@@ -17,7 +17,7 @@ const HEADINGS = {
 };
 
 const SPEAKERS = {
-  SIMON_BROWN: 'Simon Brown',
+  SAM_NEWMAN: 'Sam Newman',
   JORN_OLMHEIM: 'Jørn Ølmheim',
   JORGEN_KVALSVIK: 'Jørgen Kvalsvik',
   ERIK_PARMANN: 'Erik Parmann',
@@ -27,7 +27,7 @@ const SPEAKERS = {
   OYVIND_RONNE: 'Øyvind Rønne',
   TAHIR_ALI: 'Tahir Ali',
   JON_JAATUN: 'Jon Jaatun',
-  OLVE_MAUDAL: 'Olve Maudal',
+  JAMES_LEWIS: 'James Lewis',
   SEBASTIAN_ROLL: 'Sebastian Roll',
   JENS_G_MAGNUS: 'Jens G. Magnus',
   AUSTIN_BINGHAM: 'Austin Bingham',
@@ -56,9 +56,9 @@ const TIME_SLOTS = {
 };
 
 const DAYS = {
-  '2018-09-25': '2018-09-25',
-  '2018-09-26': '2018-09-26',
-  '2018-09-27': '2018-09-27',
+  '2019-09-17': '2019-09-17',
+  '2019-09-18': '2019-09-18',
+  '2019-09-19': '2019-09-19',
 };
 
 const CONFERENCE_DAYS = {
@@ -68,9 +68,9 @@ const CONFERENCE_DAYS = {
 };
 
 const CALENDAR_DATE = {
-  TUESDAY: 'Tuesday September 25',
-  WEDNESDAY: 'Wednesday September 26',
-  THURSDAY: 'Thursday September 27',
+  TUESDAY: 'Tuesday September 17',
+  WEDNESDAY: 'Wednesday September 18',
+  THURSDAY: 'Thursday September 19',
 };
 
 const COLORS = {
@@ -88,7 +88,7 @@ const COLORS = {
 };
 
 const IDS = {
-  KEYNOTE_SOFTWARE_ARCHITECTURE: 'keynote_software_architecture',
+  KEYNOTE_MICROSERVICES_AND_SERVERLESS: 'keynote_microservices_and_serverless',
   ELIXIR: 'elixir',
   HASKELL: 'haskell',
   LISP: 'lisp',
@@ -100,7 +100,7 @@ const IDS = {
   API_WORKSHOP: 'api_workshop',
   OMNIA: 'omnia',
   DESIGN_THINKING: 'design_thinking',
-  KEYNOTE_FEEDBACK_DRIVEN_DEVELOPMENT: 'keynote_feedback_driven_development',
+  KEYNOTE_EVOLUTIONARY_ARCHITECTURE: 'keynote_evolutionary_architecture',
   MICRO_PYTHON: 'micro_python',
   UNREAL_ENGINE: 'unreal_engine',
   INTERMEDIATE_PYTHON: 'intermediate_python',
@@ -113,10 +113,10 @@ const IDS = {
 
 export const events = [
   {
-    id: IDS.KEYNOTE_SOFTWARE_ARCHITECTURE,
+    id: IDS.KEYNOTE_MICROSERVICES_AND_SERVERLESS,
     title:
       'Five things every developer should know about software architecture (Air London & NewYork)',
-    speaker: SPEAKERS.SIMON_BROWN,
+    speaker: SPEAKERS.SAM_NEWMAN,
     description: (
       <p>
         {
@@ -221,7 +221,7 @@ export const events = [
     id: IDS.C4,
     title: 'Visualising software architecture with the C4 model (Sky1)',
     shortTitle: 'Visualising software architecture (Sky1)',
-    speaker: SPEAKERS.SIMON_BROWN,
+    speaker: SPEAKERS.SAM_NEWMAN,
     description: (
       <p>
         {
@@ -257,14 +257,14 @@ export const events = [
         date: CALENDAR_DATE.TUESDAY,
       },
     ],
-    day: DAYS['2018-09-25'],
+    day: DAYS['2019-09-17'],
     category: CATEGORIES.MINIWORKSHOP,
   },
   {
     id: IDS.MODEL_CODE_GAP,
     title: 'The model-code gap and Visualising software architecture (Sky1)',
     shortTitle: 'The model-code gap\nVisualising software architecture (Sky1)',
-    speaker: SPEAKERS.SIMON_BROWN,
+    speaker: SPEAKERS.SAM_NEWMAN,
     description: (
       <p>
         {
@@ -368,12 +368,12 @@ export const events = [
     category: CATEGORIES.MINIWORKSHOP,
   },
   {
-    id: IDS.KEYNOTE_FEEDBACK_DRIVEN_DEVELOPMENT,
+    id: IDS.KEYNOTE_EVOLUTIONARY_ARCHITECTURE,
     shortTitle: 'Feedback-driven Product Development (Air London+NewYork)',
     title:
       'Feedback-driven Product Development\n' +
       'How we do it at Lysaker and how you can design your own system',
-    speaker: SPEAKERS.OLVE_MAUDAL,
+    speaker: SPEAKERS.JAMES_LEWIS,
     description: (
       <p>
         {'Cisco’s development and innovation centre in Norway (Lysaker) develops ' +
@@ -507,7 +507,7 @@ export const events = [
   {
     id: IDS.C_PLUS_PLUS,
     title: 'A Tour of Modern C++ (Bell)',
-    speaker: SPEAKERS.OLVE_MAUDAL,
+    speaker: SPEAKERS.JAMES_LEWIS,
     color: '#03D1AB',
     description: (
       <p>
@@ -566,7 +566,7 @@ export const events = [
     description: (
       <p>
         {
-          'The vision/purpose for Omnia Radix is Happy and efficient Software Developers. We want to provide a basic modern cloud native software engineering capability for small teams. Keywords are iterative development, automation CI/CD and monitoring.\n\nIn this workshop we will build a simple web app using a basic software devel- opment workflow (code, version control, build, test), move the app to Docker containers and eventually deploy the app to the Radix platform.\n\nThe Radix platform that we will use is very early alpha stage - so expect some manual hurdles. When finished you should have an idea about how a cloud native software development workflow could look like - and what role Radix could play for your team.\n\nIn the workshop, you can use any programming language that you want to as long as it’s able to run in a Docker container on a Linux architecture. Our example app will be written in Node.JS. If you prefer to follow this “track” - please make sure that Node.JS is\n\nWho is this workshop for?\n\nSoftware developers & Coding Data Scientists. You have at least one ecosystem that you know quite good. You know git. You have some knowledge of Web development (http) You have played around with Docker. You are searching for a good way to deploy your applications and webservices. You want to get started - or continue with - CI/CD, and want this to be as easy as possible. You have at least one cool sticker on your laptop!\n\nPre-requisites\nYour own precious developer laptop with the following installed and working\n• Development ecosystem of your choice (Node, Python, C#...). The examples in the workshop will be using node.js.\n• Docker installed and working\n• Having a active account on github.com and a working ssh regime with github.com\n• Git installed and working locally\n• ssh-keygen installed and working\n• If you are using an Equinor laptop - make sure you know how to manage proxy settings\n\nThe full script of the workshop is available on https://github.com/larskaare/edcradix/blob/master/docs/radixintro.md\n\nHead over to equinor.slack.com and join the channel #omnia_radix_edc2018 for in-workshop communication'
+          'The vision/purpose for Omnia Radix is Happy and efficient Software Developers. We want to provide a basic modern cloud native software engineering capability for small teams. Keywords are iterative development, automation CI/CD and monitoring.\n\nIn this workshop we will build a simple web app using a basic software devel- opment workflow (code, version control, build, test), move the app to Docker containers and eventually deploy the app to the Radix platform.\n\nThe Radix platform that we will use is very early alpha stage - so expect some manual hurdles. When finished you should have an idea about how a cloud native software development workflow could look like - and what role Radix could play for your team.\n\nIn the workshop, you can use any programming language that you want to as long as it’s able to run in a Docker container on a Linux architecture. Our example app will be written in Node.JS. If you prefer to follow this “track” - please make sure that Node.JS is\n\nWho is this workshop for?\n\nSoftware developers & Coding Data Scientists. You have at least one ecosystem that you know quite good. You know git. You have some knowledge of Web development (http) You have played around with Docker. You are searching for a good way to deploy your applications and webservices. You want to get started - or continue with - CI/CD, and want this to be as easy as possible. You have at least one cool sticker on your laptop!\n\nPre-requisites\nYour own precious developer laptop with the following installed and working\n• Development ecosystem of your choice (Node, Python, C#...). The examples in the workshop will be using node.js.\n• Docker installed and working\n• Having a active account on github.com and a working ssh regime with github.com\n• Git installed and working locally\n• ssh-keygen installed and working\n• If you are using an Equinor laptop - make sure you know how to manage proxy settings\n\nThe full script of the workshop is available on https://github.com/larskaare/edcradix/blob/master/docs/radixintro.md\n\nHead over to equinor.slack.com and join the channel #omnia_radix_edc2019 for in-workshop communication'
         }
       </p>
     ),
@@ -641,13 +641,13 @@ export const schedule = [
       },
       {
         time: TIME_SLOTS['08:45-09:00'],
-        events: [{ title: 'Welcome to EDC2018' }],
+        events: [{ title: 'Welcome to EDC2019' }],
         background: COLORS.SPRUCE_WOOD,
       },
       {
         time: TIME_SLOTS['09:00-10:00'],
         heading: HEADINGS.KEYNOTE,
-        events: [getLecture(IDS.KEYNOTE_SOFTWARE_ARCHITECTURE)],
+        events: [getLecture(IDS.KEYNOTE_MICROSERVICES_AND_SERVERLESS)],
       },
       {
         time: TIME_SLOTS['10:15-12:00'],
@@ -721,7 +721,7 @@ export const schedule = [
       {
         time: TIME_SLOTS['09:00-10:00'],
         heading: HEADINGS.KEYNOTE,
-        events: [getLecture(IDS.KEYNOTE_FEEDBACK_DRIVEN_DEVELOPMENT)],
+        events: [getLecture(IDS.KEYNOTE_EVOLUTIONARY_ARCHITECTURE)],
       },
       {
         time: TIME_SLOTS['10:15'],
