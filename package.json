@@ -4,10 +4,6 @@
   "private": true,
   "homepage": "https://edc2019.github.io",
   "dependencies": {
-    "eslint": "^5.5.0",
-    "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-jsx-a11y": "^6.1.1",
-    "eslint-plugin-react": "^7.11.1",
     "gh-pages": "^1.2.0",
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
@@ -23,5 +19,17 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
