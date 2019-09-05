@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://edc2019.github.io",
   "dependencies": {
+    "eslint": "^6.3.0",
     "gh-pages": "^1.2.0",
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
