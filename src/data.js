@@ -17,12 +17,23 @@ const HEADINGS = {
 };
 
 const SPEAKERS = {
+    // keynotes
   SAM_NEWMAN: 'Sam Newman',
   JORN_OLMHEIM: 'Jørn Ølmheim',
+
+    // plenary
+
+    // shorts
+
+    // langs
+
+    // workshops
+
+    // miniworkshops
   JORGEN_KVALSVIK: 'Jørgen Kvalsvik',
   ERIK_PARMANN: 'Erik Parmann',
   MARKUS_FANEBUST_DREGI: 'Markus Fanebust Dregi',
-  CARSTEN_FALK_HAMMERSHOJ: 'Carsten Falk Hammershøj',
+  PAAL_GROENAAS_DRANGE: 'Pål Grønås Drange',
   KRISTIAN_FLIKKA_AND_EIVIND_SJAASTAD: 'Kristian Flikka and Eivind Sjaastad',
   OYVIND_RONNE: 'Øyvind Rønne',
   TAHIR_ALI: 'Tahir Ali',
@@ -240,13 +251,13 @@ export const events = [
   },
   {
     id: IDS.PRINTING_3D,
-    title: '3D printing — a practical guide to getting started (Robinson)',
-    shortTitle: '3D printing (Robinson)',
-    speaker: SPEAKERS.CARSTEN_FALK_HAMMERSHOJ,
+    title: 'An introduction to Git (?)',
+    shortTitle: 'Intro to Git (?)',
+    speaker: SPEAKERS.PAAL_GROENAAS_DRANGE,
     description: (
       <p>
         {
-          'What is 3D printing and where do you start?\nWhich desktop printers exist and what do you need to consider before you purchase one? What materials are needed for printing. Which maker communities for 3D printing are there? What are the opportunities for Equinor?\nHow do we design for 3D printing ? We will see tools and do a practical exercise.'
+          'Install Git Bash!.'
         }
       </p>
     ),
