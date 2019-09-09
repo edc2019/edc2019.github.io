@@ -155,7 +155,6 @@ const IDS = {
   MACHINE_LEARNING: 'machine_learning',
   API_WORKSHOP: 'api_workshop',
   GPUMAGIC: 'gpumagic',
-  DESIGN_THINKING: 'design_thinking',
   KEYNOTE_EVOLUTIONARY_ARCHITECTURE: 'keynote_evolutionary_architecture',
 
   // MINI-WORKSHOPS
@@ -166,7 +165,8 @@ const IDS = {
   KUBERNETES: 'kubernetes',
   HANDS_ON_OMNIA: 'hands_on_omnia',
   SAP_HACKATHON: 'sap_hackathon',
-  HACKATHON: 'hackathon',
+  ROBOT_COMPETITION: 'robot_competition',
+
 };
 
 export const events = [
@@ -502,26 +502,6 @@ export const events = [
 
 
   {
-    id: IDS.DESIGN_THINKING,
-    title: 'Design thinking (Bell)',
-    speaker: SPEAKERS.JON_JAATUN,
-    description: (
-      <p>
-        {
-          'What is Design Thinking?\nJon, from the mobility team, gives us a fun introduction to Design Thinking. With practical examples, first one that you can experience yourself in Lego, and later from him and his team’s work for the field of the future.'
-        }
-      </p>
-    ),
-    timeSlots: [
-      {
-        time: TIME_SLOTS['15:00-17:15'],
-        day: CONFERENCE_DAYS.DAY_1,
-        date: CALENDAR_DATE.TUESDAY,
-      },
-    ],
-    category: CATEGORIES.MINIWORKSHOP,
-  },
-  {
     id: IDS.KEYNOTE_EVOLUTIONARY_ARCHITECTURE,
     shortTitle: 'Feedback-driven Product Development (Air London+NewYork)',
     title:
@@ -761,12 +741,14 @@ export const events = [
     category: CATEGORIES.WORKSHOP,
   },
   {
-    id: IDS.HACKATHON,
-    title: 'Hackathon',
+    id: IDS.ROBOT_COMPETITION,
+    title: 'Real robot competition',
+    shortTitle: 'Real robots',
+    speaker: SPEAKERS.TEAM_REAL_ROBOT,
     description: (
       <p>
         {
-          'Do you have an idea?  Try it out here, either on your own, or with other curious playgrounders.  Mistakes are made to be made; this is the time and place for trying and working on, both good and bad ideas.\nThe C++ slot and the design sprint slot end on day 2, so this slot is especially suited for C++-innovation collaboration.'
+          'TBA'
         }
       </p>
     ),
@@ -1071,6 +1053,7 @@ export const schedule = [
           { ...getLecture(IDS.GPUMAGIC), part: '1 of 1' },
           { ...getLecture(IDS.KUBERNETES), part: '1 of 2' },
           { ...getLecture(IDS.HANDS_ON_OMNIA), part: '1 of 2' },
+          { ...getLecture(IDS.ROBOT_COMPETITION), part: '1 of 2' },
         ],
       },
       {
@@ -1085,9 +1068,10 @@ export const schedule = [
           { ...getLecture(IDS.MONOLITH), part: '2 of 2' },
           { ...getLecture(IDS.DEVELOPING_APIS), part: '2 of 2' },
           { ...getLecture(IDS.PYTHON_TOUR), part: '2 of 2' },
-          { ...getLecture(IDS.SAP_HACKATHON), part: '1 of 2' },
+          { ...getLecture(IDS.SAP_HACKATHON), part: '2 of 2' },
           { ...getLecture(IDS.KUBERNETES), part: '2 of 2' },
           { ...getLecture(IDS.HANDS_ON_OMNIA), part: '2 of 2' },
+          { ...getLecture(IDS.ROBOT_COMPETITION), part: '2 of 2' },
         ],
       },
       {
@@ -1121,7 +1105,6 @@ export const schedule = [
           getLecture(IDS.MACHINE_LEARNING),
           getLecture(IDS.GITINTRO),
           getLecture(IDS.API_WORKSHOP),
-          getLecture(IDS.DESIGN_THINKING),
           getLecture(IDS.MODEL_CODE_GAP),
         ],
       },
