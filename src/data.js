@@ -5,6 +5,7 @@ const CATEGORIES = {
   LANGUAGE: 'Language',
   MINIWORKSHOP: 'Miniworkshop',
   WORKSHOP: 'Workshop',
+  LIGHTNING: 'Lightning talks',
   CONTRIBUTED_LECTURE: 'Contributed lecture',
 };
 
@@ -13,38 +14,47 @@ const HEADINGS = {
   LANGUAGES: 'Languages',
   MINIWORKSHOPS: 'Miniworkshops',
   WORKSHOPS: 'Workshops',
-  CONTRIBUTED_LECTURE: 'Contributed lecture',
+  CONTRIBUTED_LECTURE: 'Plenary ',
 };
 
 const SPEAKERS = {
-    // keynotes
+  // keynotes
   SAM_NEWMAN: 'Sam Newman',
+  JAMES_LEWIS: 'James Lewis',
+
+  // plenary
+  BJARTE_BOGSNES: 'Bjarte Bogsnes',
+  PER_IVAR_SELVAAG: 'Per Ivar Selvaag',
+  VICTOR_NYSTAD: 'Victor Nystad',
+
+  // shorts
+
+  // langs
+  OLVE_MAUDAL: 'Olve Maudal',
+  BJARTE_JOHANSEN: 'Bjarte Johansen',
+  STIAN_OVREVAAGE: 'Stian Øvrevåge',
   JORN_OLMHEIM: 'Jørn Ølmheim',
+  JUAN_ALAMO: 'Juan Martorell Gutierrez Del Alamo',
+  KJELL_ERIK_REED_ANDA: 'Kjell Erik Reed Anda',
 
-    // plenary
+  // workshops
+  OYVIND_RONNE: 'Øyvind Rønne',
+  TEAM_RADIX: 'Team Radix',
+  JULIUS_PARULEK: 'Julius Parulek',
+  TEAM_SAP: 'Team SAP',
+  TEAM_OMNIA: 'Team OMNIA',
+  TEAM_REAL_ROBOT: 'Ole Martin Gjersvik & Kjetil Eik',
+  THORVALD_JOHANNESSEN: 'Thorvald Johannessen',
+  TEAM_HACKYOURSELF: 'Christian Sørseth',
+  TEAM_ACE: 'ACE TBA',
 
-    // shorts
-
-    // langs
-
-    // workshops
-
-    // miniworkshops
+  // miniworkshops
   JORGEN_KVALSVIK: 'Jørgen Kvalsvik',
-  ERIK_PARMANN: 'Erik Parmann',
+  TORILL_GABRIELSEN: 'Torill Kjøsnes Gabrielsen',
   MARKUS_FANEBUST_DREGI: 'Markus Fanebust Dregi',
   PAAL_GROENAAS_DRANGE: 'Pål Grønås Drange',
-  KRISTIAN_FLIKKA_AND_EIVIND_SJAASTAD: 'Kristian Flikka and Eivind Sjaastad',
-  OYVIND_RONNE: 'Øyvind Rønne',
-  TAHIR_ALI: 'Tahir Ali',
-  JON_JAATUN: 'Jon Jaatun',
-  JAMES_LEWIS: 'James Lewis',
-  SEBASTIAN_ROLL: 'Sebastian Roll',
-  JENS_G_MAGNUS: 'Jens G. Magnus',
-  AUSTIN_BINGHAM: 'Austin Bingham',
-  KRISTIN_WULFF: 'Kristin Wulff',
-  LARS_KARE_SKJORESTED: 'Lars Kåre Skjørestad',
-  KNUT_KVARME_AND_KASIA_WDANIEC: 'Knut Kvarme and Kasia Wdaniec',
+  EIRIK_NORDBOE: 'Eirik Nordbø',
+  THOMAS_HJELDE_THORESEN: 'Thomas Hjelde Thoresen',
 };
 
 const TIME_SLOTS = {
@@ -101,11 +111,11 @@ const COLORS = {
 const IDS = {
   KEYNOTE_MICROSERVICES_AND_SERVERLESS: 'keynote_microservices_and_serverless',
   ELIXIR: 'elixir',
-  HASKELL: 'haskell',
-  LISP: 'lisp',
-  BRAINFUCK: 'brainfuck',
+  PROLOG: 'prolog',
+  CLOJURE: 'clojure',
+  DEEPC: 'deepc',
   PRINTING_3D: 'printing_3D',
-  C4: 'c4',
+  DOCKER: 'docker',
   MODEL_CODE_GAP: 'model_code_gap',
   MACHINE_LEARNING: 'machine_learning',
   API_WORKSHOP: 'api_workshop',
@@ -126,12 +136,12 @@ export const events = [
   {
     id: IDS.KEYNOTE_MICROSERVICES_AND_SERVERLESS,
     title:
-      'Five things every developer should know about software architecture (Air London & NewYork)',
+      'Microservices and Serverless (Atlantic Hall)',
     speaker: SPEAKERS.SAM_NEWMAN,
     description: (
       <p>
         {
-          'The software development industry has made huge leaps in recent years; with agile, lean, software craftsmanship, evolutionary design and microservices being just a few of the buzzwords we throw around. Despite this, software development teams are often more chaotic than they are self-organising, with the resulting code being more of a mess than was perhaps anticipated. Successful software projects aren’t just about good code though, and sometimes you need to step away from the IDE for a few moments to see the bigger picture.\nThis session is about that bigger picture and is aimed at software developers who want to learn more about software architecture, technical leadership and the balance with agility. This talk will debunk some of the common myths as we look at five things every developer should know about software architecture; a guide to software architecture on modern software projects that’s pragmatic rather than academic and lightweight rather than “enterprisey”.'
+          'TBA'
         }
       </p>
     ),
@@ -166,14 +176,14 @@ export const events = [
     category: CATEGORIES.LANGUAGE,
   },
   {
-    id: IDS.HASKELL,
-    title: 'Crowdsourced Haskell (Sky2)',
-    shortTitle: 'Haskell (Sky2)',
-    speaker: SPEAKERS.JORGEN_KVALSVIK,
+    id: IDS.PROLOG,
+    title: 'Prolog (TBA)',
+    shortTitle: 'Prolog',
+    speaker: SPEAKERS.BJARTE_JOHANSEN,
     description: (
       <p>
         {
-          'Welcome to a hands-on session where we will crowdsource programs solving real problems in Haskell, a wonderful non-strict purely functional programming language. Both Haskell and mob programming is a great way to apply yourself, and to pick up a few refreshing ideas on computation and programs on the way.\nIt will be an interactive session where we together solve problems and write programs, through discussions and suggestions from the participants.\nBringing a laptop is optional (all programs will be compiled and run on the instructor’s computer), but you’re free to bring your own computer to try out snippets and programs yourself.'
+          'TBA'
         }
       </p>
     ),
@@ -187,14 +197,14 @@ export const events = [
     category: CATEGORIES.LANGUAGE,
   },
   {
-    id: IDS.LISP,
-    title: 'Schemy listy lispy lisps (Airbus)',
-    shortTitle: 'Lisp (Airbus)',
-    speaker: SPEAKERS.ERIK_PARMANN,
+    id: IDS.CLOJURE,
+    title: 'Clojure',
+    shortTitle: 'Clojure',
+    speaker: SPEAKERS.JORN_OLMHEIM,
     description: (
       <p>
         {
-          'We will look into Lisp in several of its beautiful variants. After this little crash course you should be able to uphold polite smalltalk about some of the different lisps, a bit of their history, and how to program in them. You will be able to make snarky remarks to Pythonists about their lack of macros and how Python is actually just a poor man’s Lisp without homoiconicity, and you will learn what that word means.'
+          'TBA'
         }
       </p>
     ),
@@ -208,14 +218,14 @@ export const events = [
     category: CATEGORIES.LANGUAGE,
   },
   {
-    id: IDS.BRAINFUCK,
-    title: 'Minimalistic turing complete languages and their implications (Bell)',
-    shortTitle: 'From Turing to Brainfuck (Bell)',
-    speaker: SPEAKERS.MARKUS_FANEBUST_DREGI,
+    id: IDS.DEEPC,
+    title: 'Deep C',
+    shortTitle: 'Deep C',
+    speaker: SPEAKERS.OLVE_MAUDAL,
     description: (
       <p>
         {
-          'We will start this session by giving an introduction to the extremely small language Brainfuck. We will then discuss the technical implications of Brainfuck being Turing complete, as well as ponder over its connection to life, Game of Life, amoebas and emerging intelligence (artifical or not).\nTo finish off with something concrete we will pair program Brainfuck. If you bring your best and work hard, you might be able to add two integers by the end of the session (no kidding).\nBringing a laptop is beneficial. But to be honest, development time will be king. So you will not lose that much time by emulating on paper.'
+          'TBA'
         }
       </p>
     ),
@@ -229,14 +239,14 @@ export const events = [
     category: CATEGORIES.LANGUAGE,
   },
   {
-    id: IDS.C4,
-    title: 'Visualising software architecture with the C4 model (Sky1)',
-    shortTitle: 'Visualising software architecture (Sky1)',
-    speaker: SPEAKERS.SAM_NEWMAN,
+    id: IDS.DOCKER,
+    title: 'Docker',
+    shortTitle: 'Docker',
+    speaker: SPEAKERS.STIAN_OVREVAGE,
     description: (
       <p>
         {
-          'It’s very likely that the majority of the software architecture diagrams you’ve seen are a confused mess of boxes and lines. Following the publication of the Manifesto for Agile Software Development in 2001, teams have abandoned UML, discarded the concept of modelling and instead place a heavy reliance on conversations centered around incoherent whiteboard diagrams or shallow “Marketecture” diagrams created with Visio. Moving fast and being agile requires good communication, yet software development teams struggle with this fun- damental skill. A good set of software architecture diagrams are priceless for aligning a team around a shared vision and for getting new-joiners productive fast.\nThis session explores the visual communication of software architecture and is based upon a decade of my experiences working with software development teams large and small across the globe. We’ll look at what is commonplace today, the importance of creating a shared vocabulary, diagram notation, and the value of creating a lightweight model to describe your software system using the ”C4 model”, which I created as a way to help software development teams describe and communicate software architecture, both during up - front design sessions and when retrospectively documenting an existing codebase.'
+          'TBA'
         }
       </p>
     ),
@@ -664,11 +674,11 @@ export const schedule = [
         time: TIME_SLOTS['10:15-12:00'],
         heading: HEADINGS.LANGUAGES,
         events: [
-          getLecture(IDS.BRAINFUCK),
-          getLecture(IDS.LISP),
+          getLecture(IDS.DEEPC),
+          getLecture(IDS.PROLOG),
+          getLecture(IDS.DOCKER),
+          getLecture(IDS.CLOJURE),
           getLecture(IDS.ELIXIR),
-          getLecture(IDS.HASKELL),
-          getLecture(IDS.C4),
         ],
       },
       {
