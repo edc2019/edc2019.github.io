@@ -148,6 +148,7 @@ const IDS = {
   RADIX: 'Radix',
 
 
+  KEYNOTE_EVOLUTIONARY_ARCHITECTURE: 'keynote_evolutionary_architecture',
 
 
   // WORKSHOPS
@@ -155,10 +156,6 @@ const IDS = {
   MACHINE_LEARNING: 'machine_learning',
   API_WORKSHOP: 'api_workshop',
   GPUMAGIC: 'gpumagic',
-  KEYNOTE_EVOLUTIONARY_ARCHITECTURE: 'keynote_evolutionary_architecture',
-
-  // MINI-WORKSHOPS
-  GITINTRO: 'gitintro',
   MONOLITH: 'monolith',
   DEVELOPING_APIS: 'developing_apis',
   PYTHON_TOUR: 'python_tour',
@@ -166,6 +163,12 @@ const IDS = {
   HANDS_ON_OMNIA: 'hands_on_omnia',
   SAP_HACKATHON: 'sap_hackathon',
   ROBOT_COMPETITION: 'robot_competition',
+  HACK_YOURSELF: 'hack_yourself',
+  AGILE_WORKSHOP: 'agile_workshop',
+
+
+  // MINI-WORKSHOPS
+  GITINTRO: 'gitintro',
 
 };
 
@@ -417,7 +420,7 @@ export const events = [
     description: (
       <p>
         {
-          '\n• A very basic introduction to machine learning.\n• What is it?\n• Why do we do it?\n• How do we do it (in Python)?\nThere will be some examples shown, we recommend (but don’t require) that you bring your computer with Python installed, so that you can try some things out for yourself.'
+          'TBA'
         }
       </p>
     ),
@@ -437,13 +440,9 @@ export const events = [
     speaker: SPEAKERS.OYVIND_RONNE,
     description: (
       <p>
-        {'In this hands-on session we will create a simple REST API using JavaScript and Node.js and deploy it to Azure / OMNIA.\n' +
-          'We will look into creating an API specification using Swagger / OpenAPI Specification.\n' +
-          'If we have time, we will also try setting it up in Azure API management. \n' +
-          'There will not be many slides, mostly we will code and have fun!\n' +
-          '\n' +
-          'Please make sure Node.js and Postman is installed on your computer beforehand, and that you are able to turn off any proxy ' +
-          'settings you normally need within the Equinor network. You also need the role Data Platform Developer (OMNIA DATA PLATFORM) in AccessIT.'}
+        {
+          'TBA'
+        }
       </p>
     ),
     timeSlots: [
@@ -503,34 +502,15 @@ export const events = [
 
   {
     id: IDS.KEYNOTE_EVOLUTIONARY_ARCHITECTURE,
-    shortTitle: 'Feedback-driven Product Development (Air London+NewYork)',
+    shortTitle: 'Evolutionary Architecture, DevOps and Scale',
     title:
-      'Feedback-driven Product Development\n' +
-      'How we do it at Lysaker and how you can design your own system',
+      'Evolutionary Architecture, DevOps and Scale',
     speaker: SPEAKERS.JAMES_LEWIS,
     description: (
       <p>
-        {'Cisco’s development and innovation centre in Norway (Lysaker) develops ' +
-          'videoconferencing products, telepresence technology and collaboration ' +
-          'solutions. This is embedded product development involving advanced ' +
-          'mechanics, customised electronics, movable parts and millions of lines ' +
-          'of software mostly written in C and C++. Over the last two decades we ' +
-          'have gradually established a workflow that very much supports lean and ' +
-          'agile product development for hundreds of engineers working closely ' +
-          'together. A lot of effort goes into establishing effective feedback ' +
-          'loops guiding the whole development process. We are not only talking ' +
-          'about rapid feedback from build systems and continuous integration, but ' +
-          'also from regression tests, advanced scenario testing and real ' +
-          'users. The focus on establishing feedback loops goes beyond the product ' +
-          'development workflow, it is a principle applicable to the whole ' +
-          'organization. ' +
-          '\n\n' +
-          'This talk will present a concrete insight into the software development ' +
-          'workflow that we are using today, before discussing what you need to ' +
-          'consider if you want to set up an equally effective feedback-driven ' +
-          'product development workflow in your organization. The talk is relevant ' +
-          'for everyone involved product development where software is a key ' +
-          'component.'}
+        {
+          'TBA'
+        }
       </p>
     ),
     timeSlots: [
@@ -542,6 +522,7 @@ export const events = [
     ],
     category: CATEGORIES.KEYNOTE,
   },
+
   {
     id: IDS.MONOLITH,
     title: 'Monolith to microservices',
@@ -639,9 +620,67 @@ export const events = [
     category: CATEGORIES.WORKSHOP,
   },
   {
+    id: IDS.HACK_YOURSELF,
+    title: 'Learn to Hack Yourself',
+    shortTitle: 'Learn to Hack Yourself',
+    speaker: SPEAKERS.TEAM_HACKYOURSELF,
+    color: '#367ABD',
+    description: (
+      <p>
+        {
+          'TBA'
+        }
+      </p>
+    ),
+    timeSlots: [
+      {
+        time: TIME_SLOTS['10:15'],
+        day: CONFERENCE_DAYS.DAY_2,
+        date: CALENDAR_DATE.WEDNESDAY,
+      },
+      {
+        time: TIME_SLOTS['14:15'],
+        day: CONFERENCE_DAYS.DAY_2,
+        date: CALENDAR_DATE.WEDNESDAY,
+      },
+      {
+        time: TIME_SLOTS['09:00'],
+        day: CONFERENCE_DAYS.DAY_3,
+        date: CALENDAR_DATE.THURSDAY,
+      },
+    ],
+    category: CATEGORIES.WORKSHOP,
+  },
+  {
     id: IDS.KUBERNETES,
     title: 'Kubernetes',
     speaker: SPEAKERS.TEAM_RADIX,
+    color: '#03D1AB',
+    description: (
+      <p>
+        {
+          'TBA'
+        }
+      </p>
+    ),
+    timeSlots: [
+      {
+        time: TIME_SLOTS['10:15'],
+        day: CONFERENCE_DAYS.DAY_2,
+        date: CALENDAR_DATE.WEDNESDAY,
+      },
+      {
+        time: TIME_SLOTS['14:15'],
+        day: CONFERENCE_DAYS.DAY_2,
+        date: CALENDAR_DATE.WEDNESDAY,
+      },
+    ],
+    category: CATEGORIES.WORKSHOP,
+  },
+  {
+    id: IDS.AGILE_WORKSHOP,
+    title: 'Agile Anonymous',
+    speaker: SPEAKERS.TEAM_ACE,
     color: '#03D1AB',
     description: (
       <p>
@@ -673,7 +712,7 @@ export const events = [
     description: (
       <p>
         {
-          'Get to know a practical, and time boxed implementation of Design Thinking from Google Ventures. The methodical five days approach, forces the team to explore a vast space of ideas, and assist you in quickly narrowing them down to the one you really want to test on your users. An agile approach to the design phase, that allows your team to fail fast and shortcuts the idea→learning feedback loop. Do you think we could be more curious and creative in the earlier stages of our projects. Do you think that our projects are agile in name, but not always in practice. Or have you at some point simply experienced that the code you were writing, was an excellent answer, but sadly for the wrong question. Then join in for three hours of fun, a new perspective on the design phase, and a pocket full of ideation activities and practices for you and your team.\nPrimarily for: Everyone\nParticipant requirements: Their head and hands.'
+          'TBA'
         }
       </p>
     ),
@@ -1049,11 +1088,14 @@ export const schedule = [
         events: [
           { ...getLecture(IDS.MONOLITH), part: '1 of 2' },
           { ...getLecture(IDS.DEVELOPING_APIS), part: '1 of 2' },
-          { ...getLecture(IDS.PYTHON_TOUR), part: '1 of 2' },
-          { ...getLecture(IDS.GPUMAGIC), part: '1 of 1' },
           { ...getLecture(IDS.KUBERNETES), part: '1 of 2' },
+          { ...getLecture(IDS.GPUMAGIC), part: '1 of 1' },
+          { ...getLecture(IDS.SAP_HACKATHON), part: '1 of 3' },
           { ...getLecture(IDS.HANDS_ON_OMNIA), part: '1 of 2' },
-          { ...getLecture(IDS.ROBOT_COMPETITION), part: '1 of 2' },
+          { ...getLecture(IDS.PYTHON_TOUR), part: '1 of 2' },
+          { ...getLecture(IDS.HACK_YOURSELF), part: '1 of 2' },
+          { ...getLecture(IDS.ROBOT_COMPETITION), part: '1 of 3' },
+          { ...getLecture(IDS.AGILE_WORKSHOP), part: '1 of 2' },
         ],
       },
       {
@@ -1067,11 +1109,14 @@ export const schedule = [
         events: [
           { ...getLecture(IDS.MONOLITH), part: '2 of 2' },
           { ...getLecture(IDS.DEVELOPING_APIS), part: '2 of 2' },
-          { ...getLecture(IDS.PYTHON_TOUR), part: '2 of 2' },
-          { ...getLecture(IDS.SAP_HACKATHON), part: '2 of 2' },
           { ...getLecture(IDS.KUBERNETES), part: '2 of 2' },
+          { ...getLecture(IDS.GPUMAGIC), part: '2 of 1' },
+          { ...getLecture(IDS.SAP_HACKATHON), part: '2 of 3' },
           { ...getLecture(IDS.HANDS_ON_OMNIA), part: '2 of 2' },
-          { ...getLecture(IDS.ROBOT_COMPETITION), part: '2 of 2' },
+          { ...getLecture(IDS.PYTHON_TOUR), part: '2 of 2' },
+          { ...getLecture(IDS.HACK_YOURSELF), part: '2 of 2' },
+          { ...getLecture(IDS.ROBOT_COMPETITION), part: '2 of 3' },
+          { ...getLecture(IDS.AGILE_WORKSHOP), part: '2 of 2' },
         ],
       },
       {
