@@ -139,7 +139,7 @@ const IDS = {
   PYTHON_TOUR: 'python_tour',
   KUBERNETES: 'kubernetes',
   DESIGN_SPRINT: 'design_sprint',
-  AGILE: 'agile',
+  SAP_HACKATHON: 'sap_hackathon',
   HACKATHON: 'hackathon',
 };
 
@@ -675,15 +675,15 @@ export const events = [
     category: CATEGORIES.WORKSHOP,
   },
   {
-    id: IDS.AGILE,
-    title: 'Agile Workshop (Air London)',
-    shortTitle: 'Agile Workshop (Air London)',
-    speaker: SPEAKERS.KNUT_KVARME_AND_KASIA_WDANIEC,
+    id: IDS.SAP_HACKATHON,
+    title: 'Equinor time writing hackathon',
+    shortTitle: 'Timewriting API',
+    speaker: SPEAKERS.TEAM_SAP,
     color: '#EE4035',
     description: (
       <p>
         {
-          '4 Themes of Agile:\n\nCreating Better Leaders\nGain knowledge and support in transforming an organisation\'s culture to one of autonomy, self-organisation, and continuous improvement.The goal is to continually rise above the competition while attracting and retaining top talent.\n\nCreating Better Product Owners\nBecome a "product leader" in your business, through learning tools such as product strategy and road-mapping, while using Scrum to maximise your team\'s potential to create iterative, incremental, and innovative products.\n\nCreating Better ScrumMasters\nLearn new skills and techniques that help you become more effective change agent, and validate your role of ScrumMaster in your world of work.\n\nCreating Better Teams\nDevelop skills so each of your team members is able to take ownership of the opportunity to self-organise, as the Scrum framework suggests. Learn how to manage and get the most out of yourself, your Product Owner, and ScrumMaster.\n\nDetailed schedule will be shared on the day.'
+          'TBA'
         }
       </p>
     ),
@@ -845,7 +845,7 @@ export const schedule = [
           { ...getLecture(IDS.MONOLITH), part: '2 of 2' },
           { ...getLecture(IDS.DEVELOPING_APIS), part: '2 of 2' },
           { ...getLecture(IDS.PYTHON_TOUR), part: '2 of 2' },
-          { ...getLecture(IDS.AGILE), part: '1 of 2' },
+          { ...getLecture(IDS.SAP_HACKATHON), part: '1 of 2' },
           { ...getLecture(IDS.KUBERNETES), part: '2 of 2' },
           { ...getLecture(IDS.DESIGN_SPRINT), part: '3 hrs workshop' },
         ],
@@ -876,7 +876,7 @@ export const schedule = [
           { ...getLecture(IDS.MICRO_PYTHON), part: '3 of 3' },
           { ...getLecture(IDS.UNREAL_ENGINE), part: '3 of 3' },
           { ...getLecture(IDS.PYTHON_TOUR), part: '3 of 3' },
-          { ...getLecture(IDS.AGILE), part: '2 of 2' },
+          { ...getLecture(IDS.SAP_HACKATHON), part: '2 of 2' },
           {
             ...getLecture(IDS.HACKATHON),
             part: '1 of 1',
