@@ -119,6 +119,7 @@ const IDS = {
   OPENSOURCE: 'opensource',
   CSS: 'CSS',
   LUA: 'LUA',
+  RADIX: 'Radix',
 
   // LIGHTNING SESSION
 
@@ -208,9 +209,30 @@ export const events = [
   },
   {
     id: IDS.LUA,
-    title: 'LUA',
-    shortTitle: 'LUA',
+    title: 'Lua',
+    shortTitle: 'Lua',
     speaker: SPEAKERS.JUAN_ALAMO,
+    description: (
+      <p>
+        {
+          'TBA'
+        }
+      </p>
+    ),
+    timeSlots: [
+      {
+        time: TIME_SLOTS['10:15-12:00'],
+        day: CONFERENCE_DAYS.DAY_1,
+        date: CALENDAR_DATE.TUESDAY,
+      },
+    ],
+    category: CATEGORIES.LANGUAGE,
+  },
+  {
+    id: IDS.RADIX,
+    title: 'Radix',
+    shortTitle: 'Radix',
+    speaker: SPEAKERS.KJELL_ERIK_REED_ANDA,
     description: (
       <p>
         {
@@ -733,6 +755,7 @@ export const schedule = [
           getLecture(IDS.OPENSOURCE),
           getLecture(IDS.CSS),
           getLecture(IDS.LUA),
+          getLecture(IDS.RADIX),
         ],
       },
       {
