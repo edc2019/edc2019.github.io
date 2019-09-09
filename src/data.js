@@ -127,18 +127,18 @@ const IDS = {
   MODEL_CODE_GAP: 'model_code_gap',
   MACHINE_LEARNING: 'machine_learning',
   API_WORKSHOP: 'api_workshop',
+  GPUMAGIC: 'GPUMAGIC',
   OMNIA: 'omnia',
   DESIGN_THINKING: 'design_thinking',
   KEYNOTE_EVOLUTIONARY_ARCHITECTURE: 'keynote_evolutionary_architecture',
 
   // MINI-WORKSHOPS
   GITINTRO: 'gitintro',
-  MICRO_PYTHON: 'micro_python',
-  UNREAL_ENGINE: 'unreal_engine',
+  MONOLITH: 'monolith',
+  DEVELOPING_APIS: 'developing_apis',
   INTERMEDIATE_PYTHON: 'intermediate_python',
   C_PLUS_PLUS: 'c_plus_plus',
   DESIGN_SPRINT: 'design_sprint',
-  RADIX: 'radix',
   AGILE: 'agile',
   HACKATHON: 'hackathon',
 };
@@ -504,15 +504,15 @@ export const events = [
     category: CATEGORIES.KEYNOTE,
   },
   {
-    id: IDS.MICRO_PYTHON,
-    title: 'MicroPython (Sky1)',
-    shortTitle: 'μPython (Sky1)',
-    speaker: SPEAKERS.SEBASTIAN_ROLL,
+    id: IDS.MONOLITH,
+    title: 'Monolith to microservices',
+    shortTitle: 'Monolith→Microservice',
+    speaker: SPEAKERS.SAM_NEWMAN,
     color: '#844D9E',
     description: (
       <p>
         {
-          'MicroPython is a Python implementation for embedded processors. This two day workshop will cover the MicroPython language and how to use it for your very own IoT project. Each participant will be provided with a powerful ESP32 microcontroller and a wide range of fun components to use. Cooperation is encouraged!\nSome examples of what we might create together:\n• mp3 player \n• remote controlled car \n• gamepad \n• NFC tag reader \n• handheld web server \n• MQTT-connected sensor\nFrom the experienced to the aspiring, this workshop should suit everyone.\n\nPlease bring your laptop and a USB micro cable.'
+          'TBA'
         }
       </p>
     ),
@@ -536,15 +536,15 @@ export const events = [
     category: CATEGORIES.WORKSHOP,
   },
   {
-    id: IDS.UNREAL_ENGINE,
-    title: 'Unreal Engine (Sky2)',
-    subtitle: 'Let’s make games with Unreal Engine!(Sky2)',
-    speaker: SPEAKERS.JENS_G_MAGNUS,
+    id: IDS.DEVELOPING_APIS,
+    title: 'Developing APIs',
+    subtitle: 'Developing APIs',
+    speaker: SPEAKERS.OYVIND_RONNE,
     color: '#f58db6',
     description: (
       <p>
         {
-          'This workshop is a combination of a tutorial and hackathon. We will go over everything you need to make simple games.\nThis includes\n• The Unreal Engine Editor \n• Programming in Blueprint(Unreal’s visual programming language) \n• Important gameplay classes \n• Materials During the tutorial section of the workshop we will learn by introducing new gameplay elements to template games provided by the engine. When we’re done with that it’s time to get creative!We will use what we’re learned to create our own games.\nUnreal Engine 4 is a powerful tool. The engine can be modified, extended and scripted with C++; something we might touch upon if there is time. It supports VR / AR with all mainstream hardware.\nWorkshop requirements:\n• Somewhat beefy computer, the editor is heavy (but the standard laptop works) \n• UnrealEnginelicense, it’s free, you just need to register at https://www.unrealengine.com \n• Preferably with the Unreal Engine installed\n\t– Do this before the workshop as the installation is at minimum 7GB \n\t– If you run Linux, you need to build the engine from source, this requires a newer version of make, clang, and mono.'
+          'TBA'
         }
       </p>
     ),
@@ -653,15 +653,15 @@ export const events = [
     category: CATEGORIES.WORKSHOP,
   },
   {
-    id: IDS.RADIX,
-    title: 'Getting a feel for Radix (Air London)',
-    shortTitle: 'Radix (Air London)',
-    speaker: SPEAKERS.LARS_KARE_SKJORESTED,
+    id: IDS.GPUMAGIC,
+    title: 'GPU Magic with Python',
+    shortTitle: 'GPU Magic',
+    speaker: SPEAKERS.JULIUS_PARULEK,
     color: '#EE4035',
     description: (
       <p>
         {
-          'The vision/purpose for Omnia Radix is Happy and efficient Software Developers. We want to provide a basic modern cloud native software engineering capability for small teams. Keywords are iterative development, automation CI/CD and monitoring.\n\nIn this workshop we will build a simple web app using a basic software devel- opment workflow (code, version control, build, test), move the app to Docker containers and eventually deploy the app to the Radix platform.\n\nThe Radix platform that we will use is very early alpha stage - so expect some manual hurdles. When finished you should have an idea about how a cloud native software development workflow could look like - and what role Radix could play for your team.\n\nIn the workshop, you can use any programming language that you want to as long as it’s able to run in a Docker container on a Linux architecture. Our example app will be written in Node.JS. If you prefer to follow this “track” - please make sure that Node.JS is\n\nWho is this workshop for?\n\nSoftware developers & Coding Data Scientists. You have at least one ecosystem that you know quite good. You know git. You have some knowledge of Web development (http) You have played around with Docker. You are searching for a good way to deploy your applications and webservices. You want to get started - or continue with - CI/CD, and want this to be as easy as possible. You have at least one cool sticker on your laptop!\n\nPre-requisites\nYour own precious developer laptop with the following installed and working\n• Development ecosystem of your choice (Node, Python, C#...). The examples in the workshop will be using node.js.\n• Docker installed and working\n• Having a active account on github.com and a working ssh regime with github.com\n• Git installed and working locally\n• ssh-keygen installed and working\n• If you are using an Equinor laptop - make sure you know how to manage proxy settings\n\nThe full script of the workshop is available on https://github.com/larskaare/edcradix/blob/master/docs/radixintro.md\n\nHead over to equinor.slack.com and join the channel #omnia_radix_edc2019 for in-workshop communication'
+          'TBA'
         }
       </p>
     ),
@@ -825,10 +825,10 @@ export const schedule = [
         time: TIME_SLOTS['10:15'],
         heading: HEADINGS.WORKSHOPS,
         events: [
-          { ...getLecture(IDS.MICRO_PYTHON), part: '1 of 3' },
-          { ...getLecture(IDS.UNREAL_ENGINE), part: '1 of 3' },
+          { ...getLecture(IDS.MONOLITH), part: '1 of 2' },
+          { ...getLecture(IDS.DEVELOPING_APIS), part: '1 of 3' },
           { ...getLecture(IDS.INTERMEDIATE_PYTHON), part: '1 of 3' },
-          { ...getLecture(IDS.RADIX), part: '1 of 1' },
+          { ...getLecture(IDS.GPUMAGIC), part: '1 of 1' },
           { ...getLecture(IDS.C_PLUS_PLUS), part: '1 of 2' },
           { ...getLecture(IDS.DESIGN_SPRINT), part: '3 hrs workshop' },
         ],
@@ -842,8 +842,8 @@ export const schedule = [
         time: TIME_SLOTS['14:15'],
         heading: HEADINGS.WORKSHOPS,
         events: [
-          { ...getLecture(IDS.MICRO_PYTHON), part: '2 of 3' },
-          { ...getLecture(IDS.UNREAL_ENGINE), part: '2 of 3' },
+          { ...getLecture(IDS.MONOLITH), part: '2 of 2' },
+          { ...getLecture(IDS.DEVELOPING_APIS), part: '2 of 2' },
           { ...getLecture(IDS.INTERMEDIATE_PYTHON), part: '2 of 3' },
           { ...getLecture(IDS.AGILE), part: '1 of 2' },
           { ...getLecture(IDS.C_PLUS_PLUS), part: '2 of 2' },
