@@ -13,6 +13,7 @@ const HEADINGS = {
   KEYNOTE: 'Keynote',
   LANGUAGES: 'Languages',
   MINIWORKSHOPS: 'Miniworkshops',
+  LIGHTNING: 'Lightning',
   WORKSHOPS: 'Workshops',
   CONTRIBUTED_LECTURE: 'Plenary ',
 };
@@ -66,6 +67,7 @@ const TIME_SLOTS = {
   '09:15': '09:15',
   '10:15': '10:15',
   '10:15-12:00': '10:15 — 12:00',
+  '10:30-11:20': '10:30 – 11:20',
   '12:15': '12:15',
   '13:00': '13:00',
   '14:15': '14:15',
@@ -122,6 +124,7 @@ const IDS = {
   RADIX: 'Radix',
 
   // LIGHTNING SESSION
+  LIGHT_SOFTWARE: 'light_software',
 
   // WORKSHOPS
   MODEL_CODE_GAP: 'model_code_gap',
@@ -720,6 +723,26 @@ export const events = [
     ],
     category: CATEGORIES.WORKSHOP,
   },
+
+  {
+    id: IDS.LIGHT_SOFTWARE,
+    title: 'Software Engineering',
+    description: (
+      <p>
+        {
+          'Software Engineering\n1. Technical debt is good! (Olve Maudal)\n2. FLOSS - Free/Libre Open Source Software (Knut Erik Hollund\n3. Software Development - It\'s not rocket science (Pål Grønås Drange)'
+        }
+      </p>
+    ),
+    timeSlots: [
+      {
+        time: TIME_SLOTS['09:00'],
+        day: CONFERENCE_DAYS.DAY_3,
+        date: CALENDAR_DATE.THURSDAY,
+      },
+    ],
+    category: CATEGORIES.WORKSHOP,
+  },
 ];
 
 const getLecture = id => events.find(lecture => lecture.id === id);
@@ -772,6 +795,17 @@ export const schedule = [
         heading: HEADINGS.CONTRIBUTED_LECTURE,
         events: [getLecture(IDS.OMNIA)],
       },
+
+      // DEFINITION PROGRAM LIGHTNING TALKS
+      {
+        time: TIME_SLOTS['10:30-11:20'],
+        heading: HEADINGS.LIGHTNING,
+        events: [
+          getLecture(IDS.LIGHT_SOFTWARE),
+        ],
+      },
+
+      // DEFINITION PROGRAM MINIWORKSHOPS
       {
         time: TIME_SLOTS['15:00-17:15'],
         heading: HEADINGS.MINIWORKSHOPS,
