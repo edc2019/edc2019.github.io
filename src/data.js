@@ -11,10 +11,10 @@ const CATEGORIES = {
 
 const HEADINGS = {
   KEYNOTE: 'Keynote',
-  LANGUAGES: 'Languages',
-  MINIWORKSHOPS: 'Miniworkshops',
   LIGHTNING: 'Lightning',
+  LANGUAGES: 'Languages',
   WORKSHOPS: 'Workshops',
+  MINIWORKSHOPS: 'Miniworkshops',
   CONTRIBUTED_LECTURE: 'Plenary ',
 };
 
@@ -63,16 +63,21 @@ const TIME_SLOTS = {
   '08:45-09:00': '08:45 — 09:00',
   '09:00': '09:00',
   '09:00-10:00': '09:00 — 10:00',
+  '09:00-10:15': '09:00 — 10:15',
   '09:00-12:00': '09:00 — 12:00',
   '09:15': '09:15',
   '10:15': '10:15',
   '10:15-12:00': '10:15 — 12:00',
   '10:30-11:20': '10:30 – 11:20',
+  '11:30-12:20': '11:30 – 12:20',
   '12:15': '12:15',
+  '12:30': '12:30',
   '13:00': '13:00',
+  '13:30-15:45': '13:00 — 15:45',
   '14:15': '14:15',
   '15:00': '15:00',
   '15:00-17:15': '15:00 — 17:15',
+  '16:15-17:15': '16:15 — 17:15',
   '17:30': '17:30',
   '19:00': '19:00',
   '21:00': '21:00',
@@ -113,15 +118,8 @@ const COLORS = {
 const IDS = {
   // KEYNOTE 1
   KEYNOTE_MICROSERVICES_AND_SERVERLESS: 'keynote_microservices_and_serverless',
-  // LANGS
-  PROLOG: 'prolog',
-  CLOJURE: 'clojure',
-  DEEPC: 'deepc',
-  DOCKER: 'docker',
-  OPENSOURCE: 'opensource',
-  CSS: 'CSS',
-  LUA: 'LUA',
-  RADIX: 'Radix',
+
+
 
   // LIGHTNING SESSION
   LIGHT_TEAM_WORK: 'light_team_work',
@@ -133,12 +131,30 @@ const IDS = {
   LIGHT_SOFTWARE: 'light_software',
 
 
+  // PLENARY 1 and 2
+  PRODUCT_DEVELOPMENT: 'product_development',
+  DESIGN_SYSTEM: 'design_system',
+
+
+
+  // LANGS
+  PROLOG: 'prolog',
+  CLOJURE: 'clojure',
+  DEEPC: 'deepc',
+  DOCKER: 'docker',
+  OPENSOURCE: 'opensource',
+  CSS: 'CSS',
+  LUA: 'LUA',
+  RADIX: 'Radix',
+
+
+
+
   // WORKSHOPS
   MODEL_CODE_GAP: 'model_code_gap',
   MACHINE_LEARNING: 'machine_learning',
   API_WORKSHOP: 'api_workshop',
-  GPUMAGIC: 'GPUMAGIC',
-  OMNIA: 'omnia',
+  GPUMAGIC: 'gpumagic',
   DESIGN_THINKING: 'design_thinking',
   KEYNOTE_EVOLUTIONARY_ARCHITECTURE: 'keynote_evolutionary_architecture',
 
@@ -148,7 +164,7 @@ const IDS = {
   DEVELOPING_APIS: 'developing_apis',
   PYTHON_TOUR: 'python_tour',
   KUBERNETES: 'kubernetes',
-  DESIGN_SPRINT: 'design_sprint',
+  HANDS_ON_OMNIA: 'hands_on_omnia',
   SAP_HACKATHON: 'sap_hackathon',
   HACKATHON: 'hackathon',
 };
@@ -168,13 +184,15 @@ export const events = [
     ),
     timeSlots: [
       {
-        time: TIME_SLOTS['09:00-10:00'],
+        time: TIME_SLOTS['09:00-10:15'],
         day: CONFERENCE_DAYS.DAY_1,
         date: CALENDAR_DATE.TUESDAY,
       },
     ],
     category: CATEGORIES.KEYNOTE,
   },
+
+  // LANGUAGES
   {
     id: IDS.OPENSOURCE,
     title: 'What\'s the deal with open source?',
@@ -189,7 +207,7 @@ export const events = [
     ),
     timeSlots: [
       {
-        time: TIME_SLOTS['10:15-12:00'],
+        time: TIME_SLOTS['13:30-15:45'],
         day: CONFERENCE_DAYS.DAY_1,
         date: CALENDAR_DATE.TUESDAY,
       },
@@ -210,7 +228,7 @@ export const events = [
     ),
     timeSlots: [
       {
-        time: TIME_SLOTS['10:15-12:00'],
+        time: TIME_SLOTS['13:30-15:45'],
         day: CONFERENCE_DAYS.DAY_1,
         date: CALENDAR_DATE.TUESDAY,
       },
@@ -231,7 +249,7 @@ export const events = [
     ),
     timeSlots: [
       {
-        time: TIME_SLOTS['10:15-12:00'],
+        time: TIME_SLOTS['13:30-15:45'],
         day: CONFERENCE_DAYS.DAY_1,
         date: CALENDAR_DATE.TUESDAY,
       },
@@ -252,7 +270,7 @@ export const events = [
     ),
     timeSlots: [
       {
-        time: TIME_SLOTS['10:15-12:00'],
+        time: TIME_SLOTS['13:30-15:45'],
         day: CONFERENCE_DAYS.DAY_1,
         date: CALENDAR_DATE.TUESDAY,
       },
@@ -273,7 +291,7 @@ export const events = [
     ),
     timeSlots: [
       {
-        time: TIME_SLOTS['10:15-12:00'],
+        time: TIME_SLOTS['13:30-15:45'],
         day: CONFERENCE_DAYS.DAY_1,
         date: CALENDAR_DATE.TUESDAY,
       },
@@ -294,7 +312,7 @@ export const events = [
     ),
     timeSlots: [
       {
-        time: TIME_SLOTS['10:15-12:00'],
+        time: TIME_SLOTS['13:30-15:45'],
         day: CONFERENCE_DAYS.DAY_1,
         date: CALENDAR_DATE.TUESDAY,
       },
@@ -315,7 +333,7 @@ export const events = [
     ),
     timeSlots: [
       {
-        time: TIME_SLOTS['10:15-12:00'],
+        time: TIME_SLOTS['13:30-15:45'],
         day: CONFERENCE_DAYS.DAY_1,
         date: CALENDAR_DATE.TUESDAY,
       },
@@ -336,13 +354,18 @@ export const events = [
     ),
     timeSlots: [
       {
-        time: TIME_SLOTS['10:15-12:00'],
+        time: TIME_SLOTS['13:30-15:45'],
         day: CONFERENCE_DAYS.DAY_1,
         date: CALENDAR_DATE.TUESDAY,
       },
     ],
     category: CATEGORIES.LANGUAGE,
   },
+  // END OF LANGUAGES
+
+
+
+  // MINIWORKSHOP
   {
     id: IDS.GITINTRO,
     title: 'A primer on Git',
@@ -432,26 +455,52 @@ export const events = [
     ],
     category: CATEGORIES.MINIWORKSHOP,
   },
+
+  // PLENARY DAY 1
   {
-    id: IDS.OMNIA,
-    title: 'Data enginering in Omnia (Air London+NewYork)',
-    speaker: SPEAKERS.TAHIR_ALI,
+    id: IDS.PRODUCT_DEVELOPMENT,
+    title: 'Product development, a whole perspective',
+    shortTitle: 'Product Development',
+    speaker: SPEAKERS.PER_IVAR_SELVAAG,
     description: (
       <p>
         {
-          'The amount of data collected and analyzed has increased rapidly, which has led to an increase in the demand for skills and tools in data processing. With the growth of both the number and size of big data teams, specialized roles begin to be defined. One of these roles is data engineer, which focuses on ensuring that quality data is available for data scientists and analysts to analyze.\nThis talk will give you an introduction to;\n• Data Engineering\n• Data engineering project(s)\n• How we do data engineering in Equinor\n• A demo of Azure Data factory V2'
+          'TBA'
         }
       </p>
     ),
     timeSlots: [
       {
-        time: TIME_SLOTS['14:15'],
+        time: TIME_SLOTS['11:30-12:20'],
         day: CONFERENCE_DAYS.DAY_1,
         date: CALENDAR_DATE.TUESDAY,
       },
     ],
     category: CATEGORIES.CONTRIBUTED_LECTURE,
   },
+  {
+    id: IDS.DESIGN_SYSTEM,
+    title: 'TL;DR The Equinor Design System',
+    shortTitle: 'Design System',
+    speaker: SPEAKERS.VICTOR_NYSTAD,
+    description: (
+      <p>
+        {
+          'TBA'
+        }
+      </p>
+    ),
+    timeSlots: [
+      {
+        time: TIME_SLOTS['16:15-17:15'],
+        day: CONFERENCE_DAYS.DAY_1,
+        date: CALENDAR_DATE.TUESDAY,
+      },
+    ],
+    category: CATEGORIES.CONTRIBUTED_LECTURE,
+  },
+
+
   {
     id: IDS.DESIGN_THINKING,
     title: 'Design thinking (Bell)',
@@ -636,10 +685,10 @@ export const events = [
     category: CATEGORIES.WORKSHOP,
   },
   {
-    id: IDS.DESIGN_SPRINT,
-    title: 'Google Design Sprint (Air NewYork)',
-    speaker: SPEAKERS.KRISTIN_WULFF,
-    company: 'Kantega v/ Kristin Wulff',
+    id: IDS.HANDS_ON_OMNIA,
+    title: 'Hands On With OMNIA',
+    shortTitle: 'Hands on Omnia',
+    speaker: SPEAKERS.TEAM_OMNIA,
     color: '#EB7B2D',
     description: (
       <p>
@@ -905,37 +954,9 @@ export const schedule = [
         background: COLORS.SPRUCE_WOOD,
       },
       {
-        time: TIME_SLOTS['09:00-10:00'],
+        time: TIME_SLOTS['09:00-10:15'],
         heading: HEADINGS.KEYNOTE,
         events: [getLecture(IDS.KEYNOTE_MICROSERVICES_AND_SERVERLESS)],
-      },
-      {
-        time: TIME_SLOTS['10:15-12:00'],
-        heading: HEADINGS.LANGUAGES,
-        events: [
-          getLecture(IDS.DEEPC),
-          getLecture(IDS.PROLOG),
-          getLecture(IDS.DOCKER),
-          getLecture(IDS.CLOJURE),
-          getLecture(IDS.OPENSOURCE),
-          getLecture(IDS.CSS),
-          getLecture(IDS.LUA),
-          getLecture(IDS.RADIX),
-        ],
-      },
-      {
-        time: TIME_SLOTS['12:15'],
-        events: [{ title: 'Developer Survey QA (Air London+NewYork)' }],
-      },
-      {
-        time: TIME_SLOTS['13:00'],
-        events: [{ title: 'Lunch' }],
-        background: COLORS.LIGHT_YELLOW,
-      },
-      {
-        time: TIME_SLOTS['14:15'],
-        heading: HEADINGS.CONTRIBUTED_LECTURE,
-        events: [getLecture(IDS.OMNIA)],
       },
 
       // DEFINITION PROGRAM LIGHTNING TALKS
@@ -953,18 +974,52 @@ export const schedule = [
         ],
       },
 
-      // DEFINITION PROGRAM MINIWORKSHOPS
+
+      // DEFINITION PROGRAM PLENARY (PER IVAR) before lunch
       {
-        time: TIME_SLOTS['15:00-17:15'],
-        heading: HEADINGS.MINIWORKSHOPS,
+        time: TIME_SLOTS['11:30-12:20'],
+        heading: HEADINGS.CONTRIBUTED_LECTURE,
+        events: [getLecture(IDS.PRODUCT_DEVELOPMENT)],
+      },
+
+
+      {
+        time: TIME_SLOTS['12:30'],
+        events: [{ title: 'Lunch' }],
+        background: COLORS.LIGHT_YELLOW,
+      },
+
+
+
+      // DEFINITION PROGRAM LANGUAGES
+      {
+        time: TIME_SLOTS['13:30-15:45'],
+        heading: HEADINGS.LANGUAGES,
         events: [
-          getLecture(IDS.MACHINE_LEARNING),
-          getLecture(IDS.GITINTRO),
-          getLecture(IDS.API_WORKSHOP),
-          getLecture(IDS.DESIGN_THINKING),
-          getLecture(IDS.MODEL_CODE_GAP),
+          getLecture(IDS.DEEPC),
+          getLecture(IDS.PROLOG),
+          getLecture(IDS.DOCKER),
+          getLecture(IDS.CLOJURE),
+          getLecture(IDS.OPENSOURCE),
+          getLecture(IDS.CSS),
+          getLecture(IDS.LUA),
+          getLecture(IDS.RADIX),
         ],
       },
+
+
+
+      // DEFINITION PROGRAM PLENARY 2 (Victor) after lunch
+      {
+        time: TIME_SLOTS['16:15-17:15'],
+        heading: HEADINGS.CONTRIBUTED_LECTURE,
+        events: [getLecture(IDS.DESIGN_SYSTEM)],
+      },
+
+
+
+
+      // DEFINITION PROGRAM EOD DAY 1
       {
         time: TIME_SLOTS['17:30'],
         events: [{ title: 'Leisure and activities' }],
@@ -984,6 +1039,9 @@ export const schedule = [
       },
     ],
   },
+
+
+
   {
     conferenceDay: CONFERENCE_DAYS.DAY_2,
     calendarDate: CALENDAR_DATE.WEDNESDAY,
@@ -1008,11 +1066,11 @@ export const schedule = [
         heading: HEADINGS.WORKSHOPS,
         events: [
           { ...getLecture(IDS.MONOLITH), part: '1 of 2' },
-          { ...getLecture(IDS.DEVELOPING_APIS), part: '1 of 3' },
+          { ...getLecture(IDS.DEVELOPING_APIS), part: '1 of 2' },
           { ...getLecture(IDS.PYTHON_TOUR), part: '1 of 2' },
           { ...getLecture(IDS.GPUMAGIC), part: '1 of 1' },
           { ...getLecture(IDS.KUBERNETES), part: '1 of 2' },
-          { ...getLecture(IDS.DESIGN_SPRINT), part: '3 hrs workshop' },
+          { ...getLecture(IDS.HANDS_ON_OMNIA), part: '1 of 2' },
         ],
       },
       {
@@ -1021,7 +1079,7 @@ export const schedule = [
         background: COLORS.LIGHT_YELLOW,
       },
       {
-        time: TIME_SLOTS['14:15'],
+        time: TIME_SLOTS['13:30-15:45'],
         heading: HEADINGS.WORKSHOPS,
         events: [
           { ...getLecture(IDS.MONOLITH), part: '2 of 2' },
@@ -1029,7 +1087,7 @@ export const schedule = [
           { ...getLecture(IDS.PYTHON_TOUR), part: '2 of 2' },
           { ...getLecture(IDS.SAP_HACKATHON), part: '1 of 2' },
           { ...getLecture(IDS.KUBERNETES), part: '2 of 2' },
-          { ...getLecture(IDS.DESIGN_SPRINT), part: '3 hrs workshop' },
+          { ...getLecture(IDS.HANDS_ON_OMNIA), part: '2 of 2' },
         ],
       },
       {
@@ -1047,54 +1105,52 @@ export const schedule = [
       },
     ],
   },
+
+
+
   {
     conferenceDay: CONFERENCE_DAYS.DAY_3,
     calendarDate: CALENDAR_DATE.THURSDAY,
     timeSlots: [
+
+      // DEFINITION PROGRAM MINIWORKSHOPS
       {
-        time: TIME_SLOTS['09:00-12:00'],
-        heading: HEADINGS.WORKSHOPS,
+        time: TIME_SLOTS['15:00-17:15'],
+        heading: HEADINGS.MINIWORKSHOPS,
         events: [
-          { ...getLecture(IDS.MICRO_PYTHON), part: '3 of 3' },
-          { ...getLecture(IDS.UNREAL_ENGINE), part: '3 of 3' },
-          { ...getLecture(IDS.PYTHON_TOUR), part: '3 of 3' },
-          { ...getLecture(IDS.SAP_HACKATHON), part: '2 of 2' },
-          {
-            ...getLecture(IDS.HACKATHON),
-            part: '1 of 1',
-            color: '#03D1AB',
-            key: 'hackathon green',
-          },
-          {
-            ...getLecture(IDS.HACKATHON),
-            part: '1 of 1',
-            color: '#EB7B2D',
-            key: 'hackathon orange',
-          },
+          getLecture(IDS.MACHINE_LEARNING),
+          getLecture(IDS.GITINTRO),
+          getLecture(IDS.API_WORKSHOP),
+          getLecture(IDS.DESIGN_THINKING),
+          getLecture(IDS.MODEL_CODE_GAP),
         ],
       },
-      {
-        time: TIME_SLOTS['12:15'],
-        events: [
-          {
-            title: 'DCOE and CIT QA (Air London+NewYork)',
-            speaker: 'Moderated by Kristian Flikka',
-          },
-        ],
-      },
+
+
       {
         time: TIME_SLOTS['13:00'],
         events: [{ title: 'Lunch' }],
         background: COLORS.LIGHT_YELLOW,
       },
+
+
       {
         time: TIME_SLOTS['14:15'],
         events: [{ title: 'Summary (Air London+NewYork)', color: '#ec384a' }],
       },
+
+
       {
         time: TIME_SLOTS['15:00'],
         events: [{ title: 'EOC' }],
       },
+
+
+
+
     ],
   },
+
+
+
 ];
