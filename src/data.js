@@ -32,7 +32,7 @@ const SPEAKERS = {
   // langs
   OLVE_MAUDAL: 'Olve Maudal',
   BJARTE_JOHANSEN: 'Bjarte Johansen',
-  STIAN_OVREVAAGE: 'Stian Øvrevåge',
+  STIAN_OVREVAGE: 'Stian Øvrevåge',
   JORN_OLMHEIM: 'Jørn Ølmheim',
   JUAN_ALAMO: 'Juan Martorell Gutierrez Del Alamo',
   KJELL_ERIK_REED_ANDA: 'Kjell Erik Reed Anda',
@@ -109,19 +109,28 @@ const COLORS = {
 };
 
 const IDS = {
+  // KEYNOTE 1
   KEYNOTE_MICROSERVICES_AND_SERVERLESS: 'keynote_microservices_and_serverless',
-  ELIXIR: 'elixir',
+  // LANGS
   PROLOG: 'prolog',
   CLOJURE: 'clojure',
   DEEPC: 'deepc',
-  PRINTING_3D: 'printing_3D',
   DOCKER: 'docker',
+  OPENSOURCE: 'opensource',
+  CSS: 'CSS',
+
+  // LIGHTNING SESSION
+
+  // WORKSHOPS
   MODEL_CODE_GAP: 'model_code_gap',
   MACHINE_LEARNING: 'machine_learning',
   API_WORKSHOP: 'api_workshop',
   OMNIA: 'omnia',
   DESIGN_THINKING: 'design_thinking',
   KEYNOTE_EVOLUTIONARY_ARCHITECTURE: 'keynote_evolutionary_architecture',
+
+  // MINI-WORKSHOPS
+  GITINTRO: 'gitintro',
   MICRO_PYTHON: 'micro_python',
   UNREAL_ENGINE: 'unreal_engine',
   INTERMEDIATE_PYTHON: 'intermediate_python',
@@ -155,14 +164,35 @@ export const events = [
     category: CATEGORIES.KEYNOTE,
   },
   {
-    id: IDS.ELIXIR,
-    title: 'Introduction to Elixir (Robinson)',
-    shortTitle: 'Elixir (Robinson)',
-    speaker: SPEAKERS.JORN_OLMHEIM,
+    id: IDS.OPENSOURCE,
+    title: 'What\'s the deal with open source?',
+    shortTitle: 'Open source',
+    speaker: SPEAKERS.PAAL_GROENAAS_DRANGE,
     description: (
       <p>
         {
-          'Elixir is a dynamic, functional language designed for building scalable and maintainable applications. Elixir leverages the Erlang VM, known for running low-latency, distributed and fault-tolerant systems, while also being successfully used in web development and the embedded software domain.\nThis talk will give an introduction to the language, the interactive execution environment, as well as the scripting and applications modes that Elixir can be used in. This will be an introduction and is intended for beginners, thus no prior knowledge of Elixir or functional programming is required.'
+          'TBA'
+        }
+      </p>
+    ),
+    timeSlots: [
+      {
+        time: TIME_SLOTS['10:15-12:00'],
+        day: CONFERENCE_DAYS.DAY_1,
+        date: CALENDAR_DATE.TUESDAY,
+      },
+    ],
+    category: CATEGORIES.LANGUAGE,
+  },
+  {
+    id: IDS.CSS,
+    title: 'CSS',
+    shortTitle: 'CSS',
+    speaker: SPEAKERS.VICTOR_NYSTAD,
+    description: (
+      <p>
+        {
+          'TBA'
         }
       </p>
     ),
@@ -260,14 +290,14 @@ export const events = [
     category: CATEGORIES.LANGUAGE,
   },
   {
-    id: IDS.PRINTING_3D,
-    title: 'An introduction to Git (?)',
-    shortTitle: 'Intro to Git (?)',
+    id: IDS.GITINTRO,
+    title: 'A primer on Git',
+    shortTitle: 'Git',
     speaker: SPEAKERS.PAAL_GROENAAS_DRANGE,
     description: (
       <p>
         {
-          'Install Git Bash!.'
+          'Install Git Bash!'
         }
       </p>
     ),
@@ -678,7 +708,8 @@ export const schedule = [
           getLecture(IDS.PROLOG),
           getLecture(IDS.DOCKER),
           getLecture(IDS.CLOJURE),
-          getLecture(IDS.ELIXIR),
+          getLecture(IDS.OPENSOURCE),
+          getLecture(IDS.CSS),
         ],
       },
       {
@@ -700,7 +731,7 @@ export const schedule = [
         heading: HEADINGS.MINIWORKSHOPS,
         events: [
           getLecture(IDS.MACHINE_LEARNING),
-          getLecture(IDS.PRINTING_3D),
+          getLecture(IDS.GITINTRO),
           getLecture(IDS.API_WORKSHOP),
           getLecture(IDS.DESIGN_THINKING),
           getLecture(IDS.MODEL_CODE_GAP),
