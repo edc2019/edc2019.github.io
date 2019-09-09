@@ -118,6 +118,7 @@ const IDS = {
   DOCKER: 'docker',
   OPENSOURCE: 'opensource',
   CSS: 'CSS',
+  LUA: 'LUA',
 
   // LIGHTNING SESSION
 
@@ -189,6 +190,27 @@ export const events = [
     title: 'CSS',
     shortTitle: 'CSS',
     speaker: SPEAKERS.VICTOR_NYSTAD,
+    description: (
+      <p>
+        {
+          'TBA'
+        }
+      </p>
+    ),
+    timeSlots: [
+      {
+        time: TIME_SLOTS['10:15-12:00'],
+        day: CONFERENCE_DAYS.DAY_1,
+        date: CALENDAR_DATE.TUESDAY,
+      },
+    ],
+    category: CATEGORIES.LANGUAGE,
+  },
+  {
+    id: IDS.LUA,
+    title: 'LUA',
+    shortTitle: 'LUA',
+    speaker: SPEAKERS.JUAN_ALAMO,
     description: (
       <p>
         {
@@ -710,6 +732,7 @@ export const schedule = [
           getLecture(IDS.CLOJURE),
           getLecture(IDS.OPENSOURCE),
           getLecture(IDS.CSS),
+          getLecture(IDS.LUA),
         ],
       },
       {
