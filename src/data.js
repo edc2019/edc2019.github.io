@@ -124,7 +124,14 @@ const IDS = {
   RADIX: 'Radix',
 
   // LIGHTNING SESSION
+  LIGHT_TEAM_WORK: 'light_team_work',
+  LIGHT_ARCHITECTURE: 'light_architecture',
+  LIGHT_CLOUD: 'light_cloud',
+  LIGHT_LANGS_LIBS: 'light_langs_libs',
+  LIGHT_ML_DATA_ANALYSIS: 'light_ml_data_analysis',
+  LIGHT_INFRASTRUCTURE: 'light_infrastructure',
   LIGHT_SOFTWARE: 'light_software',
+
 
   // WORKSHOPS
   MODEL_CODE_GAP: 'model_code_gap',
@@ -724,25 +731,160 @@ export const events = [
     category: CATEGORIES.WORKSHOP,
   },
 
+  /*
+   * ALL THE LIGHTNING TALKS!
+   */
+
+
+
+
   {
-    id: IDS.LIGHT_SOFTWARE,
-    title: 'Software Engineering',
-    description: (
+  id: IDS.LIGHT_TEAM_WORK,
+  title: 'Team work',
+  description: (
       <p>
-        {
-          'Software Engineering\n1. Technical debt is good! (Olve Maudal)\n2. FLOSS - Free/Libre Open Source Software (Knut Erik Hollund\n3. Software Development - It\'s not rocket science (Pål Grønås Drange)'
-        }
-      </p>
-    ),
-    timeSlots: [
       {
-        time: TIME_SLOTS['09:00'],
-        day: CONFERENCE_DAYS.DAY_3,
-        date: CALENDAR_DATE.THURSDAY,
-      },
-    ],
-    category: CATEGORIES.WORKSHOP,
-  },
+        'Team work\n1. When the One is hit by the bus (Markus Fanebust Dregi)\n2. London to Aarhus - Collaborating hands on with the business (Joachim Blaafjell Holwech)\n3. Assumptions is the mother of all f**k-ups (Harald Wesenberg)'
+      }
+    </p>
+  ),
+  timeSlots: [
+    {
+      time: TIME_SLOTS['10:30-11:20'],
+      day: CONFERENCE_DAYS.DAY_1,
+      date: CALENDAR_DATE.TUESDAY,
+    },
+  ],
+  category: CATEGORIES.LIGHTNING,
+},
+
+{
+  id: IDS.LIGHT_ARCHITECTURE,
+  title: 'Architecture',
+  description: (
+      <p>
+      {
+        '  Architecture\n1. Domain Driven Design (Einar Landre)\n2. EITA and the role of EITA for software development (Jørn Ølmheim)\n3. 3rd party components in software projects (Anton Eskov)\n4. Realizing the potential (Bjørn-Ovin Wivestad)'
+      }
+    </p>
+  ),
+  timeSlots: [
+    {
+      time: TIME_SLOTS['10:30-11:20'],
+      day: CONFERENCE_DAYS.DAY_1,
+      date: CALENDAR_DATE.TUESDAY,
+    },
+  ],
+  category: CATEGORIES.LIGHTNING,
+},
+
+
+{
+  id: IDS.LIGHT_CLOUD,
+  title: 'Cloud',
+  description: (
+      <p>
+      {
+        '  Cloud\n1. How unit testing enables DevOps for Azure SQL databases (Nikolai Kragebøl Thomassen)\n2. Cloud migration - How to fail most spectacular (Anders Sogaard)\n3. API Management (Anette Hansen)\n4. Security (Lars Kåre Skjørestad)'
+      }
+    </p>
+  ),
+  timeSlots: [
+    {
+      time: TIME_SLOTS['10:30-11:20'],
+      day: CONFERENCE_DAYS.DAY_1,
+      date: CALENDAR_DATE.TUESDAY,
+    },
+  ],
+  category: CATEGORIES.LIGHTNING,
+},
+
+
+{
+  id: IDS.LIGHT_LANGS_LIBS,
+  title: 'Langs & libs',
+  description: (
+      <p>
+      {
+        '  Langs & libs\n1. Lua (Juan Martorell Gutierrez Del Alamo)\n2. Web applications using Lisp (Raymond Wiker)\n3. Luigie - Python pipeline library (Jens Gåsemyr Magnus)'
+      }
+    </p>
+  ),
+  timeSlots: [
+    {
+      time: TIME_SLOTS['10:30-11:20'],
+      day: CONFERENCE_DAYS.DAY_1,
+      date: CALENDAR_DATE.TUESDAY,
+    },
+  ],
+  category: CATEGORIES.LIGHTNING,
+},
+
+{
+  id: IDS.LIGHT_ML_DATA_ANALYSIS,
+  title: 'ML & Data analysis',
+  description: (
+      <p>
+      {
+        '  ML & Data analysis\n1. How to accelerate a geologist (David Wade)\n2. Natural language processing (Bjarte Johannesen)\n3. Azure databricks (Juan Martorell Gutierrez Del Alamo)'
+      }
+    </p>
+  ),
+  timeSlots: [
+    {
+      time: TIME_SLOTS['10:30-11:20'],
+      day: CONFERENCE_DAYS.DAY_1,
+      date: CALENDAR_DATE.TUESDAY,
+    },
+  ],
+  category: CATEGORIES.LIGHTNING,
+},
+
+{
+  id: IDS.LIGHT_INFRASTRUCTURE,
+  title: 'Infrastructure',
+  description: (
+      <p>
+      {
+        '  Infrastructure\n1. SpaceX Starlink (Jon Ole Nome)\n2. 20 thousand leagues under the sea (Espen Alv Tjønneland)\n3. Radix (Kjell-Erik Reed Anda)\n4. Gaining business insight at the edge of the cloud (Anders Erling Aabakken)'
+      }
+    </p>
+  ),
+  timeSlots: [
+    {
+      time: TIME_SLOTS['10:30-11:20'],
+      day: CONFERENCE_DAYS.DAY_1,
+      date: CALENDAR_DATE.TUESDAY,
+    },
+  ],
+  category: CATEGORIES.LIGHTNING,
+},
+
+
+{
+  id: IDS.LIGHT_SOFTWARE,
+  title: 'Software Engineering',
+  description: (
+      <p>
+      {
+        '  Software Engineering\n1. Technical debt is good! (Olve Maudal)\n2. FLOSS - Free/Libre Open Source Software (Knut Erik Hollund)\n3. Software Development - It\'s not rocket science (Pål Grønås Drange)'
+      }
+    </p>
+  ),
+  timeSlots: [
+    {
+      time: TIME_SLOTS['10:30-11:20'],
+      day: CONFERENCE_DAYS.DAY_1,
+      date: CALENDAR_DATE.TUESDAY,
+    },
+  ],
+  category: CATEGORIES.LIGHTNING,
+},
+
+
+
+
+
 ];
 
 const getLecture = id => events.find(lecture => lecture.id === id);
@@ -801,6 +943,12 @@ export const schedule = [
         time: TIME_SLOTS['10:30-11:20'],
         heading: HEADINGS.LIGHTNING,
         events: [
+          getLecture(IDS.LIGHT_TEAM_WORK),
+          getLecture(IDS.LIGHT_ARCHITECTURE),
+          getLecture(IDS.LIGHT_CLOUD),
+          getLecture(IDS.LIGHT_LANGS_LIBS),
+          getLecture(IDS.LIGHT_ML_DATA_ANALYSIS),
+          getLecture(IDS.LIGHT_INFRASTRUCTURE),
           getLecture(IDS.LIGHT_SOFTWARE),
         ],
       },
