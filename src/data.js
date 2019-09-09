@@ -137,7 +137,7 @@ const IDS = {
   MONOLITH: 'monolith',
   DEVELOPING_APIS: 'developing_apis',
   PYTHON_TOUR: 'python_tour',
-  C_PLUS_PLUS: 'c_plus_plus',
+  KUBERNETES: 'kubernetes',
   DESIGN_SPRINT: 'design_sprint',
   AGILE: 'agile',
   HACKATHON: 'hackathon',
@@ -600,14 +600,14 @@ export const events = [
     category: CATEGORIES.WORKSHOP,
   },
   {
-    id: IDS.C_PLUS_PLUS,
-    title: 'A Tour of Modern C++ (Bell)',
-    speaker: SPEAKERS.JAMES_LEWIS,
+    id: IDS.KUBERNETES,
+    title: 'Kubernetes',
+    speaker: SPEAKERS.TEAM_RADIX,
     color: '#03D1AB',
     description: (
       <p>
         {
-          'In this fast-paced course we will start from scratch and relearn C++ with modern syntax and semantics.\nAmong other things you will learn(at least something) about:\n• rvalues and move semantics \n• how to write and understand templates \n• function objects and lambda expressions \n• decltype, auto and type deduction in general \n• exception handling and exception safety \n• ”mystical” stuff like ADL, RAII and SFINAE \n• futures, promises and higher-order parallelism \n• concepts and type traits \n• iterators, smart pointers and object lifetimes \n• using the standard library effectively \n• misc do’s and don’ts in modern C++ \n• modern design principles and how to write solid code \n• C++11, C++14 and new stuff coming with C++17 and later\nThis course is aimed at experienced programmers that would like to learn how to write, or at least understand, modern C++.Ideally you should have some experience with either C, old-school C++, Python and / or Java.'
+          'TBA'
         }
       </p>
     ),
@@ -829,7 +829,7 @@ export const schedule = [
           { ...getLecture(IDS.DEVELOPING_APIS), part: '1 of 3' },
           { ...getLecture(IDS.PYTHON_TOUR), part: '1 of 2' },
           { ...getLecture(IDS.GPUMAGIC), part: '1 of 1' },
-          { ...getLecture(IDS.C_PLUS_PLUS), part: '1 of 2' },
+          { ...getLecture(IDS.KUBERNETES), part: '1 of 2' },
           { ...getLecture(IDS.DESIGN_SPRINT), part: '3 hrs workshop' },
         ],
       },
@@ -846,7 +846,7 @@ export const schedule = [
           { ...getLecture(IDS.DEVELOPING_APIS), part: '2 of 2' },
           { ...getLecture(IDS.PYTHON_TOUR), part: '2 of 2' },
           { ...getLecture(IDS.AGILE), part: '1 of 2' },
-          { ...getLecture(IDS.C_PLUS_PLUS), part: '2 of 2' },
+          { ...getLecture(IDS.KUBERNETES), part: '2 of 2' },
           { ...getLecture(IDS.DESIGN_SPRINT), part: '3 hrs workshop' },
         ],
       },
