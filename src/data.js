@@ -136,7 +136,7 @@ const IDS = {
   GITINTRO: 'gitintro',
   MONOLITH: 'monolith',
   DEVELOPING_APIS: 'developing_apis',
-  INTERMEDIATE_PYTHON: 'intermediate_python',
+  PYTHON_TOUR: 'python_tour',
   C_PLUS_PLUS: 'c_plus_plus',
   DESIGN_SPRINT: 'design_sprint',
   AGILE: 'agile',
@@ -568,15 +568,15 @@ export const events = [
     category: CATEGORIES.WORKSHOP,
   },
   {
-    id: IDS.INTERMEDIATE_PYTHON,
-    title: 'Intermediate Python (Airbus)',
-    speaker: SPEAKERS.AUSTIN_BINGHAM,
-    company: 'Sixty North v/ Austin Bingham',
+    id: IDS.PYTHON_TOUR,
+    title: 'A Tour of Python',
+    shortTitle: 'Introduksjon til Python',
+    speaker: SPEAKERS.OLVE_MAUDAL,
     color: '#367ABD',
     description: (
       <p>
         {
-          'This two day course is designed for developers who already know the funda- mentals of Python. This course will get more ”under the hood” and introduce the students to powerful tools and techniques that go beyond the basics. There are a lot of intermediate topics in Python, and this course can be customized based on need. The class will focus on Python 3 unless Python 2 is specifically requested. \n• We start immediately with working programs. \n• Testing is integral to our approach. \n• Taught on Windows, Linux or Mac OS X. \n• Knowledge level of Python for Programmers course is assumed\nTopics \n• Function and class decorators \n• Closures \n• Creating context managers \n• Packaging and distribution of Python packages \n• Callable objects, lambdas, and extended argument syntax \n• Properties, class methods, and static methods \n• String representations of objects \n• Specialized numeric and scalar types \n• Functional-style programming tools \n• The iteration and iterable protocols \n• Multiple inheritance, method resolution order, and super() \n• Collection protocols and implementing collections \n• Advanced error handling with exceptions \n• Introspection\nComputer Setup:\nThis workshop requires that you bring a laptop with the following software installed: \n• Python 3.3 or greater installed. \n• An editor for Python code.Attendees can use whatever editor they prefer, but we recommend PyCharm which is a full - featured Python IDE \n• The ability to either connect to the Internet or accept USB flash drives so we can distribute course materials on the day.'
+          'TBA'
         }
       </p>
     ),
@@ -827,7 +827,7 @@ export const schedule = [
         events: [
           { ...getLecture(IDS.MONOLITH), part: '1 of 2' },
           { ...getLecture(IDS.DEVELOPING_APIS), part: '1 of 3' },
-          { ...getLecture(IDS.INTERMEDIATE_PYTHON), part: '1 of 3' },
+          { ...getLecture(IDS.PYTHON_TOUR), part: '1 of 2' },
           { ...getLecture(IDS.GPUMAGIC), part: '1 of 1' },
           { ...getLecture(IDS.C_PLUS_PLUS), part: '1 of 2' },
           { ...getLecture(IDS.DESIGN_SPRINT), part: '3 hrs workshop' },
@@ -844,7 +844,7 @@ export const schedule = [
         events: [
           { ...getLecture(IDS.MONOLITH), part: '2 of 2' },
           { ...getLecture(IDS.DEVELOPING_APIS), part: '2 of 2' },
-          { ...getLecture(IDS.INTERMEDIATE_PYTHON), part: '2 of 3' },
+          { ...getLecture(IDS.PYTHON_TOUR), part: '2 of 2' },
           { ...getLecture(IDS.AGILE), part: '1 of 2' },
           { ...getLecture(IDS.C_PLUS_PLUS), part: '2 of 2' },
           { ...getLecture(IDS.DESIGN_SPRINT), part: '3 hrs workshop' },
@@ -875,7 +875,7 @@ export const schedule = [
         events: [
           { ...getLecture(IDS.MICRO_PYTHON), part: '3 of 3' },
           { ...getLecture(IDS.UNREAL_ENGINE), part: '3 of 3' },
-          { ...getLecture(IDS.INTERMEDIATE_PYTHON), part: '3 of 3' },
+          { ...getLecture(IDS.PYTHON_TOUR), part: '3 of 3' },
           { ...getLecture(IDS.AGILE), part: '2 of 2' },
           {
             ...getLecture(IDS.HACKATHON),
