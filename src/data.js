@@ -323,9 +323,20 @@ export const events = [
     shortTitle: 'Clojure',
     speaker: SPEAKERS.JORN_OLMHEIM,
     description: (
-      <p>
+        <p>
+        {'Learn You a Clojure for Great Good\n\n'}
+{<span><tt> (ns clojure-noob.core</tt><br /></span> }
+{<span><tt>     (:gen-class))</tt><br /><br /></span> }
+{<span><tt> (defn -main</tt><br /></span> }
+{<span><tt>     "I don\'t do a whole lot...yet."</tt><br /></span> }
+{<span><tt>     [& args]</tt><br /></span> }
+{<span><tt>     (println "Hello, World!"))</tt><br /></span> }
         {
-          'TBA'
+          'Clojure is a Lisp running on the JVM. This means that it is a functional, data-oriented language with close interoperability with Java libraries.\n\n'+
+            'In this short tutorial you will get to learn the basics of Clojure and get started writing your first Clojure programs. If there is time or you already know the basics, we\'ll move on to building a restful webservice to see how Clojure can help you build powerful applications in a functional style.\n\n'+
+            'The tutorial is aimed at anyone who is interested in learning Clojure, and will cater to both newbies and more experienced functional programmers and even seasoned Lispers. In order to get as far as possible in the short time allotted, please make sure you have a current JDK installed as well as Leiningen the Clojure build/project tool. Also have your favourite IDE/text editor ready.\n\n'+
+            'If you want to attend please have a look at the getting started guide and have everything up and running on your OS of choice.\n\n'+
+            'https://clojure.org/guides/getting_started'
         }
       </p>
     ),
