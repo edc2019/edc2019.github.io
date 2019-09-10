@@ -27,6 +27,7 @@ const SPEAKERS = {
   BJARTE_BOGSNES: 'Bjarte Bogsnes',
   PER_IVAR_SELVAAG: 'Per Ivar Selvaag',
   VICTOR_NYSTAD: 'Victor Nystad',
+  TEAM_EDS: 'Jon Jaatun, Victor Nystad, Michael Marszalek',
 
   // shorts
 
@@ -584,11 +585,11 @@ export const events = [
     id: IDS.DESIGN_SYSTEM,
     title: 'TL;DR The Equinor Design System',
     shortTitle: 'Design System',
-    speaker: SPEAKERS.VICTOR_NYSTAD,
+    speaker: SPEAKERS.TEAM_EDS,
     description: (
       <p>
         {
-          'TBA'
+          'We will introduce you to the Equinor Design System (EDS). You will learn the benefits of design systems, and how the EDS can help your team to efficiently build consistent user interfaces. This session is for everyone involved in product development with a focus on the developer.'
         }
       </p>
     ),
@@ -635,7 +636,9 @@ export const events = [
     description: (
       <p>
         {
-          'TBA'
+          'Microservices are a broad topic, and the issues that teams will encounter can vary greatly. This workshop is designed to accomodate the specific needs of your teams, and help give them the knowledge to get the most out of microservice architecture.\n\n'+
+            'The workshop itself is aimed at technologists currently working with, or planning to work with microservices. It\'s suitable for architects, technical leads, developers, automation testers and operations people. Based on understanding your needs, I will create a class that best addresses the needs of your colleagues.\n\n'+
+            'Due to the wide and varied nature of the challenges that teams may be facing, I dislike providing a fixed syllabus for this workshop. Instead I adapt each class for the needs of clients. By breaking material down into modules, I’m able to rearrange classes to ensure I meet the needs of each individual client. I have included an indicative two and three day syllabus to give you an idea of the topics we can cover.'
         }
       </p>
     ),
@@ -667,7 +670,8 @@ export const events = [
     description: (
       <p>
         {
-          'TBA'
+          'The API Track is a series of presentations (and some demos) about API development in Equinor.\n\n'+
+            'The API Track cover topics like the Equinor API Strategy, the API portal (api.equinor.com) and OMNIA API Management, API security, using Postman in API development, REST basics, etc.'
         }
       </p>
     ),
@@ -699,7 +703,9 @@ export const events = [
     description: (
       <p>
         {
-          'TBA'
+          'This is a one day tour of the Python programming language. We will start with the fundamental building blocks and then focus on learning how things are connected under the hood. This tour will visit things like objects, sequences, generators, flow control, types, functions, classes, exceptions, comprehension, iterators, decorators, concurrency and much more. While we will mention, and sometimes use, a few standard libraries, most of this tour will focus on the Python language itself, explained through writing small useless snippets of code.\n\n'+
+'This tour is first of all for anyone that would like to start a journey to learn Python properly. Even if you have lots of Python experience already you are more than welcome to join us - there is always something new to learn by participating on a tour like this.\n\n'+
+'Bring a laptop with Python 3.6 or better installed (Python 3.6 is available in the software center). We will do some simple exercises in pairs, but most of the tour will be live coding by the instructor.'
         }
       </p>
     ),
@@ -731,7 +737,7 @@ export const events = [
     description: (
       <p>
         {
-          'TBA'
+          'Hands-on workshop focusing on web and mobile security, aiming to increase the security awareness for software developers. It looks at security from the attacker\'s perspective and takes them through the steps necessary to exploit vulnerable software on the web. Vulnerabilities like Cross-site Scripting (XSS), SQL Injection, Cross-Site Request Forgery (CSRF) ect. will be covered in this workshop.'
         }
       </p>
     ),
@@ -762,7 +768,8 @@ export const events = [
     description: (
       <p>
         {
-          'TBA'
+          'Kubernetes is an open source container-orchestration system, and is one of the fastest growing open source projects. It supports cloud-native applications by deploying them as microservices, packaging each part into its own container, and dynamically orchestrating those containers to optimise resource utilisation.\n\n'+
+            'In this workshop, we will introduce the fundamentals of Kubernetes and get our hands dirty deploying microservices to a Kubernetes cluster'
         }
       </p>
     ),
@@ -815,7 +822,11 @@ export const events = [
     description: (
       <p>
         {
-          'TBA'
+          'Omnia is Equinor\'s new IT platform and will be central to how we develop going forwards. In this workshop we will give a short overview of what Omnia is before focussing on the data platform and the different options available. The hands on tutorial will cover the steps to build an end-to-end data pipeline from data ingestion, storage, compute, API creation and consumption.\n\n'+
+'Target Audience\n\n'+
+'- All developers in Equinor without existing Omnia experience.\n\n'+
+'Preparations\n\n'+
+'- None (at this time) - join #edc2019-omnia on Slack for updates.'
         }
       </p>
     ),
@@ -842,7 +853,7 @@ export const events = [
     description: (
       <p>
         {
-          'TBA'
+          'I welcome all who would like to learn SIMPLE ways to implement even COMPLEX tasks on your TINY graphic cards! We will employ Python — as this language is so nice and simple and yet so powerful. In addition we will be exposed to GPU / Parallel languages (CUDA, OpenCL, etc) — learning to use our brains in parallel fashion too. Magic real-time rendering and 3D visualization tricks should also be revelead!'
         }
       </p>
     ),
@@ -864,7 +875,19 @@ export const events = [
     description: (
       <p>
         {
-          'TBA'
+          'Bring your own laptop with your preferred development tools installed. You must have access to Equinor GitHub.\n\n'+
+'You can work on your own or in a self-organizing team based on shared interests.\n'+
+'The time writing API will be ready to be consumed for development. Detail documentation about the API will be made available.\n'+
+'Demo time writing applications will be created in React and SAP UI5, and made available for reference on GitHub.\n'+
+'Recently employed people may not exist in SAP QA system and need to work together with other participants.\n'+
+'This is a 1,5 day hackathon in which the participants can make their own time writing solution using their preferred technology.\n'+
+'The participants will play with their own time writing data which is persisted in SAP test system.\n'+
+'We have made available for you a conventional REST API and an OData API for time writing.\n'+
+'There will exist Github repos for React and SAP UI5 demo apps which can be used as starting points or for reference.\n'+
+'You are welcome to use any front-end technology.\n'+
+'On the last day we will hopefully have exciting demos of the participant\'s effort.\n'+
+'Maybe your solution will be the next Equinor time writing app?\n\n'+
+'Slack channel: #edc2019-hackathon-timewriting'
         }
       </p>
     ),
@@ -890,7 +913,14 @@ export const events = [
     description: (
       <p>
         {
-          'TBA'
+         'Write the code that will bring your team of robots to victory. Join as a single person or as a team.\n'+
+'Simulator and coding environment will be hosted online so you only need a modern web browser.\n'+
+'We have a robot arena with real physical robots you can compete with.\n'+
+'You don’t have to compete if you join this track you can just come to play around. No pressure.\n'+
+'The programming language will be JavaScript/NodeJS so you should be able to at least read JavaScript code.\n'+
+'Experience with command-line and Visual Studio Code will help but it\'s not required.\n'+
+'On Wednesday you can code and challenge fellow coders/teams to use the real robot arena.\n'+
+'On Thursday we will select the best robot teams and have a tournament on the arena.\n'
         }
       </p>
     ),
@@ -1213,7 +1243,7 @@ export const schedule = [
           { ...getLecture(IDS.MONOLITH), part: '2 of 2' },
           { ...getLecture(IDS.DEVELOPING_APIS), part: '2 of 2' },
           { ...getLecture(IDS.KUBERNETES), part: '2 of 2' },
-          { ...getLecture(IDS.GPUMAGIC), part: '2 of 1' },
+          { ...getLecture(IDS.GPUMAGIC), part: '2 of 2' },
           { ...getLecture(IDS.SAP_HACKATHON), part: '2 of 3' },
           { ...getLecture(IDS.HANDS_ON_OMNIA), part: '2 of 2' },
           { ...getLecture(IDS.PYTHON_TOUR), part: '2 of 2' },
