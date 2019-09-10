@@ -946,6 +946,7 @@ export const events = [
     title: 'Real robot competition^W hackathon',
     shortTitle: 'Real robots',
     speaker: SPEAKERS.TEAM_REAL_ROBOT,
+    color: '#f58db6',
     description: (
       <p>
         {
@@ -1350,6 +1351,13 @@ export const schedule = [
       {
         time: TIME_SLOTS['14:15'],
         events: [{ title: 'Summary (Atlantic Hall)', color: '#ec384a' }],
+      },
+
+
+
+      {
+        time: TIME_SLOTS['14:30'],
+        events: [{ title: 'Bus to airport 🛫', color: '#ec384a' }],
       },
 
 
