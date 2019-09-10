@@ -979,8 +979,9 @@ export const events = [
 
 
   {
-  id: IDS.LIGHT_TEAM_WORK,
-  title: 'Team work',
+    id: IDS.LIGHT_TEAM_WORK,
+    title: 'Team work',
+    speaker: 'Dregi, Blaafjell Holwech, Wesenberg',
   description: (
       <p>
       {
@@ -1001,6 +1002,7 @@ export const events = [
 {
   id: IDS.LIGHT_ARCHITECTURE,
   title: 'Architecture',
+  speaker: 'Landre, Ølmheim, Wivestad',
   description: (
       <p>
       {
@@ -1022,6 +1024,7 @@ export const events = [
 {
   id: IDS.LIGHT_CLOUD,
   title: 'Cloud',
+  speaker: 'Kragebøl Thomassen, Sogaard, Hansen, Skjørestad',
   description: (
       <p>
       {
@@ -1043,6 +1046,7 @@ export const events = [
 {
   id: IDS.LIGHT_LANGS_LIBS,
   title: 'Langs & libs',
+  speaker: 'del Alamo, Wiker, Gåsemyr Magnus',
   description: (
       <p>
       {
@@ -1063,6 +1067,7 @@ export const events = [
 {
   id: IDS.LIGHT_ML_DATA_ANALYSIS,
   title: 'ML & Data analysis',
+  speaker: 'Wade, Sundvall Fjermestad, del Alamo',
   description: (
       <p>
       {
@@ -1083,6 +1088,7 @@ export const events = [
 {
   id: IDS.LIGHT_INFRASTRUCTURE,
   title: 'Infrastructure',
+  speaker: 'Nome, Tjønneland, Reed Anda, Aabakken',
   description: (
       <p>
       {
@@ -1104,6 +1110,7 @@ export const events = [
 {
   id: IDS.LIGHT_SOFTWARE,
   title: 'Software Engineering',
+  speaker: 'Maudal, Hollund, Grønås Drange',
   description: (
       <p>
       {
