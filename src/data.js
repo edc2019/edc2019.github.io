@@ -73,6 +73,7 @@ const TIME_SLOTS = {
   '12:15': '12:15',
   '12:30': '12:30',
   '13:00': '13:00',
+  '13:15': '13:15',
   '13:30-15:45': '13:00 — 15:45',
   '14:15': '14:15',
   '15:00': '15:00',
@@ -170,7 +171,9 @@ const IDS = {
   GIS_INTRO: 'gis_intro',
   NLP_OUTSIDE: 'nlp_outside',
   ALGDAT: 'algdat',
-
+  INTRO_CTF: 'intro_ctf',
+  MLFLOW: 'mlflow',
+  BEYOND_WORKSHOP: 'beyond_workshop',
 };
 
 export const events = [
@@ -460,6 +463,69 @@ export const events = [
     title: 'Algorithms and data structures',
     shortTitle: 'Algorithms and data structures',
     speaker: SPEAKERS.MARKUS_DREGI,
+    description: (
+      <p>
+        {
+          'TBA'
+        }
+      </p>
+    ),
+    timeSlots: [
+      {
+        time: TIME_SLOTS['15:00-17:15'],
+        day: CONFERENCE_DAYS.DAY_1,
+        date: CALENDAR_DATE.TUESDAY,
+      },
+    ],
+    category: CATEGORIES.MINIWORKSHOP,
+  },
+  {
+    id: IDS.INTRO_CTF,
+    title: 'An introduction to Capture The Flags',
+    shortTitle: 'An introduction to CTFs',
+    speaker: SPEAKERS.EIRIK_NORDBOE,
+    description: (
+      <p>
+        {
+          'TBA'
+        }
+      </p>
+    ),
+    timeSlots: [
+      {
+        time: TIME_SLOTS['15:00-17:15'],
+        day: CONFERENCE_DAYS.DAY_1,
+        date: CALENDAR_DATE.TUESDAY,
+      },
+    ],
+    category: CATEGORIES.MINIWORKSHOP,
+  },
+  {
+    id: IDS.MLFLOW,
+    title: 'Machine learning – From experiments to production with MLFlow',
+    shortTitle: 'To production with MLFlow',
+    speaker: SPEAKERS.THOMAS_HJELDE_THORESEN,
+    description: (
+      <p>
+        {
+          'TBA'
+        }
+      </p>
+    ),
+    timeSlots: [
+      {
+        time: TIME_SLOTS['15:00-17:15'],
+        day: CONFERENCE_DAYS.DAY_1,
+        date: CALENDAR_DATE.TUESDAY,
+      },
+    ],
+    category: CATEGORIES.MINIWORKSHOP,
+  },
+  {
+    id: IDS.BEYOND_WORKSHOP,
+    title: 'Beyond Workshop with Bjarte Bogsnes',
+    shortTitle: 'Beyond Workshop',
+    speaker: SPEAKERS.BJARTE_BOGSNES,
     description: (
       <p>
         {
@@ -1174,15 +1240,30 @@ export const schedule = [
           getLecture(IDS.GITINTRO),
           getLecture(IDS.NLP_OUTSIDE),
           getLecture(IDS.ALGDAT),
+          getLecture(IDS.INTRO_CTF),
+
+          { ...getLecture(IDS.ROBOT_COMPETITION), part: '3 of 3' },
+          { ...getLecture(IDS.SAP_HACKATHON), part: '3 of 3' },
+          { ...getLecture(IDS.HACK_YOURSELF), part: '3 of 3' },
+
+          getLecture(IDS.MLFLOW),
+          getLecture(IDS.BEYOND_WORKSHOP),
         ],
       },
 
 
       {
-        time: TIME_SLOTS['13:00'],
+        time: TIME_SLOTS['12:15'],
         events: [{ title: 'Lunch' }],
         background: COLORS.LIGHT_YELLOW,
       },
+
+
+      {
+        time: TIME_SLOTS['13:15'],
+        events: [{ title: 'Beyond Budgeting with Bjarte Bogsnes (Atlantic Hall)', color: '#ec384a' }],
+      },
+
 
 
       {
