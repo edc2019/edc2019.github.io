@@ -80,6 +80,7 @@ const TIME_SLOTS = {
   '15:00-17:15': '15:00 — 17:15',
   '16:15-17:15': '16:15 — 17:15',
   '17:30': '17:30',
+  '17:45-18:30': '17:45 — 18:30',
   '19:00': '19:00',
   '21:00': '21:00',
 };
@@ -208,7 +209,7 @@ export const events = [
     description: (
       <p>
         {
-          'TBA'
+          'We\'ll take a look at frequently asked questions around the use of, and development of, Open Source (Free Software).\n\nWhat is Open Source?\n\nIs it Free?\n\nWhy do we invest in giving away software for "free"?\n\nAnd what are all these different licenses about?'
         }
       </p>
     ),
@@ -290,11 +291,21 @@ export const events = [
     shortTitle: 'Prolog',
     speaker: SPEAKERS.BJARTE_JOHANSEN,
     description: (
-      <p>
+      <tt>
         {
-          'TBA'
+          'Lang=prolog,\n'+
+            'title(awesome(Lang)),\n'+
+            'target(Person),\n'+
+            'curious_of(Person, Lang),\n'+
+            'skill(Person, Lang, Skill),\n'+
+            'Skill >= 0,\n'+
+            'preparation(Person, _),\n'+
+            'expect(Person, logic),\n'+
+            'expect(Person, challenge),\n'+
+            'expect(Person, skill(Person, Lang, AfterSkill)),\n'+
+            'AfterSkill > Skill.\n'
         }
-      </p>
+      </tt>
     ),
     timeSlots: [
       {
@@ -334,7 +345,9 @@ export const events = [
     description: (
       <p>
         {
-          'TBA'
+          'C has been the dominating programming language for more than 40 years. C is still going strong. C will be forever. Unlike most programming languages, the language was particularly designed to give direct access to the underlying hardware and let programmers do whatever they want, without petty restrictions. C was not designed for ease of use, but rather as a language that would be very easy to compile into machine code. The language is extremely fascinating due to it\'s brutal simplicity and all the nasty traps that you will fall into.\n'+
+            'This workshop is first of all aimed at experienced C and C++ programmers, but anyone with a deep interest in programming languages will probably enjoy this workshop. We will introduce the basics of the C programming language, but then quickly dive into the abyss where dark and strange features of this wonderful language are hiding. The goal is to teach a deep understanding of the C programming language.\n'+
+            'Bring a laptop with your favorite C compiler installed. Make sure you are able to compile, link and run "Hello, World!". If you dont have a machine to use, no worries, you can just pair up with a colleague.'
         }
       </p>
     ),
@@ -355,7 +368,9 @@ export const events = [
     description: (
       <p>
         {
-          'TBA'
+          'Preparations: Docker installed and working on your machine. Follow the instructions at https://edc2019.github.io/\n'+
+            'For: People interested in cloud and modern building and deployment practices\n' +
+            'Outcome: To have a basic understanding of the history and benefits of Docker as well as enough practical experience to start using it in simple projects.'
         }
       </p>
     ),
@@ -1130,14 +1145,14 @@ export const schedule = [
 
       // DEFINITION PROGRAM EOD DAY 1
       {
-        time: TIME_SLOTS['17:30'],
-        events: [{ title: 'Leisure and activities' }],
+        time: TIME_SLOTS['17:45-18:30'],
+        events: [{ title: 'Leisure and activities [Football or CrossFit (30)]' }],
       },
       {
         time: TIME_SLOTS['19:00'],
         events: [
           {
-            title: 'Dinner (TBA)',
+            title: 'Dinner (Tapas) at Atlantic',
           },
         ],
         background: COLORS.LIGHT_YELLOW,
@@ -1208,12 +1223,12 @@ export const schedule = [
         ],
       },
       {
-        time: TIME_SLOTS['17:30'],
-        events: [{ title: 'Leisure and activities' }],
+        time: TIME_SLOTS['17:45-18:30'],
+        events: [{ title: 'Leisure and activities [Football or Spinning (48)]' }],
       },
       {
         time: TIME_SLOTS['19:00'],
-        events: [{ title: 'Dinner' }],
+        events: [{ title: 'Dinner (Banquet) at Atlantic' }],
         background: COLORS.LIGHT_YELLOW,
       },
       {
@@ -1261,7 +1276,7 @@ export const schedule = [
 
       {
         time: TIME_SLOTS['13:15'],
-        events: [{ title: 'Beyond Budgeting with Bjarte Bogsnes (Atlantic Hall)', color: '#ec384a' }],
+        events: [{ title: 'Systems thinking with Bjarte Bogsnes (Atlantic Hall)', color: '#ec384a' }],
       },
 
 
