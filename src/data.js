@@ -984,7 +984,7 @@ export const events = [
   description: (
       <p>
       {
-        '  ML & Data analysis\n1. How to accelerate a geologist (David Wade)\n2. Natural language processing (Bjarte Johannesen)\n3. Azure databricks (Juan Martorell Gutierrez Del Alamo)'
+        '  ML & Data analysis\n1. How to accelerate a geologist (David Wade)\n2. ML in Subsurface (Sindre Sundvall Fjermestad)\n3. Azure databricks (Juan Martorell Gutierrez Del Alamo)'
       }
     </p>
   ),
@@ -1137,7 +1137,7 @@ export const schedule = [
         time: TIME_SLOTS['19:00'],
         events: [
           {
-            title: 'Dinner and quiz, delicious tapas and drinks (Atlantic Hall)',
+            title: 'Dinner (TBA)',
           },
         ],
         background: COLORS.LIGHT_YELLOW,
