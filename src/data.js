@@ -52,7 +52,7 @@ const SPEAKERS = {
   // miniworkshops
   JORGEN_KVALSVIK: 'Jørgen Kvalsvik',
   TORILL_GABRIELSEN: 'Torill Kjøsnes Gabrielsen',
-  MARKUS_FANEBUST_DREGI: 'Markus Fanebust Dregi',
+  MARKUS_DREGI: 'Markus Fanebust Dregi',
   PAAL_GROENAAS_DRANGE: 'Pål Grønås Drange',
   EIRIK_NORDBOE: 'Eirik Nordbø',
   THOMAS_HJELDE_THORESEN: 'Thomas Hjelde Thoresen',
@@ -152,9 +152,6 @@ const IDS = {
 
 
   // WORKSHOPS
-  MODEL_CODE_GAP: 'model_code_gap',
-  MACHINE_LEARNING: 'machine_learning',
-  API_WORKSHOP: 'api_workshop',
   GPUMAGIC: 'gpumagic',
   MONOLITH: 'monolith',
   DEVELOPING_APIS: 'developing_apis',
@@ -168,7 +165,11 @@ const IDS = {
 
 
   // MINI-WORKSHOPS
+  PYTHON_LIBS: 'python_libs',
   GITINTRO: 'gitintro',
+  GIS_INTRO: 'gis_intro',
+  NLP_OUTSIDE: 'nlp_outside',
+  ALGDAT: 'algdat',
 
 };
 
@@ -392,31 +393,10 @@ export const events = [
     category: CATEGORIES.MINIWORKSHOP,
   },
   {
-    id: IDS.MODEL_CODE_GAP,
-    title: 'The model-code gap and Visualising software architecture (Sky1)',
-    shortTitle: 'The model-code gap\nVisualising software architecture (Sky1)',
-    speaker: SPEAKERS.SAM_NEWMAN,
-    description: (
-      <p>
-        {
-          'The model-code gap\n\nWhen we’re having an architecture discussion, we’ll talk about abstractions, using terms like component, module and layer. These abstractions reflect our mental model of a software system, which are useful when describing our architectural ideas and intent. These same abstractions don’t typically exist in the programming languages we use though. There’s no layer keyword in Java, for example. To implement these abstractions, we need to use a combination of the constructs available in our programming languages; such as classes, interfaces, objects, functions, packages, namespaces, files and folders. In many cases, the code that is written doesn’t end up reflecting the model. This is the model-code gap.\nThe model - code gap manifests itself in a number of ways. In obvious cases, the code doesn’t match the architecture diagrams.Sometimes the problems are more subtle though. This session is about the model-code gap, and particularly how it relates to applications that are built from a single monolithic deployment unit.Regardless of how we choose to structure our code(layers, vertical slices, ports and adapters, etc), our best design intentions can be destroyed in a flash if we don’t consider the intricacies of the implementation strategy. The devil is in the implementation details.\n\n\nVisualising software architecture\n\nIt’s very likely that the majority of the software architecture diagrams you’ve seen are a confused mess of boxes and lines. Following the publication of the Manifesto for Agile Software Development in 2001, teams have abandoned UML, discarded the concept of modelling and instead place a heavy reliance on conversations centered around incoherent whiteboard diagrams or shallow “Marketecture” diagrams created with Visio. Moving fast and being agile requires good communication, yet software development teams struggle with this fun- damental skill. A good set of software architecture diagrams are priceless for aligning a team around a shared vision and for getting new-joiners productive fast.\nThis session explores the visual communication of software architecture and is based upon a decade of my experiences working with software development teams large and small across the globe. We’ll look at what is commonplace today, the importance of creating a shared vocabulary, diagram notation, and the value of creating a lightweight model to describe your software system using the ”C4 model”, which I created as a way to help software development teams describe and communicate software architecture, both during up - front design sessions and when retrospectively documenting an existing codebase.'
-        }
-      </p>
-    ),
-    timeSlots: [
-      {
-        time: TIME_SLOTS['15:00-17:15'],
-        day: CONFERENCE_DAYS.DAY_1,
-        date: CALENDAR_DATE.TUESDAY,
-      },
-    ],
-    category: CATEGORIES.MINIWORKSHOP,
-  },
-  {
-    id: IDS.MACHINE_LEARNING,
-    title: 'Introduction to machine learning (Airbus)',
-    shortTitle: 'Machine learning basics (Airbus)',
-    speaker: SPEAKERS.KRISTIAN_FLIKKA_AND_EIVIND_SJAASTAD,
+    id: IDS.PYTHON_LIBS,
+    title: 'How to build Python libraries with C++',
+    shortTitle: 'Building Python libraries',
+    speaker: SPEAKERS.JORGEN_KVALSVIK,
     description: (
       <p>
         {
@@ -434,10 +414,52 @@ export const events = [
     category: CATEGORIES.MINIWORKSHOP,
   },
   {
-    id: IDS.API_WORKSHOP,
-    title: 'API workshop (Sky2)',
-    shortTitle: 'API workshop (Sky2)',
-    speaker: SPEAKERS.OYVIND_RONNE,
+    id: IDS.GIS_INTRO,
+    title: 'Introduction to MapHub and ArcGIS with Python',
+    shortTitle: 'Introduction to Geo',
+    speaker: SPEAKERS.TORILL_GABRIELSEN,
+    description: (
+      <p>
+        {
+          'TBA'
+        }
+      </p>
+    ),
+    timeSlots: [
+      {
+        time: TIME_SLOTS['15:00-17:15'],
+        day: CONFERENCE_DAYS.DAY_1,
+        date: CALENDAR_DATE.TUESDAY,
+      },
+    ],
+    category: CATEGORIES.MINIWORKSHOP,
+  },
+  {
+    id: IDS.NLP_OUTSIDE,
+    title: 'Language Processing when you are not in academia',
+    shortTitle: 'NLP outside academia',
+    speaker: SPEAKERS.BJARTE_JOHANSEN,
+    description: (
+      <p>
+        {
+          'TBA'
+        }
+      </p>
+    ),
+    timeSlots: [
+      {
+        time: TIME_SLOTS['15:00-17:15'],
+        day: CONFERENCE_DAYS.DAY_1,
+        date: CALENDAR_DATE.TUESDAY,
+      },
+    ],
+    category: CATEGORIES.MINIWORKSHOP,
+  },
+  {
+    id: IDS.ALGDAT,
+    title: 'Algorithms and data structures',
+    shortTitle: 'Algorithms and data structures',
+    speaker: SPEAKERS.MARKUS_DREGI,
     description: (
       <p>
         {
@@ -1049,7 +1071,7 @@ export const schedule = [
         time: TIME_SLOTS['19:00'],
         events: [
           {
-            title: 'Dinner and quiz, delicious tapas and drinks (Air London+NewYork)',
+            title: 'Dinner and quiz, delicious tapas and drinks (Atlantic Hall)',
           },
         ],
         background: COLORS.LIGHT_YELLOW,
@@ -1069,12 +1091,12 @@ export const schedule = [
     timeSlots: [
       {
         time: TIME_SLOTS['08:15-08:45'],
-        events: [{ title: 'Good morning (Air London+NewYork)' }],
+        events: [{ title: 'Good morning (Atlantic Hall)' }],
         background: COLORS.LIGHT_YELLOW,
       },
       {
         time: TIME_SLOTS['08:45-09:00'],
-        events: [{ title: 'Introducing workshops (Air London+NewYork)' }],
+        events: [{ title: 'Introducing workshops (Atlantic Hall)' }],
         background: COLORS.SPRUCE_WOOD,
       },
       {
@@ -1147,10 +1169,11 @@ export const schedule = [
         time: TIME_SLOTS['15:00-17:15'],
         heading: HEADINGS.MINIWORKSHOPS,
         events: [
-          getLecture(IDS.MACHINE_LEARNING),
+          getLecture(IDS.PYTHON_LIBS),
+          getLecture(IDS.GIS_INTRO),
           getLecture(IDS.GITINTRO),
-          getLecture(IDS.API_WORKSHOP),
-          getLecture(IDS.MODEL_CODE_GAP),
+          getLecture(IDS.NLP_OUTSIDE),
+          getLecture(IDS.ALGDAT),
         ],
       },
 
@@ -1164,7 +1187,7 @@ export const schedule = [
 
       {
         time: TIME_SLOTS['14:15'],
-        events: [{ title: 'Summary (Air London+NewYork)', color: '#ec384a' }],
+        events: [{ title: 'Summary (Atlantic Hall)', color: '#ec384a' }],
       },
 
 
