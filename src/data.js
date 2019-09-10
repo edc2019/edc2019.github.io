@@ -397,7 +397,11 @@ export const events = [
     description: (
       <p>
         {
-          'Install Git Bash!'
+          'This is an introduction to version control system and specifically git.\n\n'+
+'Prerequisites: None, but it is good if you manage to install Git Bash if you\'re on Windows!\n\n'+
+'Target audience: People who want to get started with Git and version control, either for configs, source code, or other textual data.\n\n'+
+'We go through the basics of distributed version control and make and edit/rebase commits, create and merge branches, revert and fix conflicts, and use several remotes.'
+
         }
       </p>
     ),
@@ -419,7 +423,10 @@ export const events = [
     description: (
       <p>
         {
-          'TBA'
+          'Preparations: none strictly necessary, but if you want follow the examples, you must have a working python and a working C++ compiler\n\n'+
+            'Target audience: anyone curious on (advanced) python development, or speeding up python with native code\n\n'+
+            'Expect: This is about _building_ (compiling), not code.\n\n'+
+            'Python is a pretty good user-facing language, but sometimes things need speeding up, or you need to interact with a C++ library. The first step in this interaction is building it, and it is not necessarily smooth sailing. This workshop goes through the whole process, from an empty directory to a package with C++ code, installable with pip install.'
         }
       </p>
     ),
@@ -440,7 +447,9 @@ export const events = [
     description: (
       <p>
         {
-          'TBA'
+          'MapHub is Equinor’s portal for finding, sharing, creating, and analyzing geospatial content.\n\n'+
+            'In this workshop, you will learn skills needed for working with maps and geospatial data in MapHub. We will use ArcGIS API for Python and learn fundamentals of working with maps, geocoding, vectors, raster, lines, routing and directions.\n\n'+
+            'Prerequisites: Novice to intermediate-level experience writing Python.'
         }
       </p>
     ),
@@ -461,7 +470,12 @@ export const events = [
     description: (
       <p>
         {
-          'TBA'
+          'Preparations\n'+
+            ' - Working Python environment\n\n'+
+            'Recommended skills\n'+
+            ' - Solid Python, journeyman machine learning (or equivalent) skills, information theory aware.\n\n'+
+            'What to expect\n'+
+            ' - Basic knowledge of NLP techniques that can be applied when your domain does not neatly conform to academic standards.'
         }
       </p>
     ),
@@ -476,14 +490,15 @@ export const events = [
   },
   {
     id: IDS.ALGDAT,
-    title: 'Algorithms and data structures',
-    shortTitle: 'Algorithms and data structures',
+    title: 'Saving the drone — An Algorithms and Data Structures recap',
+    shortTitle: 'Saving the drone',
     speaker: SPEAKERS.MARKUS_DREGI,
     description: (
       <p>
         {
-          'TBA'
-        }
+'Saving the drone — After the SI gathering you casually left your drone in the maze. But what nobody told you is that after dark all the monsters get out.\n\n'+
+'And of course, it turns out that the drone is highly classified Equinor material, so it has be rescued. During this workshop we will rescue your drone utilizing one graph traversal algorithm after the other, with all the tricks your professor never told you.\n\n'+
+'Since it is already dark, we are going in blind, i.e. there will be no simulator. But fear not, you will be enlightened by the end.'        }
       </p>
     ),
     timeSlots: [
@@ -497,13 +512,23 @@ export const events = [
   },
   {
     id: IDS.INTRO_CTF,
-    title: 'An introduction to Capture The Flags',
+    title: 'An introduction to CTFs — an exciting way to gain new knowledge and skills',
     shortTitle: 'An introduction to CTFs',
     speaker: SPEAKERS.EIRIK_NORDBOE,
     description: (
       <p>
         {
-          'TBA'
+          'CTFs [capture the flag] are events that are usually hosted online or at information security conferences. These events consist of a series of challenges in a range of categories that vary in their degree of difficulty. Typical categories are web security, forensics, crypto, binary exploitation and steganography. Once an individual challenge is solved, a “flag” is given to the player and they submit this flag to the CTF server to earn points. CTF events are usually timed, and the points are totaled once the time has expired. The winning player / team will be the one that solved the most challenges and thus secured the highest score.\n\n'+
+'WarGames are similar to CTFs, but without the stress of time constrains and competition. Both WarGames and CTFs are great ways to learn new skills, not just for information security professionals, but also for developers and others interested in information technology.\n\n'+
+'This workshop will cover:\n\n'+
+' - What CTFs are, and how they are played.\n\n'+
+' - Introduction to some of the most popular platforms.\n\n'+
+' - Introduction to common tools and techniques.\n\n'+
+' - Hands on exercises.\n\n'+
+'Requirements:\n\n'+
+' - Laptop with Nmap and Burp Suite installed. Equinor domain joined computers are not recommended, but can be used.\n\n'+
+'Preferred:\n\n'+
+' - Kali Linux VM or similar. (Kali Linux is a Debian-derived Linux distribution designed for digital forensics and penetration testing.)'
         }
       </p>
     ),
@@ -907,7 +932,7 @@ export const events = [
   },
   {
     id: IDS.ROBOT_COMPETITION,
-    title: 'Real robot competition',
+    title: 'Real robot competition^W hackathon',
     shortTitle: 'Real robots',
     speaker: SPEAKERS.TEAM_REAL_ROBOT,
     description: (
