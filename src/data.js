@@ -83,6 +83,7 @@ const TIME_SLOTS = {
   '17:30': '17:30',
   '17:45-18:30': '17:45 — 18:30',
   '19:00': '19:00',
+  '19:30': '19:30',
   '21:00': '21:00',
 };
 
@@ -614,13 +615,13 @@ export const events = [
   // PLENARY DAY 1
   {
     id: IDS.PRODUCT_DEVELOPMENT,
-    title: 'Product development, a whole perspective',
-    shortTitle: 'Product Development',
+    title: 'Three fish — Pivoting from a "Swiss watch mentality", to becoming a post-digital enterprise',
+    shortTitle: 'Three fish',
     speaker: SPEAKERS.PER_IVAR_SELVAAG,
     description: (
       <p>
         {
-          'TBA'
+          ''
         }
       </p>
     ),
