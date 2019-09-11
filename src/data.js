@@ -164,6 +164,7 @@ const IDS = {
   SAP_HACKATHON: 'sap_hackathon',
   ROBOT_COMPETITION: 'robot_competition',
   HACK_YOURSELF: 'hack_yourself',
+  ROBOCAR_WORKSHOP: 'robocar_workshop',
   AGILE_WORKSHOP: 'agile_workshop',
 
 
@@ -187,7 +188,8 @@ export const events = [
     description: (
       <p>
         {
-          'TBA'
+          'Microservices and Serverless continue to be two of the most hyped terms in our industry. As I’ve explored previously, some of that hype may be justified, but you need to take some time to cut to the heart of what makes them important if you want to get the most out of them. I remain convinced that Serverless technology offers the potential to make teams significantly more productive, but I still find people confused as to what serverless actually is, and whether or not things like Cloud Functions mean we no longer need to worry about microservices.\n\n'+
+          'In this talk, I’ll examine who these two ideas can work together, and explore the space of serverless more broadly. Should you be worried about vendor lock-in? Does cloud functions mean you can get rid of your operations department? Or will serverless technology just lead to a terribly confused spaghetti IT landscape? I’ll try to make sense of the hype and help you understand if serverless and microservices are right for you.'
         }
       </p>
     ),
@@ -246,13 +248,20 @@ export const events = [
   },
   {
     id: IDS.LUA,
-    title: 'Lua',
+    title: 'love = require("lua")',
     shortTitle: 'Lua',
     speaker: SPEAKERS.JUAN_ALAMO,
     description: (
       <p>
         {
-          'TBA'
+'Lua is a powerful, efficient, lightweight, embeddable scripting language. It supports procedural programming, object-oriented programming, functional programming, data-driven programming, and data description.\n\n'+
+'Lua is an extension language, so it is meant to extend other software by adding scripts. It is used in Minecraft, in Unity and in realtime integration solutions like Tarantool.\n\n'+
+'To get familiar with its powerful realtime scripting we will develop a small controller simulation using the LÖVE framework.\n\n'+
+'Visual Studio Code has extensions for Lua, however we will use ZeroBrane Studio (https://studio.zerobrane.com/) since it has a great integration with LÖVE.\n\n'+
+'To follow the content an participate, for Windows Equinor machines I recommend\n\n'+
+' - download the Windows 32bit zip archive from the ZeroBrane download page (https://studio.zerobrane.com/download?not-this-time) and\n\n'+
+' - the 32 or 64 bit zipped archive from the LÖVE download page (https://love2d.org/).\n\n'+
+'For Mac and Linux just use the distribution packages.\n\n'
         }
       </p>
     ),
@@ -273,7 +282,14 @@ export const events = [
     description: (
       <p>
         {
-          'TBA'
+'The purpose of the workshop is to give a general and hands-on introduction to Radix. We will take a UI-First approach (https://konstantinpavlov.net/blog/2017/03/07/ui-first-development/), where we will start from a web app with mocked data, establish a CI/CD DevOps cycle in Radix, integrate the web app with an API and add authentication using oauth-proxy (https://github.com/pusher/oauth2_proxy). If there is time we\'ll explore monitoring using prometheus and grafana.\n\n'+
+'Pre-requisites\n'+
+' - Account on github.com\n'+
+' - Git installed and working locally against github.com\n'+
+' - Docker running locally\n'+
+' - Local dev. environment (IDE++)\n'+
+' - Node js eco system installed and running (Download Nodejs)\n'+
+' - If you dont have everything in place, join the workshop and team up with someone else\n'
         }
       </p>
     ),
@@ -649,7 +665,8 @@ export const events = [
     description: (
       <p>
         {
-          'TBA'
+          'Recent research summarised in the book Accelerate points to a set of practices that lead to high software development organisation performance. Simultaneously, research from the Santa Fe institute on Complex Adaptive Systems over the last 20 years seems to point to a grand unified theory of organisational design. So have we cracked it? Do we now have the answer to the question: how do we create and scale high performing software and organisations?\n\n'+
+            'In his keynote, James explores this research and takes a look at some of the surprising links between microservices, organisations and evolutionary architecture.'
         }
       </p>
     ),
@@ -662,6 +679,7 @@ export const events = [
     ],
     category: CATEGORIES.KEYNOTE,
   },
+
 
   {
     id: IDS.MONOLITH,
@@ -697,6 +715,7 @@ export const events = [
     ],
     category: CATEGORIES.WORKSHOP,
   },
+
   {
     id: IDS.DEVELOPING_APIS,
     title: 'Developing APIs',
@@ -730,6 +749,7 @@ export const events = [
     ],
     category: CATEGORIES.WORKSHOP,
   },
+
   {
     id: IDS.PYTHON_TOUR,
     title: 'A Tour of Python',
@@ -764,6 +784,7 @@ export const events = [
     ],
     category: CATEGORIES.WORKSHOP,
   },
+
   {
     id: IDS.HACK_YOURSELF,
     title: 'Learn to Hack Yourself',
@@ -796,6 +817,44 @@ export const events = [
     ],
     category: CATEGORIES.WORKSHOP,
   },
+
+    {
+    id: IDS.ROBOCAR_WORKSHOP,
+    title: 'Bring Your Own Project / Robocar league',
+    shortTitle: 'Robocar league, or: BYOP',
+    speaker: SPEAKERS.THORVALD_JOHANNESSEN,
+    color: '#367ABD',
+    description: (
+      <p>
+        {
+'Spend the time at EDC to start up a new playground project. Software or hardware. By yourself, or together with some colleges. Bring your own, or build something beautiful with the hardware available. Perhaps this is the time to bring your micro-python project from last year back to life?\n\n'+
+'Join in and become a founder of the first EDC Robocar league!\n\n'+
+'We\'ll provide the parts to build two complete Robocars, using the Donkey car setup. A project suitable for two or three persons pr. car.\n\n'+
+'Build it, drive it, and then learn it how to drive itself.\n\n'+
+'This project will require some effort. And we are not by any means confident that we\'ll complete the project during these two days. But what a great start it can be for your new favorite hobby?\n\n'
+        }
+      </p>
+    ),
+    timeSlots: [
+      {
+        time: TIME_SLOTS['10:15'],
+        day: CONFERENCE_DAYS.DAY_2,
+        date: CALENDAR_DATE.WEDNESDAY,
+      },
+      {
+        time: TIME_SLOTS['14:15'],
+        day: CONFERENCE_DAYS.DAY_2,
+        date: CALENDAR_DATE.WEDNESDAY,
+      },
+      {
+        time: TIME_SLOTS['09:00'],
+        day: CONFERENCE_DAYS.DAY_3,
+        date: CALENDAR_DATE.THURSDAY,
+      },
+    ],
+    category: CATEGORIES.WORKSHOP,
+  },
+
   {
     id: IDS.KUBERNETES,
     title: 'Kubernetes',
@@ -823,6 +882,7 @@ export const events = [
     ],
     category: CATEGORIES.WORKSHOP,
   },
+
   {
     id: IDS.AGILE_WORKSHOP,
     title: 'Agile Anonymous',
@@ -849,6 +909,7 @@ export const events = [
     ],
     category: CATEGORIES.WORKSHOP,
   },
+
   {
     id: IDS.HANDS_ON_OMNIA,
     title: 'Hands On With OMNIA',
@@ -880,6 +941,7 @@ export const events = [
     ],
     category: CATEGORIES.WORKSHOP,
   },
+
   {
     id: IDS.GPUMAGIC,
     title: 'GPU Magic with Python',
@@ -902,6 +964,7 @@ export const events = [
     ],
     category: CATEGORIES.WORKSHOP,
   },
+
   {
     id: IDS.SAP_HACKATHON,
     title: 'Equinor time writing hackathon',
@@ -941,6 +1004,7 @@ export const events = [
     ],
     category: CATEGORIES.WORKSHOP,
   },
+
   {
     id: IDS.ROBOT_COMPETITION,
     title: 'Real robot competition^W hackathon',
@@ -971,21 +1035,22 @@ export const events = [
     category: CATEGORIES.WORKSHOP,
   },
 
+
+
   /*
    * ALL THE LIGHTNING TALKS!
    */
-
-
-
-
-  {
-    id: IDS.LIGHT_TEAM_WORK,
-    title: 'Team work',
-    speaker: 'Dregi, Blaafjell Holwech, Wesenberg',
+{
+  id: IDS.LIGHT_TEAM_WORK,
+  title: 'Team work',
+  speaker: 'Dregi, Blaafjell Holwech, Wesenberg',
   description: (
       <p>
       {
-        'Team work\n1. When the One is hit by the bus (Markus Fanebust Dregi)\n2. London to Aarhus - Collaborating hands on with the business (Joachim Blaafjell Holwech)\n3. Assumptions is the mother of all f**k-ups (Harald Wesenberg)'
+        'Team work\n'+
+          '1. When the One is hit by the bus (Markus Fanebust Dregi)\n'+
+          '2. London to Aarhus - Collaborating hands on with the business (Joachim Blaafjell Holwech)\n'+
+          '3. Assumptions is the mother of all f**k-ups (Harald Wesenberg)'
       }
     </p>
   ),
@@ -1006,7 +1071,10 @@ export const events = [
   description: (
       <p>
       {
-        '  Architecture\n1. Domain Driven Design (Einar Landre)\n2. EITA and the role of EITA for software development (Jørn Ølmheim)\n3. 3rd party components in software projects (Anton Eskov)\n4. Realizing the potential (Bjørn-Ovin Wivestad)'
+        'Architecture\n'+
+          '1. Domain Driven Design (Einar Landre)\n'+
+          '2. What is EITA and why should I care? (Jørn Ølmheim)\n'+
+          '3. 3rd party components in software projects (Anton Eskov)\n4. Realizing the potential (Bjørn-Ovin Wivestad)'
       }
     </p>
   ),
@@ -1024,11 +1092,14 @@ export const events = [
 {
   id: IDS.LIGHT_CLOUD,
   title: 'Cloud',
-  speaker: 'Kragebøl Thomassen, Sogaard, Hansen, Skjørestad',
+  speaker: 'Kragebøl Thomassen, Sogaard, Hansen',
   description: (
       <p>
       {
-        '  Cloud\n1. How unit testing enables DevOps for Azure SQL databases (Nikolai Kragebøl Thomassen)\n2. Cloud migration - How to fail most spectacular (Anders Sogaard)\n3. API Management (Anette Hansen)\n4. Security (Lars Kåre Skjørestad)'
+        'Cloud\n'+
+          '1. How unit testing enables DevOps for Azure SQL databases (Nikolai Kragebøl Thomassen)\n'+
+          '2. Cloud migration - How to fail most spectacular (Anders Sogaard)\n'+
+          '3. API Management (Anette Hansen)'
       }
     </p>
   ),
@@ -1050,7 +1121,10 @@ export const events = [
   description: (
       <p>
       {
-        '  Langs & libs\n1. Lua (Juan Martorell Gutierrez Del Alamo)\n2. Web applications using Lisp (Raymond Wiker)\n3. Luigie - Python pipeline library (Jens Gåsemyr Magnus)'
+        'Langs & libs\n'+
+          '1. Lua (Juan Martorell Gutierrez Del Alamo)\n'+
+          '2. Web applications using Lisp (Raymond Wiker)\n'+
+          '3. Data processing pipelines with Luigi (Jens Gåsemyr Magnus)'
       }
     </p>
   ),
@@ -1067,11 +1141,15 @@ export const events = [
 {
   id: IDS.LIGHT_ML_DATA_ANALYSIS,
   title: 'ML & Data analysis',
-  speaker: 'Wade, Sundvall Fjermestad, del Alamo',
+  speaker: 'Wade, Sundvall Fjermestad, Øren Hauge, del Alamo',
   description: (
       <p>
       {
-        '  ML & Data analysis\n1. How to accelerate a geologist (David Wade)\n2. ML in Subsurface (Sindre Sundvall Fjermestad)\n3. Azure databricks (Juan Martorell Gutierrez Del Alamo)'
+        'ML & Data analysis\n'+
+          '1. How to accelerate a geologist (David Wade)\n'+
+          '2. ML in Subsurface (Sindre Sundvall Fjermestad)\n'+
+          '3. Job shop drill scheduling (Lars Petter Øren Hauge) \n'+
+          '4. Azure databricks (Juan Martorell Gutierrez Del Alamo)'
       }
     </p>
   ),
@@ -1092,7 +1170,11 @@ export const events = [
   description: (
       <p>
       {
-        '  Infrastructure\n1. SpaceX Starlink (Jon Ole Nome)\n2. 20 thousand leagues under the sea (Espen Alv Tjønneland)\n3. Radix (Kjell-Erik Reed Anda)\n4. Gaining business insight at the edge of the cloud (Anders Erling Aabakken)'
+        'Infrastructure\n'+
+          '1. SpaceX Starlink — Broadband access everywhere (Jon Ole Nome)\n'+
+          '2. 20 thousand leagues under the sea (Espen Alv Tjønneland)\n'+
+          '3. Radix (Kjell-Erik Reed Anda)\n'+
+          '4. Gaining business insight at the edge of the cloud (Anders Erling Aabakken)'
       }
     </p>
   ),
@@ -1110,11 +1192,14 @@ export const events = [
 {
   id: IDS.LIGHT_SOFTWARE,
   title: 'Software Engineering',
-  speaker: 'Maudal, Hollund, Grønås Drange',
+  speaker: 'Maudal, Hollund, Skjørestad',
   description: (
       <p>
       {
-        '  Software Engineering\n1. Technical debt is good! (Olve Maudal)\n2. FLOSS - Free/Libre Open Source Software (Knut Erik Hollund)\n3. Software Development - It\'s not rocket science (Pål Grønås Drange)'
+        'Software Engineering\n'+
+          '1. Technical debt is good! (Olve Maudal)\n'+
+          '2. FLOSS - Free/Libre Open Source Software (Knut Erik Hollund)\n'+
+          '3. Security in development (Lars Kåre Skjørestad)'
       }
     </p>
   ),
@@ -1223,7 +1308,7 @@ export const schedule = [
         events: [{ title: 'Leisure and activities [Football or CrossFit (30)]' }],
       },
       {
-        time: TIME_SLOTS['19:00'],
+        time: TIME_SLOTS['19:30'],
         events: [
           {
             title: 'Dinner (Tapas) at Atlantic',
@@ -1272,6 +1357,7 @@ export const schedule = [
           { ...getLecture(IDS.PYTHON_TOUR), part: '1 of 2' },
           { ...getLecture(IDS.HACK_YOURSELF), part: '1 of 2' },
           { ...getLecture(IDS.ROBOT_COMPETITION), part: '1 of 3' },
+          { ...getLecture(IDS.ROBOCAR_WORKSHOP), part: '1 of 3' },
           { ...getLecture(IDS.AGILE_WORKSHOP), part: '1 of 2' },
         ],
       },
@@ -1293,6 +1379,7 @@ export const schedule = [
           { ...getLecture(IDS.PYTHON_TOUR), part: '2 of 2' },
           { ...getLecture(IDS.HACK_YOURSELF), part: '2 of 2' },
           { ...getLecture(IDS.ROBOT_COMPETITION), part: '2 of 3' },
+          { ...getLecture(IDS.ROBOCAR_WORKSHOP), part: '2 of 3' },
           { ...getLecture(IDS.AGILE_WORKSHOP), part: '2 of 2' },
         ],
       },
@@ -1301,7 +1388,7 @@ export const schedule = [
         events: [{ title: 'Leisure and activities [Football or Spinning (48)]' }],
       },
       {
-        time: TIME_SLOTS['19:00'],
+        time: TIME_SLOTS['19:30'],
         events: [{ title: 'Dinner (Banquet) at Atlantic' }],
         background: COLORS.LIGHT_YELLOW,
       },
@@ -1334,6 +1421,8 @@ export const schedule = [
           { ...getLecture(IDS.ROBOT_COMPETITION), part: '3 of 3' },
           { ...getLecture(IDS.SAP_HACKATHON), part: '3 of 3' },
           { ...getLecture(IDS.HACK_YOURSELF), part: '3 of 3' },
+          { ...getLecture(IDS.ROBOCAR_WORKSHOP), part: '3 of 3' },
+
 
           getLecture(IDS.MLFLOW),
           getLecture(IDS.BEYOND_WORKSHOP),
