@@ -903,7 +903,38 @@ export const events = [
     description: (
       <p>
         {
-          ''
+'Are you tired of the buzzword “agile”?\n'+
+'\n'+
+'Is your development team stuck with operational work?\n'+
+'\n'+
+'Does your product owner suck?\n'+
+'\n'+
+'Is your leader never available to listen and understand your challenges?\n'+
+'\n'+
+'Are you tired of wasting time on “organizational hazzle”?\n'+
+'\n'+
+'\n'+
+'\n'+
+'Then this is the place for you!\n'+
+'\n'+
+'\n'+
+'The Agile unConference is the place where you bring your burning questions, listen to those of others, participate in discussion sessions and get even smarter than you already are – together!\n'+
+'\n'+
+'We would like to emphasize the informal exchange of information and ideas between participants.\n'+
+'\n'+
+'\n'+
+'\n'+
+'We invite you to join us in conversations on how to:\n'+
+'\n'+
+'10.15 - 11.15: Re-Write the Agile manifesto\n'+
+'\n'+
+'11.30 - 12.30: Re-Organize Equinor – for a digital world\n'+
+'\n'+
+'13.30 - 14.15: Re-Think leadership – lead with|in|tension\n'+
+'\n'+
+'14.30 – 15.15: Re-Design DevOps\n'+
+'\n'+
+'15.30 – 16.15: Re-Invent the Product Owner\n'
         }
       </p>
     ),
