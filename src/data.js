@@ -59,6 +59,8 @@ const SPEAKERS = {
   THOMAS_HJELDE_THORESEN: 'Thomas Hjelde Thoresen',
 };
 
+
+
 const TIME_SLOTS = {
   '08:15-08:45': '08:15 — 08:45',
   '08:45-09:00': '08:45 — 09:00',
@@ -69,8 +71,8 @@ const TIME_SLOTS = {
   '09:15': '09:15',
   '10:15': '10:15',
   '10:15-12:00': '10:15 — 12:00',
-  '10:30-11:20': '10:30 – 11:20',
-  '11:30-12:20': '11:30 – 12:20',
+  '10:30-11:20': '10:30 — 11:20',
+  '11:30-12:20': '11:30 — 12:20',
   '12:15': '12:15',
   '12:30': '12:30',
   '13:00': '13:00',
@@ -572,7 +574,7 @@ export const events = [
   },
   {
     id: IDS.MLFLOW,
-    title: 'Machine learning – From experiments to production with MLFlow (Horizon)',
+    title: 'Machine learning — From experiments to production with MLFlow (Horizon)',
     shortTitle: 'To production with MLFlow (Horizon)',
     speaker: SPEAKERS.THOMAS_HJELDE_THORESEN,
     description: (
@@ -708,19 +710,14 @@ export const events = [
     ),
     timeSlots: [
       {
-        time: TIME_SLOTS['10:15'],
+        time: TIME_SLOTS['10:30-11:20'],
         day: CONFERENCE_DAYS.DAY_2,
         date: CALENDAR_DATE.WEDNESDAY,
       },
       {
-        time: TIME_SLOTS['14:15'],
+        time: TIME_SLOTS['13:30-15:45'],
         day: CONFERENCE_DAYS.DAY_2,
         date: CALENDAR_DATE.WEDNESDAY,
-      },
-      {
-        time: TIME_SLOTS['09:00'],
-        day: CONFERENCE_DAYS.DAY_3,
-        date: CALENDAR_DATE.THURSDAY,
       },
     ],
     category: CATEGORIES.WORKSHOP,
@@ -742,19 +739,14 @@ export const events = [
     ),
     timeSlots: [
       {
-        time: TIME_SLOTS['10:15'],
+        time: TIME_SLOTS['10:30-11:20'],
         day: CONFERENCE_DAYS.DAY_2,
         date: CALENDAR_DATE.WEDNESDAY,
       },
       {
-        time: TIME_SLOTS['14:15'],
+        time: TIME_SLOTS['13:30-15:45'],
         day: CONFERENCE_DAYS.DAY_2,
         date: CALENDAR_DATE.WEDNESDAY,
-      },
-      {
-        time: TIME_SLOTS['09:00'],
-        day: CONFERENCE_DAYS.DAY_3,
-        date: CALENDAR_DATE.THURSDAY,
       },
     ],
     category: CATEGORIES.WORKSHOP,
@@ -777,19 +769,14 @@ export const events = [
     ),
     timeSlots: [
       {
-        time: TIME_SLOTS['10:15'],
+        time: TIME_SLOTS['10:30-11:20'],
         day: CONFERENCE_DAYS.DAY_2,
         date: CALENDAR_DATE.WEDNESDAY,
       },
       {
-        time: TIME_SLOTS['14:15'],
+        time: TIME_SLOTS['13:30-15:45'],
         day: CONFERENCE_DAYS.DAY_2,
         date: CALENDAR_DATE.WEDNESDAY,
-      },
-      {
-        time: TIME_SLOTS['09:00'],
-        day: CONFERENCE_DAYS.DAY_3,
-        date: CALENDAR_DATE.THURSDAY,
       },
     ],
     category: CATEGORIES.WORKSHOP,
@@ -810,19 +797,14 @@ export const events = [
     ),
     timeSlots: [
       {
-        time: TIME_SLOTS['10:15'],
+        time: TIME_SLOTS['10:30-11:20'],
         day: CONFERENCE_DAYS.DAY_2,
         date: CALENDAR_DATE.WEDNESDAY,
       },
       {
-        time: TIME_SLOTS['14:15'],
+        time: TIME_SLOTS['13:30-15:45'],
         day: CONFERENCE_DAYS.DAY_2,
         date: CALENDAR_DATE.WEDNESDAY,
-      },
-      {
-        time: TIME_SLOTS['09:00'],
-        day: CONFERENCE_DAYS.DAY_3,
-        date: CALENDAR_DATE.THURSDAY,
       },
     ],
     category: CATEGORIES.WORKSHOP,
@@ -847,19 +829,14 @@ export const events = [
     ),
     timeSlots: [
       {
-        time: TIME_SLOTS['10:15'],
+        time: TIME_SLOTS['10:30-11:20'],
         day: CONFERENCE_DAYS.DAY_2,
         date: CALENDAR_DATE.WEDNESDAY,
       },
       {
-        time: TIME_SLOTS['14:15'],
+        time: TIME_SLOTS['13:30-15:45'],
         day: CONFERENCE_DAYS.DAY_2,
         date: CALENDAR_DATE.WEDNESDAY,
-      },
-      {
-        time: TIME_SLOTS['09:00'],
-        day: CONFERENCE_DAYS.DAY_3,
-        date: CALENDAR_DATE.THURSDAY,
       },
     ],
     category: CATEGORIES.WORKSHOP,
@@ -881,12 +858,12 @@ export const events = [
     ),
     timeSlots: [
       {
-        time: TIME_SLOTS['10:15'],
+        time: TIME_SLOTS['10:30-11:20'],
         day: CONFERENCE_DAYS.DAY_2,
         date: CALENDAR_DATE.WEDNESDAY,
       },
       {
-        time: TIME_SLOTS['14:15'],
+        time: TIME_SLOTS['13:30-15:45'],
         day: CONFERENCE_DAYS.DAY_2,
         date: CALENDAR_DATE.WEDNESDAY,
       },
@@ -918,7 +895,7 @@ export const events = [
 'Then this is the place for you!\n'+
 '\n'+
 '\n'+
-'The Agile unConference is the place where you bring your burning questions, listen to those of others, participate in discussion sessions and get even smarter than you already are – together!\n'+
+'The Agile unConference is the place where you bring your burning questions, listen to those of others, participate in discussion sessions and get even smarter than you already are — together!\n'+
 '\n'+
 'We would like to emphasize the informal exchange of information and ideas between participants.\n'+
 '\n'+
@@ -926,26 +903,26 @@ export const events = [
 '\n'+
 'We invite you to join us in conversations on how to:\n'+
 '\n'+
-'10.15 - 11.15: Re-Write the Agile manifesto\n'+
+'10:15 — 11:15: Re-Write the Agile manifesto\n'+
 '\n'+
-'11.30 - 12.30: Re-Organize Equinor – for a digital world\n'+
+'11:30 — 12:30: Re-Organize Equinor — for a digital world\n'+
 '\n'+
-'13.30 - 14.15: Re-Think leadership – lead with|in|tension\n'+
+'13:30 — 14:15: Re-Think leadership — lead with|in|tension\n'+
 '\n'+
-'14.30 – 15.15: Re-Design DevOps\n'+
+'14:30 — 15:15: Re-Design DevOps\n'+
 '\n'+
-'15.30 – 16.15: Re-Invent the Product Owner\n'
+'15:30 — 16:15: Re-Invent the Product Owner\n'
         }
       </p>
     ),
     timeSlots: [
       {
-        time: TIME_SLOTS['10:15'],
+        time: TIME_SLOTS['10:30-11:20'],
         day: CONFERENCE_DAYS.DAY_2,
         date: CALENDAR_DATE.WEDNESDAY,
       },
       {
-        time: TIME_SLOTS['14:15'],
+        time: TIME_SLOTS['13:30-15:45'],
         day: CONFERENCE_DAYS.DAY_2,
         date: CALENDAR_DATE.WEDNESDAY,
       },
@@ -972,12 +949,12 @@ export const events = [
     ),
     timeSlots: [
       {
-        time: TIME_SLOTS['10:15'],
+        time: TIME_SLOTS['10:30-11:20'],
         day: CONFERENCE_DAYS.DAY_2,
         date: CALENDAR_DATE.WEDNESDAY,
       },
       {
-        time: TIME_SLOTS['14:15'],
+        time: TIME_SLOTS['13:30-15:45'],
         day: CONFERENCE_DAYS.DAY_2,
         date: CALENDAR_DATE.WEDNESDAY,
       },
@@ -1000,7 +977,12 @@ export const events = [
     ),
     timeSlots: [
       {
-        time: TIME_SLOTS['10:15'],
+        time: TIME_SLOTS['10:30-11:20'],
+        day: CONFERENCE_DAYS.DAY_2,
+        date: CALENDAR_DATE.WEDNESDAY,
+      },
+      {
+        time: TIME_SLOTS['13:30-15:45'],
         day: CONFERENCE_DAYS.DAY_2,
         date: CALENDAR_DATE.WEDNESDAY,
       },
@@ -1035,14 +1017,14 @@ export const events = [
     ),
     timeSlots: [
       {
-        time: TIME_SLOTS['14:15'],
+        time: TIME_SLOTS['10:30-11:20'],
         day: CONFERENCE_DAYS.DAY_2,
         date: CALENDAR_DATE.WEDNESDAY,
       },
       {
-        time: TIME_SLOTS['09:00'],
-        day: CONFERENCE_DAYS.DAY_3,
-        date: CALENDAR_DATE.THURSDAY,
+        time: TIME_SLOTS['13:30-15:45'],
+        day: CONFERENCE_DAYS.DAY_2,
+        date: CALENDAR_DATE.WEDNESDAY,
       },
     ],
     category: CATEGORIES.WORKSHOP,
@@ -1070,9 +1052,14 @@ export const events = [
     ),
     timeSlots: [
       {
-        time: TIME_SLOTS['09:00'],
-        day: CONFERENCE_DAYS.DAY_3,
-        date: CALENDAR_DATE.THURSDAY,
+        time: TIME_SLOTS['10:30-11:20'],
+        day: CONFERENCE_DAYS.DAY_2,
+        date: CALENDAR_DATE.WEDNESDAY,
+      },
+      {
+        time: TIME_SLOTS['13:30-15:45'],
+        day: CONFERENCE_DAYS.DAY_2,
+        date: CALENDAR_DATE.WEDNESDAY,
       },
     ],
     category: CATEGORIES.WORKSHOP,
@@ -1388,7 +1375,7 @@ export const schedule = [
         events: [getLecture(IDS.KEYNOTE_EVOLUTIONARY_ARCHITECTURE)],
       },
       {
-        time: TIME_SLOTS['10:15'],
+        time: TIME_SLOTS['10:30-11:20'],
         heading: HEADINGS.WORKSHOPS,
         events: [
           { ...getLecture(IDS.MONOLITH), part: '1 of 2' },
