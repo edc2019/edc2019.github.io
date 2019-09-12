@@ -609,17 +609,18 @@ export const events = [
   },
   {
     id: IDS.BEYOND_WORKSHOP,
-    title: 'Beyond Budgeting — Business agility in practice Bjarte Bogsnes (Atlantic hall)',
+    title: 'Beyond Budgeting — Business agility in practice with Bjarte Bogsnes (Atlantic hall)',
     shortTitle: 'Beyond Budgeting — Business agility in practice (Atlantic hall)',
     speaker: SPEAKERS.BJARTE_BOGSNES,
     description: (
       <p>
         {
-          'Beyond Budgetting - Business agility in practice (Bjarte Bogsnes)\n'+
+          'Beyond Budgeting — Business agility in practice\n'+
             '\n'+
             'We know that command & control doesn\'t work well in complex environments. But what is the alternative? Bjarte Bogsnes and Beyond Budgeting is providing answers.\n'+
             '\n'+
-            'In this 3 hour workshop you will learn about aspects of the adaptive management model Beyond Budgeting, from background to philosophy to its 12 principles covering leadership and management, and the close relationship between Beyond Budgeting and Agile. Attendees will understand how to trust and empower without losing control, and learn how to redefine performance – with dynamic and relative targets (or no targets at all) and a holistic performance evaluation.\n'
+            'In this 3 hour workshop you will learn about aspects of the adaptive management model Beyond Budgeting, from background to philosophy to its 12 principles covering leadership and management, and the close relationship between Beyond Budgeting and Agile.\n\n'+
+            'Attendees will understand how to trust and empower without losing control, and learn how to redefine performance — with dynamic and relative targets (or no targets at all) and a holistic performance evaluation.\n'
         }
       </p>
     ),
