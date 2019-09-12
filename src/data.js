@@ -81,6 +81,7 @@ const TIME_SLOTS = {
   '15:00-17:15': '15:00 — 17:15',
   '16:15-17:15': '16:15 — 17:15',
   '17:30': '17:30',
+  '17:30-19:00': '17:30 — 19:00',
   '17:45-18:30': '17:45 — 18:30',
   '19:00': '19:00',
   '19:30': '19:30',
@@ -174,7 +175,7 @@ const IDS = {
   GITINTRO: 'gitintro',
   GIS_INTRO: 'gis_intro',
   NLP_OUTSIDE: 'nlp_outside',
-  ALGDAT: 'algdat',
+  SAVE_THE_DRONE: 'save_the_drone',
   INTRO_CTF: 'intro_ctf',
   MLFLOW: 'mlflow',
   BEYOND_WORKSHOP: 'beyond_workshop',
@@ -207,8 +208,8 @@ export const events = [
   // LANGUAGES
   {
     id: IDS.OPENSOURCE,
-    title: 'What\'s the deal with open source?',
-    shortTitle: 'Open source',
+    title: 'What\'s the deal with open source? (Kiellandsalen)',
+    shortTitle: 'Open source (Kiellandsalen)',
     speaker: SPEAKERS.PAAL_GROENAAS_DRANGE,
     description: (
       <p>
@@ -228,8 +229,8 @@ export const events = [
   },
   {
     id: IDS.CSS,
-    title: 'CSS',
-    shortTitle: 'CSS',
+    title: 'CSS (Rederiet)',
+    shortTitle: 'CSS (Rederiet)',
     speaker: SPEAKERS.VICTOR_NYSTAD,
     description: (
       <p>
@@ -249,8 +250,8 @@ export const events = [
   },
   {
     id: IDS.LUA,
-    title: 'love = require("lua")',
-    shortTitle: 'Lua',
+    title: 'love = require("lua") (Horizon)',
+    shortTitle: 'Lua (Horizon)',
     speaker: SPEAKERS.JUAN_ALAMO,
     description: (
       <p>
@@ -277,8 +278,8 @@ export const events = [
   },
   {
     id: IDS.RADIX,
-    title: 'Radix',
-    shortTitle: 'Radix',
+    title: 'Radix (Kannik)',
+    shortTitle: 'Radix (Kannik)',
     speaker: SPEAKERS.KJELL_ERIK_REED_ANDA,
     description: (
       <p>
@@ -305,8 +306,8 @@ export const events = [
   },
   {
     id: IDS.PROLOG,
-    title: 'Prolog (TBA)',
-    shortTitle: 'Prolog',
+    title: 'Prolog (Kongsgardsstuen)',
+    shortTitle: 'Prolog (Kongsgardsstuen)',
     speaker: SPEAKERS.BJARTE_JOHANSEN,
     description: (
       <tt>
@@ -336,8 +337,8 @@ export const events = [
   },
   {
     id: IDS.CLOJURE,
-    title: 'Clojure',
-    shortTitle: 'Clojure',
+    title: 'Clojure (Kiellandstuen)',
+    shortTitle: 'Clojure (Kiellandstuen)',
     speaker: SPEAKERS.JORN_OLMHEIM,
     description: (
         <p>
@@ -368,8 +369,8 @@ export const events = [
   },
   {
     id: IDS.DEEPC,
-    title: 'Deep C',
-    shortTitle: 'Deep C',
+    title: 'Deep C (Mortepumpen)',
+    shortTitle: 'Deep C (Mortepumpen)',
     speaker: SPEAKERS.OLVE_MAUDAL,
     description: (
       <p>
@@ -391,8 +392,8 @@ export const events = [
   },
   {
     id: IDS.DOCKER,
-    title: 'Docker',
-    shortTitle: 'Docker',
+    title: 'Docker (Atlantic hall)',
+    shortTitle: 'Docker (Atlantic hall)',
     speaker: SPEAKERS.STIAN_OVREVAGE,
     description: (
       <p>
@@ -419,8 +420,8 @@ export const events = [
   // MINIWORKSHOP
   {
     id: IDS.GITINTRO,
-    title: 'A primer on Git',
-    shortTitle: 'Git',
+    title: 'A primer on Git (Kannik)',
+    shortTitle: 'Git (Kannik)',
     speaker: SPEAKERS.PAAL_GROENAAS_DRANGE,
     description: (
       <p>
@@ -445,8 +446,8 @@ export const events = [
   },
   {
     id: IDS.PYTHON_LIBS,
-    title: 'How to build Python libraries with C++',
-    shortTitle: 'Building Python libraries',
+    title: 'How to build Python libraries with C++ (Sølvberget)',
+    shortTitle: 'Building Python libraries (Sølvberget)',
     speaker: SPEAKERS.JORGEN_KVALSVIK,
     description: (
       <p>
@@ -469,8 +470,8 @@ export const events = [
   },
   {
     id: IDS.GIS_INTRO,
-    title: 'Introduction to MapHub and ArcGIS with Python',
-    shortTitle: 'Introduction to Geo',
+    title: 'Introduction to MapHub and ArcGIS with Python (Tulsa)',
+    shortTitle: 'Introduction to Geo (Tulsa)',
     speaker: SPEAKERS.TORILL_GABRIELSEN,
     description: (
       <p>
@@ -492,8 +493,8 @@ export const events = [
   },
   {
     id: IDS.NLP_OUTSIDE,
-    title: 'Language Processing when you are not in academia',
-    shortTitle: 'NLP outside academia',
+    title: 'Language Processing when you are not in academia (Kiellandstuen)',
+    shortTitle: 'NLP outside academia (Kiellandstuen)',
     speaker: SPEAKERS.BJARTE_JOHANSEN,
     description: (
       <p>
@@ -517,9 +518,9 @@ export const events = [
     category: CATEGORIES.MINIWORKSHOP,
   },
   {
-    id: IDS.ALGDAT,
-    title: 'Saving the drone — An Algorithms and Data Structures recap',
-    shortTitle: 'Saving the drone',
+    id: IDS.SAVE_THE_DRONE,
+    title: 'Saving the drone — An Algorithms and Data Structures recap (Ledaalstuen)',
+    shortTitle: 'Saving the drone (Ledaalstuen)',
     speaker: SPEAKERS.MARKUS_DREGI,
     description: (
       <p>
@@ -540,8 +541,8 @@ export const events = [
   },
   {
     id: IDS.INTRO_CTF,
-    title: 'An introduction to CTFs — an exciting way to gain new knowledge and skills',
-    shortTitle: 'An introduction to CTFs',
+    title: 'An introduction to CTFs — an exciting way to gain new knowledge and skills (Valberget)',
+    shortTitle: 'An introduction to CTFs (Valberget)',
     speaker: SPEAKERS.EIRIK_NORDBOE,
     description: (
       <p>
@@ -571,13 +572,20 @@ export const events = [
   },
   {
     id: IDS.MLFLOW,
-    title: 'Machine learning – From experiments to production with MLFlow',
-    shortTitle: 'To production with MLFlow',
+    title: 'Machine learning – From experiments to production with MLFlow (Horizon)',
+    shortTitle: 'To production with MLFlow (Horizon)',
     speaker: SPEAKERS.THOMAS_HJELDE_THORESEN,
     description: (
       <p>
         {
-          'TBA'
+          'The workshop will demonstrate the lifecycle of a machine learning model through the following phases:\n\n'+
+            ' - Experimenting and EDA in jupyter notebook.\n'+
+            ' - Running structured experiments locally.\n'+
+            ' - Running experiments remotely on a Databricks-cluster in Azure.\n'+
+            ' - Evaluating results of experiments and choosing a model to deploy.\n'+
+            ' - Deploy the selected model to production in Azure.\n'+
+            '\n\n'+
+            'Making requests to the model.The workshop will be held on a Windows computer with elevated privileges. Recommended prerequisites are Ubuntu (Windows Subsystem for Linux), and a guide to install it may be found here. In order to follow all parts of the workshop, access to run jobs on a databricks-cluster (DataplatformDBricksDev) in OMNIA is required. This should be available to all with OMNIA DEVELOPER or OMNIA DATA SCIENTIST roles, which may be requested through AccessIT. This is not a requirement to benefit from the workshop.'
         }
       </p>
     ),
@@ -592,8 +600,8 @@ export const events = [
   },
   {
     id: IDS.BEYOND_WORKSHOP,
-    title: 'Beyond Workshop with Bjarte Bogsnes',
-    shortTitle: 'Beyond Workshop',
+    title: 'Beyond Workshop with Bjarte Bogsnes (Atlantic hall)',
+    shortTitle: 'Beyond Workshop (Atlantic hall)',
     speaker: SPEAKERS.BJARTE_BOGSNES,
     description: (
       <p>
@@ -684,8 +692,8 @@ export const events = [
 
   {
     id: IDS.MONOLITH,
-    title: 'Monolith to microservices',
-    shortTitle: 'Monolith→Microservice',
+    title: 'Monolith to microservices (Atlantic hall)',
+    shortTitle: 'Monolith→Microservice (Atlantic hall)',
     speaker: SPEAKERS.SAM_NEWMAN,
     color: '#844D9E',
     description: (
@@ -719,8 +727,8 @@ export const events = [
 
   {
     id: IDS.DEVELOPING_APIS,
-    title: 'Developing APIs',
-    subtitle: 'Developing APIs',
+    title: 'Developing APIs (Rederiet 6th floor)',
+    subtitle: 'Developing APIs (Rederiet 6th floor)',
     speaker: SPEAKERS.OYVIND_RONNE,
     color: '#f58db6',
     description: (
@@ -753,8 +761,8 @@ export const events = [
 
   {
     id: IDS.PYTHON_TOUR,
-    title: 'A Tour of Python',
-    shortTitle: 'Introduksjon til Python',
+    title: 'A Tour of Python (Sølvberget)',
+    shortTitle: 'Introduksjon til Python (Sølvberget)',
     speaker: SPEAKERS.OLVE_MAUDAL,
     color: '#367ABD',
     description: (
@@ -788,8 +796,8 @@ export const events = [
 
   {
     id: IDS.HACK_YOURSELF,
-    title: 'Learn to Hack Yourself',
-    shortTitle: 'Learn to Hack Yourself',
+    title: 'Learn to Hack Yourself (Kongsgaardstuen)',
+    shortTitle: 'Learn to Hack Yourself (Kongsgaardstuen)',
     speaker: SPEAKERS.TEAM_HACKYOURSELF,
     color: '#367ABD',
     description: (
@@ -821,8 +829,8 @@ export const events = [
 
     {
     id: IDS.ROBOCAR_WORKSHOP,
-    title: 'Bring Your Own Project / Robocar league',
-    shortTitle: 'Robocar league, or: BYOP',
+    title: 'Bring Your Own Project / Robocar league (Antique 2)',
+    shortTitle: 'Robocar league, or: BYOP (Antique 2)',
     speaker: SPEAKERS.THORVALD_JOHANNESSEN,
     color: '#367ABD',
     description: (
@@ -858,7 +866,8 @@ export const events = [
 
   {
     id: IDS.KUBERNETES,
-    title: 'Kubernetes',
+    title: 'Kubernetes (Kiellandstuen)',
+    shortTitle: 'Kubernetes (Kiellandstuen)',
     speaker: SPEAKERS.TEAM_RADIX,
     color: '#03D1AB',
     description: (
@@ -886,13 +895,14 @@ export const events = [
 
   {
     id: IDS.AGILE_WORKSHOP,
-    title: 'Agile Anonymous',
+    title: 'Agile Anonymous (Kannik)',
+    shortTitle: 'Agile Workshop (Kannik)',
     speaker: SPEAKERS.TEAM_ACE,
     color: '#03D1AB',
     description: (
       <p>
         {
-          'TBA'
+          ''
         }
       </p>
     ),
@@ -913,8 +923,8 @@ export const events = [
 
   {
     id: IDS.HANDS_ON_OMNIA,
-    title: 'Hands On With OMNIA',
-    shortTitle: 'Hands on Omnia',
+    title: 'Hands On With OMNIA (Valberget)',
+    shortTitle: 'Hands on Omnia (Valberget)',
     speaker: SPEAKERS.TEAM_OMNIA,
     color: '#EB7B2D',
     description: (
@@ -945,8 +955,8 @@ export const events = [
 
   {
     id: IDS.GPUMAGIC,
-    title: 'GPU Magic with Python',
-    shortTitle: 'GPU Magic',
+    title: 'GPU Magic with Python (Horizon)',
+    shortTitle: 'GPU Magic (Horizon)',
     speaker: SPEAKERS.JULIUS_PARULEK,
     color: '#EE4035',
     description: (
@@ -968,8 +978,8 @@ export const events = [
 
   {
     id: IDS.SAP_HACKATHON,
-    title: 'Equinor time writing hackathon',
-    shortTitle: 'Timewriting API',
+    title: 'Equinor time writing hackathon (Mortepumpen)',
+    shortTitle: 'Timewriting API (Mortepumpen)',
     speaker: SPEAKERS.TEAM_SAP,
     color: '#EE4035',
     description: (
@@ -1008,8 +1018,8 @@ export const events = [
 
   {
     id: IDS.ROBOT_COMPETITION,
-    title: 'Real robot competition^W hackathon',
-    shortTitle: 'Real robots',
+    title: 'Real robot competition^W hackathon (Antique 1)',
+    shortTitle: 'Real robots (Antique 1)',
     speaker: SPEAKERS.TEAM_REAL_ROBOT,
     color: '#f58db6',
     description: (
@@ -1305,14 +1315,14 @@ export const schedule = [
 
       // DEFINITION PROGRAM EOD DAY 1
       {
-        time: TIME_SLOTS['17:45-18:30'],
+        time: TIME_SLOTS['17:30-19:00'],
         events: [{ title: 'Leisure and activities [Football or CrossFit (30)]' }],
       },
       {
         time: TIME_SLOTS['19:30'],
         events: [
           {
-            title: 'Dinner (Tapas) at Atlantic',
+            title: 'Dinner (Full-course dinner) at Atlantic',
           },
         ],
         background: COLORS.LIGHT_YELLOW,
@@ -1385,12 +1395,12 @@ export const schedule = [
         ],
       },
       {
-        time: TIME_SLOTS['17:45-18:30'],
+        time: TIME_SLOTS['17:30-19:00'],
         events: [{ title: 'Leisure and activities [Football or Spinning (48)]' }],
       },
       {
         time: TIME_SLOTS['19:30'],
-        events: [{ title: 'Dinner (Banquet) at Atlantic' }],
+        events: [{ title: 'Dinner (Tapas) at Atlantic' }],
         background: COLORS.LIGHT_YELLOW,
       },
       {
@@ -1416,7 +1426,7 @@ export const schedule = [
           getLecture(IDS.GIS_INTRO),
           getLecture(IDS.GITINTRO),
           getLecture(IDS.NLP_OUTSIDE),
-          getLecture(IDS.ALGDAT),
+          getLecture(IDS.SAVE_THE_DRONE),
           getLecture(IDS.INTRO_CTF),
 
           { ...getLecture(IDS.ROBOT_COMPETITION), part: '3 of 3' },
