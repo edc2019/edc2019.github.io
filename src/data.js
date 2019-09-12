@@ -48,7 +48,7 @@ const SPEAKERS = {
   TEAM_REAL_ROBOT: 'Ole Martin Gjersvik & Kjetil Eik',
   THORVALD_JOHANNESSEN: 'Thorvald Johannessen',
   TEAM_HACKYOURSELF: 'Christian Sørseth',
-  TEAM_ACE: 'ACE TBA',
+  TEAM_ACE: 'Tor-Ivar Hals, Kristina Marie Kjønnås, Katarzyna Wdaniec',
 
   // miniworkshops
   JORGEN_KVALSVIK: 'Jørgen Kvalsvik',
@@ -624,7 +624,7 @@ export const events = [
   {
     id: IDS.PRODUCT_DEVELOPMENT,
     title: 'Three fish — Pivoting from a "Swiss watch mentality", to becoming a post-digital enterprise',
-    shortTitle: 'Three fish',
+    shortTitle: 'Three fish (Atlantic Hall)',
     speaker: SPEAKERS.PER_IVAR_SELVAAG,
     description: (
       <p>
@@ -645,12 +645,13 @@ export const events = [
   {
     id: IDS.DESIGN_SYSTEM,
     title: 'TL;DR The Equinor Design System',
-    shortTitle: 'Design System',
+    shortTitle: 'Design System (Atlantic Hall)',
     speaker: SPEAKERS.TEAM_EDS,
     description: (
       <p>
         {
-          'We will introduce you to the Equinor Design System (EDS). You will learn the benefits of design systems, and how the EDS can help your team to efficiently build consistent user interfaces. This session is for everyone involved in product development with a focus on the developer.'
+          'We will introduce you to the Equinor Design System (EDS). You will learn the benefits of design systems, and how the EDS can help your team to efficiently build consistent user interfaces. This session is for everyone involved in product development with a focus on the developer.\n\n'+
+            'https://eds.equinor.com'
         }
       </p>
     ),
@@ -895,8 +896,8 @@ export const events = [
 
   {
     id: IDS.AGILE_WORKSHOP,
-    title: 'Agile Anonymous (Kannik)',
-    shortTitle: 'Agile Workshop (Kannik)',
+    title: 'Agile Unconference (Kannik)',
+    shortTitle: 'Agile Unconference (Kannik)',
     speaker: SPEAKERS.TEAM_ACE,
     color: '#03D1AB',
     description: (
@@ -1053,7 +1054,7 @@ export const events = [
    */
 {
   id: IDS.LIGHT_TEAM_WORK,
-  title: 'Team work',
+  title: 'Team work (Rederiet)',
   speaker: 'Dregi, Blaafjell Holwech, Wesenberg',
   description: (
       <p>
@@ -1077,7 +1078,7 @@ export const events = [
 
 {
   id: IDS.LIGHT_ARCHITECTURE,
-  title: 'Architecture',
+  title: 'Architecture (Kongsgaardstuen)',
   speaker: 'Landre, Ølmheim, Wivestad',
   description: (
       <p>
@@ -1102,7 +1103,7 @@ export const events = [
 
 {
   id: IDS.LIGHT_CLOUD,
-  title: 'Cloud',
+  title: 'Cloud (Mortepumpen)',
   speaker: 'Kragebøl Thomassen, Sogaard, Hansen',
   description: (
       <p>
@@ -1127,7 +1128,7 @@ export const events = [
 
 {
   id: IDS.LIGHT_LANGS_LIBS,
-  title: 'Langs & libs',
+  title: 'Langs & libs (Kiellandstuen)',
   speaker: 'del Alamo, Wiker, Gåsemyr Magnus',
   description: (
       <p>
@@ -1151,7 +1152,7 @@ export const events = [
 
 {
   id: IDS.LIGHT_ML_DATA_ANALYSIS,
-  title: 'ML & Data analysis',
+  title: 'ML & Data analysis (Kiellandsalen)',
   speaker: 'Wade, Sundvall Fjermestad, Øren Hauge, del Alamo',
   description: (
       <p>
@@ -1176,7 +1177,7 @@ export const events = [
 
 {
   id: IDS.LIGHT_INFRASTRUCTURE,
-  title: 'Infrastructure',
+  title: 'Infrastructure (Atlantic Hall)',
   speaker: 'Nome, Tjønneland, Reed Anda, Aabakken',
   description: (
       <p>
@@ -1202,7 +1203,7 @@ export const events = [
 
 {
   id: IDS.LIGHT_SOFTWARE,
-  title: 'Software Engineering',
+  title: 'Software Engineering (Kannik)',
   speaker: 'Maudal, Hollund, Skjørestad',
   description: (
       <p>
