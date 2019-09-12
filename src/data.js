@@ -229,8 +229,8 @@ export const events = [
   },
   {
     id: IDS.CSS,
-    title: 'CSS (Rederiet)',
-    shortTitle: 'CSS (Rederiet)',
+    title: 'CSS (Rederiet 6th floor)',
+    shortTitle: 'CSS (Rederiet 6th floor)',
     speaker: SPEAKERS.VICTOR_NYSTAD,
     description: (
       <p>
@@ -1085,7 +1085,7 @@ export const events = [
    */
 {
   id: IDS.LIGHT_TEAM_WORK,
-  title: 'Team work (Rederiet)',
+  title: 'Team work (Rederiet 6th floor)',
   speaker: 'Dregi, Blaafjell Holwech, Wesenberg',
   description: (
       <p>
