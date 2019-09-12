@@ -79,6 +79,7 @@ const TIME_SLOTS = {
   '13:15': '13:15',
   '13:30-15:45': '13:00 — 15:45',
   '14:15': '14:15',
+  '14:30': '14:30',
   '15:00': '15:00',
   '15:00-17:15': '15:00 — 17:15',
   '16:15-17:15': '16:15 — 17:15',
@@ -438,12 +439,12 @@ export const events = [
     ),
     timeSlots: [
       {
-        time: TIME_SLOTS['15:00-17:15'],
-        day: CONFERENCE_DAYS.DAY_1,
-        date: CALENDAR_DATE.TUESDAY,
+        time: TIME_SLOTS['09:00-12:00'],
+        day: CONFERENCE_DAYS.DAY_3,
+        date: CALENDAR_DATE.THURSDAY,
       },
     ],
-    day: DAYS['2019-09-17'],
+    day: DAYS['2019-09-19'],
     category: CATEGORIES.MINIWORKSHOP,
   },
   {
@@ -463,11 +464,12 @@ export const events = [
     ),
     timeSlots: [
       {
-        time: TIME_SLOTS['15:00-17:15'],
-        day: CONFERENCE_DAYS.DAY_1,
-        date: CALENDAR_DATE.TUESDAY,
+        time: TIME_SLOTS['09:00-12:00'],
+        day: CONFERENCE_DAYS.DAY_3,
+        date: CALENDAR_DATE.THURSDAY,
       },
     ],
+    day: DAYS['2019-09-19'],
     category: CATEGORIES.MINIWORKSHOP,
   },
   {
@@ -486,11 +488,12 @@ export const events = [
     ),
     timeSlots: [
       {
-        time: TIME_SLOTS['15:00-17:15'],
-        day: CONFERENCE_DAYS.DAY_1,
-        date: CALENDAR_DATE.TUESDAY,
+        time: TIME_SLOTS['09:00-12:00'],
+        day: CONFERENCE_DAYS.DAY_3,
+        date: CALENDAR_DATE.THURSDAY,
       },
     ],
+    day: DAYS['2019-09-19'],
     category: CATEGORIES.MINIWORKSHOP,
   },
   {
@@ -512,11 +515,12 @@ export const events = [
     ),
     timeSlots: [
       {
-        time: TIME_SLOTS['15:00-17:15'],
-        day: CONFERENCE_DAYS.DAY_1,
-        date: CALENDAR_DATE.TUESDAY,
+        time: TIME_SLOTS['09:00-12:00'],
+        day: CONFERENCE_DAYS.DAY_3,
+        date: CALENDAR_DATE.THURSDAY,
       },
     ],
+    day: DAYS['2019-09-19'],
     category: CATEGORIES.MINIWORKSHOP,
   },
   {
@@ -534,11 +538,12 @@ export const events = [
     ),
     timeSlots: [
       {
-        time: TIME_SLOTS['15:00-17:15'],
-        day: CONFERENCE_DAYS.DAY_1,
-        date: CALENDAR_DATE.TUESDAY,
+        time: TIME_SLOTS['09:00-12:00'],
+        day: CONFERENCE_DAYS.DAY_3,
+        date: CALENDAR_DATE.THURSDAY,
       },
     ],
+    day: DAYS['2019-09-19'],
     category: CATEGORIES.MINIWORKSHOP,
   },
   {
@@ -565,11 +570,12 @@ export const events = [
     ),
     timeSlots: [
       {
-        time: TIME_SLOTS['15:00-17:15'],
-        day: CONFERENCE_DAYS.DAY_1,
-        date: CALENDAR_DATE.TUESDAY,
+        time: TIME_SLOTS['09:00-12:00'],
+        day: CONFERENCE_DAYS.DAY_3,
+        date: CALENDAR_DATE.THURSDAY,
       },
     ],
+    day: DAYS['2019-09-19'],
     category: CATEGORIES.MINIWORKSHOP,
   },
   {
@@ -593,32 +599,38 @@ export const events = [
     ),
     timeSlots: [
       {
-        time: TIME_SLOTS['15:00-17:15'],
-        day: CONFERENCE_DAYS.DAY_1,
-        date: CALENDAR_DATE.TUESDAY,
+        time: TIME_SLOTS['09:00-12:00'],
+        day: CONFERENCE_DAYS.DAY_3,
+        date: CALENDAR_DATE.THURSDAY,
       },
     ],
+    day: DAYS['2019-09-19'],
     category: CATEGORIES.MINIWORKSHOP,
   },
   {
     id: IDS.BEYOND_WORKSHOP,
-    title: 'Beyond Workshop with Bjarte Bogsnes (Atlantic hall)',
-    shortTitle: 'Beyond Workshop (Atlantic hall)',
+    title: 'Beyond Budgeting — Business agility in practice Bjarte Bogsnes (Atlantic hall)',
+    shortTitle: 'Beyond Budgeting — Business agility in practice (Atlantic hall)',
     speaker: SPEAKERS.BJARTE_BOGSNES,
     description: (
       <p>
         {
-          'TBA'
+          'Beyond Budgetting - Business agility in practice (Bjarte Bogsnes)\n'+
+            '\n'+
+            'We know that command & control doesn\'t work well in complex environments. But what is the alternative? Bjarte Bogsnes and Beyond Budgeting is providing answers.\n'+
+            '\n'+
+            'In this 3 hour workshop you will learn about aspects of the adaptive management model Beyond Budgeting, from background to philosophy to its 12 principles covering leadership and management, and the close relationship between Beyond Budgeting and Agile. Attendees will understand how to trust and empower without losing control, and learn how to redefine performance – with dynamic and relative targets (or no targets at all) and a holistic performance evaluation.\n'
         }
       </p>
     ),
     timeSlots: [
       {
-        time: TIME_SLOTS['15:00-17:15'],
-        day: CONFERENCE_DAYS.DAY_1,
-        date: CALENDAR_DATE.TUESDAY,
+        time: TIME_SLOTS['09:00-12:00'],
+        day: CONFERENCE_DAYS.DAY_3,
+        date: CALENDAR_DATE.THURSDAY,
       },
     ],
+    day: DAYS['2019-09-19'],
     category: CATEGORIES.MINIWORKSHOP,
   },
 
@@ -1438,7 +1450,7 @@ export const schedule = [
 
       // DEFINITION PROGRAM MINIWORKSHOPS
       {
-        time: TIME_SLOTS['15:00-17:15'],
+        time: TIME_SLOTS['09:00-12:00'],
         heading: HEADINGS.MINIWORKSHOPS,
         events: [
           getLecture(IDS.PYTHON_LIBS),
@@ -1469,7 +1481,12 @@ export const schedule = [
 
       {
         time: TIME_SLOTS['13:15'],
-        events: [{ title: 'Systems thinking with Bjarte Bogsnes (Atlantic Hall)', color: '#ec384a' }],
+        events: [
+          { title: 'Business agility with Bjarte Bogsnes (Atlantic Hall)',
+            color: '#ec384a',
+            speaker: SPEAKERS.BJARTE_BOGSNES,
+          }
+        ],
       },
 
 
