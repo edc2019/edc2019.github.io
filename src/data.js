@@ -232,13 +232,15 @@ export const events = [
   },
   {
     id: IDS.CSS,
-    title: 'CSS (Rederiet 6th floor)',
+    title: 'Styling components – a CSS crash course (Rederiet 6th floor)',
     shortTitle: 'CSS (Rederiet 6th floor)',
     speaker: SPEAKERS.VICTOR_NYSTAD,
     description: (
       <p>
         {
-          'TBA'
+'Preparations: Install Node.js (latest), a Git client, Chrome and VS Code (out-of-the-box without third-party extensions).\n\n'+
+'No prior CSS knowledge required.\n\n'+          
+'In this workshop we’ll go through some fundamental concepts in CSS and look at different strategies for styling components'
         }
       </p>
     ),
