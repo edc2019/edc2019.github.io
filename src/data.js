@@ -68,8 +68,8 @@ const TIME_SLOTS = {
   'LIGHTNING': '10:10 — 11:00',
   'LANGUAGE': '13:30 — 16:00',
   'LANGUAGE_SHORT': '13:30 — 15:00',  // only for pgdr open source
-  'WORKSHOP_1': '10:30 — 11:20',
-  'WORKSHOP_2': '13:30 — 15:45',
+  'WORKSHOP_1': '10:15 — 12:30',
+  'WORKSHOP_2': '13:30 — 17:00',
   'WORKSHOP_3': '09:00 — 12:00',  // same as MINIWORKSHOP
   'MINIWORKSHOP': '09:00 — 12:00',
   'KEYNOTE_1': '09:00 — 10:00',
@@ -77,8 +77,9 @@ const TIME_SLOTS = {
   'LUNCH_DAY1': '12:30',
   'LUNCH_DAY2': '12:30',
   'LUNCH_DAY3': '12:15',
-  'PLENARY_1_1': '11:30 — 12:20',
+  'PLENARY_1_1': '11:30 — 12:30',
   'PLENARY_1_2': '16:15 — 17:15',
+  'PLENARY_3_1': '13:15 — 14:15',
   'LEISURE_TIME': '17:30 — 19:00',
   'DINNER': '19:30',
 };
@@ -1273,7 +1274,7 @@ export const events = [
         'Software Engineering\n\n'+
           '1. Technical debt is good! (Olve Maudal)\n'+
           '2. FLOSS - Free/Libre Open Source Software (Knut Erik Hollund)\n'+
-          '3. Security in development (Lars Kåre Skjørestad)'
+          '3. Security alerts on github.com (Lars Kåre Skjørestad)'
       }
     </p>
   ),
@@ -1512,7 +1513,7 @@ export const schedule = [
 
 
       {
-        time: '13:15 — 14:15',
+        time: TIME_SLOTS['PLENARY_3_1'],
         events: [
           { title: 'Business agility (Atlantic Hall)',
             color: '#ec384a',
@@ -1524,20 +1525,20 @@ export const schedule = [
 
 
       {
-        time: TIME_SLOTS['14:15'],
+        time: '14:15',
         events: [{ title: 'Summary (Atlantic Hall)', color: '#ec384a' }],
       },
 
 
 
       {
-        time: TIME_SLOTS['14:30'],
+        time: '14:30',
         events: [{ title: 'Bus to airport 🛫', color: '#ec384a' }],
       },
 
 
       {
-        time: TIME_SLOTS['15:00'],
+        time: '15:00',
         events: [{ title: 'EOC' }],
       },
 
