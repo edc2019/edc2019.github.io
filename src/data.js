@@ -6,7 +6,7 @@ const CATEGORIES = {
   MINIWORKSHOP: 'Miniworkshop',
   WORKSHOP: 'Workshop',
   LIGHTNING: 'Lightning talks',
-  CONTRIBUTED_LECTURE: 'Contributed lecture',
+  PLENARY: 'Plenary',
 };
 
 const HEADINGS = {
@@ -15,7 +15,7 @@ const HEADINGS = {
   LANGUAGES: 'Languages',
   WORKSHOPS: 'Workshops',
   MINIWORKSHOPS: 'Miniworkshops',
-  CONTRIBUTED_LECTURE: 'Plenary ',
+  PLENARY: 'Plenary',
 };
 
 const SPEAKERS = {
@@ -63,6 +63,8 @@ const SPEAKERS = {
 
 const TIME_SLOTS = {
   // named timeslots
+  'REGISTRATION': '08:15 — 08:45',
+  'WELCOME': '08:45 — 09:00',
   'LIGHTNING': '10:10 — 11:00',
   'LANGUAGE': '13:30 — 16:00',
   'LANGUAGE_SHORT': '13:30 — 15:00',  // only for pgdr open source
@@ -70,37 +72,15 @@ const TIME_SLOTS = {
   'WORKSHOP_2': '13:30 — 15:45',
   'WORKSHOP_3': '09:00 — 12:00',  // same as MINIWORKSHOP
   'MINIWORKSHOP': '09:00 — 12:00',
+  'KEYNOTE_1': '09:00 — 10:00',
+  'KEYNOTE_2': '09:00 — 10:00',
   'LUNCH_DAY1': '12:30',
   'LUNCH_DAY2': '12:30',
   'LUNCH_DAY3': '12:15',
-  // random times
-  '08:15-08:45': '08:15 — 08:45',
-  '08:45-09:00': '08:45 — 09:00',
-  '09:00': '09:00',
-  '09:00-10:00': '09:00 — 10:00',
-  '09:00-10:15': '09:00 — 10:15',
-  '09:00-12:00': '09:00 — 12:00',
-  '09:15': '09:15',
-  '10:15': '10:15',
-  '10:15-12:00': '10:15 — 12:00',
-  '10:30-11:20': '10:30 — 11:20',
-  '11:30-12:20': '11:30 — 12:20',
-  '12:15': '12:15',
-  '12:30': '12:30',
-  '13:00': '13:00',
-  '13:15': '13:15',
-  '13:30-15:45': '13:00 — 15:45',
-  '14:15': '14:15',
-  '14:30': '14:30',
-  '15:00': '15:00',
-  '15:00-17:15': '15:00 — 17:15',
-  '16:15-17:15': '16:15 — 17:15',
-  '17:30': '17:30',
-  '17:30-19:00': '17:30 — 19:00',
-  '17:45-18:30': '17:45 — 18:30',
-  '19:00': '19:00',
-  '19:30': '19:30',
-  '21:00': '21:00',
+  'PLENARY_1_1': '11:30 — 12:20',
+  'PLENARY_1_2': '16:15 — 17:15',
+  'LEISURE_TIME': '17:30 — 19:00',
+  'DINNER': '19:30',
 };
 
 const CALENDAR_DATE = {
@@ -191,6 +171,7 @@ const IDS = {
 };
 
 export const events = [
+
   {
     id: IDS.KEYNOTE_MICROSERVICES_AND_SERVERLESS,
     title:
@@ -206,7 +187,7 @@ export const events = [
     ),
     timeSlots: [
       {
-        time: TIME_SLOTS['09:00-10:00'],
+        time: TIME_SLOTS['KEYNOTE_1'],
         day: CONFERENCE_DAYS.DAY_1,
         date: CALENDAR_DATE.TUESDAY,
       },
@@ -672,13 +653,14 @@ export const events = [
     ),
     timeSlots: [
       {
-        time: TIME_SLOTS['11:30-12:20'],
+        time: TIME_SLOTS['PLENARY_1_1'],
         day: CONFERENCE_DAYS.DAY_1,
         date: CALENDAR_DATE.TUESDAY,
       },
     ],
-    category: CATEGORIES.CONTRIBUTED_LECTURE,
+    category: CATEGORIES.PLENARY,
   },
+
   {
     id: IDS.DESIGN_SYSTEM,
     title: 'TL;DR The Equinor Design System',
@@ -694,12 +676,12 @@ export const events = [
     ),
     timeSlots: [
       {
-        time: TIME_SLOTS['16:15-17:15'],
+        time: TIME_SLOTS['PLENARY_1_2'],
         day: CONFERENCE_DAYS.DAY_1,
         date: CALENDAR_DATE.TUESDAY,
       },
     ],
-    category: CATEGORIES.CONTRIBUTED_LECTURE,
+    category: CATEGORIES.PLENARY,
   },
 
 
@@ -719,7 +701,7 @@ export const events = [
     ),
     timeSlots: [
       {
-        time: TIME_SLOTS['09:00-10:00'],
+        time: TIME_SLOTS['KEYNOTE_2'],
         day: CONFERENCE_DAYS.DAY_2,
         date: CALENDAR_DATE.WEDNESDAY,
       },
@@ -1319,19 +1301,19 @@ export const schedule = [
     calendarDate: CALENDAR_DATE.TUESDAY,
     timeSlots: [
       {
-        time: TIME_SLOTS['08:15-08:45'],
+        time: TIME_SLOTS['REGISTRATION'],
         events: [{ title: 'Registration' }],
         background: COLORS.LIGHT_YELLOW,
       },
 
       {
-        time: TIME_SLOTS['08:45-09:00'],
+        time: TIME_SLOTS['WELCOME'],
         events: [{ title: 'Welcome to EDC2019' }],
         background: COLORS.SPRUCE_WOOD,
       },
 
       {
-        time: TIME_SLOTS['09:00-10:00'],
+        time: TIME_SLOTS['KEYNOTE_1'],
         heading: HEADINGS.KEYNOTE,
         events: [getLecture(IDS.KEYNOTE_MICROSERVICES_AND_SERVERLESS)],
       },
@@ -1353,8 +1335,8 @@ export const schedule = [
 
       // DEFINITION PROGRAM PLENARY (PER IVAR) before lunch
       {
-        time: '11:30 — 12:30',
-        heading: HEADINGS.CONTRIBUTED_LECTURE,
+        time: TIME_SLOTS['PLENARY_1_1'],
+        heading: HEADINGS.PLENARY,
         events: [getLecture(IDS.PRODUCT_DEVELOPMENT)],
       },
 
@@ -1386,8 +1368,8 @@ export const schedule = [
 
       // DEFINITION PROGRAM PLENARY 2 (Victor) after lunch
       {
-        time: TIME_SLOTS['16:15-17:15'],
-        heading: HEADINGS.CONTRIBUTED_LECTURE,
+        time: TIME_SLOTS['PLENARY_1_2'],
+        heading: HEADINGS.PLENARY,
         events: [getLecture(IDS.DESIGN_SYSTEM)],
       },
 
@@ -1396,11 +1378,11 @@ export const schedule = [
 
       // DEFINITION PROGRAM EOD DAY 1
       {
-        time: TIME_SLOTS['17:30-19:00'],
+        time: TIME_SLOTS['LEISURE_TIME'],
         events: [{ title: 'Leisure and activities [Football or CrossFit (30)]' }],
       },
       {
-        time: TIME_SLOTS['19:30'],
+        time: TIME_SLOTS['DINNER'],
         events: [
           {
             title: 'Dinner (Full-course dinner) at Atlantic hall',
@@ -1409,7 +1391,7 @@ export const schedule = [
         background: COLORS.LIGHT_YELLOW,
       },
       {
-        time: TIME_SLOTS['21:00'],
+        time: '21:00',
         events: [{ title: 'Meet your colleagues' }],
       },
     ],
@@ -1422,13 +1404,13 @@ export const schedule = [
     calendarDate: CALENDAR_DATE.WEDNESDAY,
     timeSlots: [
       {
-        time: TIME_SLOTS['08:45-09:00'],
+        time: TIME_SLOTS['WELCOME'],
         events: [{ title: 'Introducing workshops (Atlantic Hall)' }],
         background: COLORS.SPRUCE_WOOD,
       },
 
       {
-        time: TIME_SLOTS['09:00-10:00'],
+        time: TIME_SLOTS['KEYNOTE_2'],
         heading: HEADINGS.KEYNOTE,
         events: [getLecture(IDS.KEYNOTE_EVOLUTIONARY_ARCHITECTURE)],
       },
@@ -1475,16 +1457,16 @@ export const schedule = [
         ],
       },
       {
-        time: TIME_SLOTS['17:30-19:00'],
+        time: TIME_SLOTS['LEISURE_TIME'],
         events: [{ title: 'Leisure and activities [Football or Spinning (48)]' }],
       },
       {
-        time: TIME_SLOTS['19:30'],
+        time: TIME_SLOTS['DINNER'],
         events: [{ title: 'Dinner (Tapas) at Atlantic hall' }],
         background: COLORS.LIGHT_YELLOW,
       },
       {
-        time: TIME_SLOTS['21:00'],
+        time: '21:00',
         events: [{ title: 'Meet your colleagues' }],
       },
     ],
@@ -1522,7 +1504,7 @@ export const schedule = [
 
 
       {
-        time: TIME_SLOTS['12:15'],
+        time: TIME_SLOTS['LUNCH_DAY3'],
         events: [{ title: 'Lunch' }],
         background: COLORS.LIGHT_YELLOW,
       },
