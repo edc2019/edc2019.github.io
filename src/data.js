@@ -1135,14 +1135,15 @@ export const events = [
 {
   id: IDS.LIGHT_ARCHITECTURE,
   title: 'Architecture (Kongsgaardstuen)',
-  speaker: 'Landre, Ølmheim, Wivestad',
+  speaker: 'Landre, Ølmheim, Eskov, Wivestad',
   description: (
       <p>
       {
         'Architecture\n\n'+
           '1. Domain Driven Design (Einar Landre)\n'+
           '2. What is EITA and why should I care? (Jørn Ølmheim)\n'+
-          '3. 3rd party components in software projects (Anton Eskov)\n4. Realizing the potential (Bjørn-Ovin Wivestad)'
+          '3. 3rd party components in software projects (Anton Eskov)\n'+
+          '4. Realizing the potential (Bjørn-Ovin Wivestad)'
       }
     </p>
   ),
