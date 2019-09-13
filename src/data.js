@@ -809,7 +809,16 @@ export const events = [
     description: (
       <p>
         {
-          'Hands-on workshop focusing on web and mobile security, aiming to increase the security awareness for software developers. It looks at security from the attacker\'s perspective and takes them through the steps necessary to exploit vulnerable software on the web. Vulnerabilities like Cross-site Scripting (XSS), SQL Injection, Cross-Site Request Forgery (CSRF) ect. will be covered in this workshop.'
+          'Hands-on workshop focusing on web and mobile security, aiming to increase the security awareness for software developers. It looks at security from the attacker\'s perspective and takes them through the steps necessary to exploit vulnerable software on the web.\n\n'+
+            'Vulnerabilities like Cross-site Scripting (XSS), SQL Injection, Cross-Site Request Forgery (CSRF) ect. will be covered in this workshop.\n\n'+
+            'Partisipants should have the following software installed:\n'+
+            ' - Fiddler https://www.telerik.com/fiddler\n'+
+            ' - Python 3 https://www.python.org/downloads/\n'+
+            ' - Sqlmap http://sqlmap.org/\n'+
+            '\n'+
+            'Verify sqlmap by running sqlmap.py\n\n'+
+            'Target group for workshop is software developers, system administrators and testers.\n\n'+
+            'Level: Beginner'
         }
       </p>
     ),
