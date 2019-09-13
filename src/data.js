@@ -1038,7 +1038,7 @@ export const events = [
   {
     id: IDS.SAP_HACKATHON,
     title: 'Equinor time writing hackathon (Mortepumpen)',
-    shortTitle: 'Timewriting API (Mortepumpen)',
+    shortTitle: 'Timewriting hackathon (Mortepumpen)',
     speaker: SPEAKERS.TEAM_SAP,
     color: '#EE4035',
     description: (
