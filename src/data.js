@@ -200,7 +200,7 @@ export const events = [
     ),
     timeSlots: [
       {
-        time: TIME_SLOTS['09:00-10:15'],
+        time: TIME_SLOTS['09:00-10:00'],
         day: CONFERENCE_DAYS.DAY_1,
         date: CALENDAR_DATE.TUESDAY,
       },
@@ -232,8 +232,8 @@ export const events = [
   },
   {
     id: IDS.CSS,
-    title: 'CSS (Rederiet 6th floor)',
-    shortTitle: 'CSS (Rederiet 6th floor)',
+    title: 'CSS (Horizon)',
+    shortTitle: 'CSS (Horizon)',
     speaker: SPEAKERS.VICTOR_NYSTAD,
     description: (
       <p>
@@ -253,8 +253,8 @@ export const events = [
   },
   {
     id: IDS.LUA,
-    title: 'love = require("lua") (Horizon)',
-    shortTitle: 'Lua (Horizon)',
+    title: 'love = require("lua") (Rederiet 6th floor)',
+    shortTitle: 'Lua (Rederiet 6th floor)',
     speaker: SPEAKERS.JUAN_ALAMO,
     description: (
       <p>
@@ -1274,20 +1274,22 @@ export const schedule = [
         events: [{ title: 'Registration' }],
         background: COLORS.LIGHT_YELLOW,
       },
+
       {
         time: TIME_SLOTS['08:45-09:00'],
         events: [{ title: 'Welcome to EDC2019' }],
         background: COLORS.SPRUCE_WOOD,
       },
+
       {
-        time: TIME_SLOTS['09:00-10:15'],
+        time: TIME_SLOTS['09:00-10:00'],
         heading: HEADINGS.KEYNOTE,
         events: [getLecture(IDS.KEYNOTE_MICROSERVICES_AND_SERVERLESS)],
       },
 
       // DEFINITION PROGRAM LIGHTNING TALKS
       {
-        time: TIME_SLOTS['10:30-11:20'],
+        time: '10:10 — 11:00',
         heading: HEADINGS.LIGHTNING,
         events: [
           getLecture(IDS.LIGHT_TEAM_WORK),
@@ -1300,14 +1302,12 @@ export const schedule = [
         ],
       },
 
-
       // DEFINITION PROGRAM PLENARY (PER IVAR) before lunch
       {
-        time: TIME_SLOTS['11:30-12:20'],
+        time: '11:30 — 12:30',
         heading: HEADINGS.CONTRIBUTED_LECTURE,
         events: [getLecture(IDS.PRODUCT_DEVELOPMENT)],
       },
-
 
       {
         time: TIME_SLOTS['12:30'],
@@ -1319,7 +1319,7 @@ export const schedule = [
 
       // DEFINITION PROGRAM LANGUAGES
       {
-        time: TIME_SLOTS['13:30-15:45'],
+        time: '13:30 — 16:00',
         heading: HEADINGS.LANGUAGES,
         events: [
           getLecture(IDS.DEEPC),
@@ -1354,7 +1354,7 @@ export const schedule = [
         time: TIME_SLOTS['19:30'],
         events: [
           {
-            title: 'Dinner (Full-course dinner) at Atlantic',
+            title: 'Dinner (Full-course dinner) at Atlantic hall',
           },
         ],
         background: COLORS.LIGHT_YELLOW,
@@ -1373,28 +1373,25 @@ export const schedule = [
     calendarDate: CALENDAR_DATE.WEDNESDAY,
     timeSlots: [
       {
-        time: TIME_SLOTS['08:15-08:45'],
-        events: [{ title: 'Good morning (Atlantic Hall)' }],
-        background: COLORS.LIGHT_YELLOW,
-      },
-      {
         time: TIME_SLOTS['08:45-09:00'],
         events: [{ title: 'Introducing workshops (Atlantic Hall)' }],
         background: COLORS.SPRUCE_WOOD,
       },
+
       {
         time: TIME_SLOTS['09:00-10:00'],
         heading: HEADINGS.KEYNOTE,
         events: [getLecture(IDS.KEYNOTE_EVOLUTIONARY_ARCHITECTURE)],
       },
+
       {
-        time: TIME_SLOTS['10:30-11:20'],
+        time: '10:15 — 12:30',
         heading: HEADINGS.WORKSHOPS,
         events: [
           { ...getLecture(IDS.MONOLITH), part: '1 of 2' },
           { ...getLecture(IDS.DEVELOPING_APIS), part: '1 of 2' },
           { ...getLecture(IDS.KUBERNETES), part: '1 of 2' },
-          { ...getLecture(IDS.GPUMAGIC), part: '1 of 1' },
+          { ...getLecture(IDS.GPUMAGIC), part: '1 of 2' },
           { ...getLecture(IDS.SAP_HACKATHON), part: '1 of 3' },
           { ...getLecture(IDS.HANDS_ON_OMNIA), part: '1 of 2' },
           { ...getLecture(IDS.PYTHON_TOUR), part: '1 of 2' },
@@ -1404,13 +1401,15 @@ export const schedule = [
           { ...getLecture(IDS.AGILE_WORKSHOP), part: '1 of 2' },
         ],
       },
+
       {
-        time: TIME_SLOTS['13:00'],
+        time: TIME_SLOTS['12:30'],
         events: [{ title: 'Lunch' }],
         background: COLORS.LIGHT_YELLOW,
       },
+
       {
-        time: TIME_SLOTS['13:30-15:45'],
+        time: '13:30 — 17:00',
         heading: HEADINGS.WORKSHOPS,
         events: [
           { ...getLecture(IDS.MONOLITH), part: '2 of 2' },
@@ -1432,7 +1431,7 @@ export const schedule = [
       },
       {
         time: TIME_SLOTS['19:30'],
-        events: [{ title: 'Dinner (Tapas) at Atlantic' }],
+        events: [{ title: 'Dinner (Tapas) at Atlantic hall' }],
         background: COLORS.LIGHT_YELLOW,
       },
       {
@@ -1481,9 +1480,9 @@ export const schedule = [
 
 
       {
-        time: TIME_SLOTS['13:15'],
+        time: '13:15 — 14:15',
         events: [
-          { title: 'Business agility with Bjarte Bogsnes (Atlantic Hall)',
+          { title: 'Business agility (Atlantic Hall)',
             color: '#ec384a',
             speaker: SPEAKERS.BJARTE_BOGSNES,
           }
