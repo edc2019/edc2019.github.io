@@ -619,8 +619,13 @@ export const events = [
             ' - Running experiments remotely on a Databricks-cluster in Azure.\n'+
             ' - Evaluating results of experiments and choosing a model to deploy.\n'+
             ' - Deploy the selected model to production in Azure.\n'+
-            '\n\n'+
-            'Making requests to the model.The workshop will be held on a Windows computer with elevated privileges. Recommended prerequisites are Ubuntu (Windows Subsystem for Linux), and a guide to install it may be found here. In order to follow all parts of the workshop, access to run jobs on a databricks-cluster (DataplatformDBricksDev) in OMNIA is required. This should be available to all with OMNIA DEVELOPER or OMNIA DATA SCIENTIST roles, which may be requested through AccessIT. This is not a requirement to benefit from the workshop.'
+            ' - Making requests to the model.\n'+
+            '\n'+
+            'The workshop will be held on a Windows computer with elevated privileges.\n'+
+            '\n'+
+            'Recommended prerequisites are Ubuntu (Windows Subsystem for Linux).\n'+
+            '\n'+
+            'In order to follow all parts of the workshop, access to run jobs on a databricks-cluster (DataplatformDBricksDev) in OMNIA is required. This should be available to all with OMNIA DEVELOPER or OMNIA DATA SCIENTIST roles, which may be requested through AccessIT. This is not a requirement to benefit from the workshop.'
         }
       </p>
     ),
