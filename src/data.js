@@ -7,6 +7,7 @@ const CATEGORIES = {
   WORKSHOP: 'Workshop',
   LIGHTNING: 'Lightning talks',
   PLENARY: 'Plenary',
+  LEISURE: 'Leisure and activities time',
 };
 
 const HEADINGS = {
@@ -169,6 +170,10 @@ const IDS = {
   INTRO_CTF: 'intro_ctf',
   MLFLOW: 'mlflow',
   BEYOND_WORKSHOP: 'beyond_workshop',
+
+  // YMSE
+  LEISURE_1: 'leisure_1',
+  LEISURE_2: 'leisure_2',
 };
 
 export const events = [
@@ -1329,6 +1334,92 @@ export const events = [
     category: CATEGORIES.LIGHTNING,
 },
 
+  // LEISURE STUFF
+  {
+  id: IDS.LEISURE_1,
+  title: 'Leisure and activities [Football or Crosstraining (30)]',
+  speaker: 'Magrete & Lars Kåre',
+  description: (
+      <p>
+      {
+'Fotball:\n'+
+'\n'+
+'Find Magrete or Kirsti!\n'+
+'\n'+
+'\n'+
+'Crosstraining:\n'+
+'\n'+
+'Timene gjennomføres på SATS St.Olav\n'+
+'\n'+
+'Link til beskrivelse av Crosstraining: https://www.sats.no/trening/gruppetrening/crosstraining/\n'+
+'\n'+
+'Praktisk informasjon Crosstraining\n'+
+'Produkt: Crosstraining\n'+
+'Lokasjon: SATS St.Olav\n'+
+'Dato: 17.09.19\n'+
+'Dag: Tirsdag\n'+
+'Varighet: 17:55 – 18:40\n'+
+'\n'+
+'\n'+
+'Hvis du ikke allerede er medlem i SATS, så oppgir du i resepsjonen at du er fra Equinor, og skal delta på fellestreningstimen. Du vil da bli sluppet gjennom porten. Selv om du ikke er medlem så disponerer du selvfølgelig garderobefasilitetene på senteret i forbindelse med gjennomføringen av timen. Husk treningstøy, håndkle, toalettsaker og hengelås.\n'
+      }
+    </p>
+  ),
+    timeSlots: [
+      {
+        time: TIME_SLOTS['LEISURE_TIME'],
+        day: CONFERENCE_DAYS.DAY_1,
+        date: CALENDAR_DATE.TUESDAY,
+      },
+    ],
+    day: CONFERENCE_DAYS.DAY_1,
+    category: CATEGORIES.LEISURE,
+},
+
+  {
+  id: IDS.LEISURE_2,
+  title: 'Leisure and activities [Football or Spinning (48)]',
+  speaker: 'Magrete & Lars Kåre',
+  description: (
+      <p>
+      {
+'Fotball:\n'+
+'\n'+
+'Find Magrete or Kirsti!\n'+
+'\n'+
+'\n'+
+'Spinning:\n'+
+'\n'+
+'Timene gjennomføres på SATS St.Olav\n'+
+'\n'+
+'Under finner dere linker som beskriver disse to timene:\n'+
+'\n'+
+'Link til beskrivelse av Spinning: https://www.sats.no/trening/gruppetrening/cycling/\n'+
+'\n'+
+'Praktisk informasjon Spinning\n'+
+'\n'+
+'Produkt: Spinning\n'+
+'Lokasjon: SATS St.Olav\n'+
+'Dato: 18.09.19\n'+
+'Dag: Onsdag\n'+
+'Varighet: 17:45 – 18:30\n'+
+'\n'+
+'\n'+
+'Hvis du ikke allerede er medlem i SATS, så oppgir du i resepsjonen at du er fra Equinor, og skal delta på fellestreningstimen. Du vil da bli sluppet gjennom porten. Selv om du ikke er medlem så disponerer du selvfølgelig garderobefasilitetene på senteret i forbindelse med gjennomføringen av timen. Husk treningstøy, håndkle, toalettsaker og hengelås.\n'
+      }
+    </p>
+  ),
+    timeSlots: [
+      {
+        time: TIME_SLOTS['LEISURE_TIME'],
+        day: CONFERENCE_DAYS.DAY_1,
+        date: CALENDAR_DATE.TUESDAY,
+      },
+    ],
+    day: CONFERENCE_DAYS.DAY_1,
+    category: CATEGORIES.LEISURE,
+},
+
 
 
 
@@ -1421,7 +1512,7 @@ export const schedule = [
       // DEFINITION PROGRAM EOD DAY 1
       {
         time: TIME_SLOTS['LEISURE_TIME'],
-        events: [{ title: 'Leisure and activities [Football or CrossFit (30)]' }],
+        events: [getLecture(IDS.LEISURE_1)],
       },
       {
         time: TIME_SLOTS['DINNER'],
@@ -1498,10 +1589,12 @@ export const schedule = [
           { ...getLecture(IDS.AGILE_WORKSHOP), part: '2 of 2' },
         ],
       },
+
       {
         time: TIME_SLOTS['LEISURE_TIME'],
-        events: [{ title: 'Leisure and activities [Football or Spinning (48)]' }],
+        events: [getLecture(IDS.LEISURE_2)],
       },
+
       {
         time: TIME_SLOTS['DINNER'],
         events: [{ title: 'Dinner (Tapas) at Atlantic hall' }],
