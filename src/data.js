@@ -416,7 +416,7 @@ export const events = [
         {
           'Preparations:\n'+
             ' - Docker installed and working on your machine.\n'+
-            ' - Follow the instructions at https://github.com/equinor/edc2019-docker\n'+
+            ' - Follow the instructions at https://equinor.github.io/edc2019-docker/\n'+
             '\n'+
             'For:\n'+
             ' - People interested in cloud and modern building and deployment practices\n' +
