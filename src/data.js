@@ -242,7 +242,9 @@ export const events = [
             ' - Chrome and \n'+
             ' - VS Code (out-of-the-box without third-party extensions).\n\n'+
             'No prior CSS knowledge required.\n\n'+
-            'In this workshop we\'ll go through some fundamental concepts in CSS and look at different strategies for styling components.'
+            'In this workshop we\'ll go through some fundamental concepts in CSS and look at different strategies for styling components.\n\n\n'+
+            '#edc2019-css-workshop at equinor.slack.com'
+
         }
       </p>
     ),
@@ -258,7 +260,7 @@ export const events = [
   },
   {
     id: IDS.LUA,
-    title: 'love = require("lua") (Rederiet 6th floor)',
+    title: 'From Lua with LÖVE (Rederiet 6th floor)',
     shortTitle: 'Lua (Rederiet 6th floor)',
     speaker: SPEAKERS.JUAN_ALAMO,
     description: (
@@ -271,7 +273,8 @@ export const events = [
 'To follow the content an participate, for Windows Equinor machines I recommend\n\n'+
 ' - download the Windows 32bit zip archive from the ZeroBrane download page (https://studio.zerobrane.com/download?not-this-time) and\n\n'+
 ' - the 32 or 64 bit zipped archive from the LÖVE download page (https://love2d.org/).\n\n'+
-'For Mac and Linux just use the distribution packages.\n\n'
+            'For Mac and Linux just use the distribution packages.\n\n\n'+
+            '#edc2019-lua at equinor.slack.com'
         }
       </p>
     ),
@@ -411,9 +414,17 @@ export const events = [
     description: (
       <p>
         {
-          'Preparations: Docker installed and working on your machine. Follow the instructions at https://edc2019.github.io/\n'+
-            'For: People interested in cloud and modern building and deployment practices\n' +
-            'Outcome: To have a basic understanding of the history and benefits of Docker as well as enough practical experience to start using it in simple projects.'
+          'Preparations:\n'+
+            ' - Docker installed and working on your machine.\n'+
+            ' - Follow the instructions at https://github.com/equinor/edc2019-docker\n'+
+            '\n'+
+            'For:\n'+
+            ' - People interested in cloud and modern building and deployment practices\n' +
+            '\n'+
+            'Outcome:\n'+
+            ' - To have a basic understanding of the history and benefits of Docker as well as enough practical experience to start using it in simple projects.\n\n\n'+
+            '#edc2019-docker at equinor.slack.com'
+
         }
       </p>
     ),
@@ -440,11 +451,16 @@ export const events = [
     description: (
       <p>
         {
-          'This is an introduction to version control system and specifically git.\n\n'+
-'Prerequisites: None, but it is good if you manage to install Git Bash if you\'re on Windows!\n\n'+
-'Target audience: People who want to get started with Git and version control, either for configs, source code, or other textual data.\n\n'+
-'We go through the basics of distributed version control and make and edit/rebase commits, create and merge branches, revert and fix conflicts, and use several remotes.'
-
+          'This is an introduction to version control system and specifically git.\n'+
+            '\n'+
+            'Prerequisites:\n'+
+            ' - Get Elevated Priveleges or at least the Elevated Installer if on Equinor Windows\n'+
+            ' - Install Git Bash if you\'re on Windows!\n'+
+            ' - Launch the terminal and type git if you\'re on a macOS\n'+
+            '\n'+
+            'Target audience:\n'+
+            ' - People who want to get started with Git and version control, either for configs, source code, or other textual data.\n\n'+
+            'We go through the basics of distributed version control and make and edit/rebase commits, create and merge branches, revert and fix conflicts, and use several remotes.'
         }
       </p>
     ),
@@ -862,7 +878,8 @@ export const events = [
 'Join in and become a founder of the first EDC Robocar league!\n\n'+
 'We\'ll provide the parts to build two complete Robocars, using the Donkey car setup. A project suitable for two or three persons pr. car.\n\n'+
 'Build it, drive it, and then learn it how to drive itself.\n\n'+
-'This project will require some effort. And we are not by any means confident that we\'ll complete the project during these two days. But what a great start it can be for your new favorite hobby?\n\n'
+            'This project will require some effort. And we are not by any means confident that we\'ll complete the project during these two days. But what a great start it can be for your new favorite hobby?\n\n\n'+
+            '#robocar at equinor.slack.com'
         }
       </p>
     ),
@@ -896,7 +913,8 @@ export const events = [
       <p>
         {
           'Kubernetes is an open source container-orchestration system, and is one of the fastest growing open source projects. It supports cloud-native applications by deploying them as microservices, packaging each part into its own container, and dynamically orchestrating those containers to optimise resource utilisation.\n\n'+
-            'In this workshop, we will introduce the fundamentals of Kubernetes and get our hands dirty deploying microservices to a Kubernetes cluster'
+            'In this workshop, we will introduce the fundamentals of Kubernetes and get our hands dirty deploying microservices to a Kubernetes cluster\n\n\n'+
+            '#edc2019-kubernetes at equinor.slack.com'
         }
       </p>
     ),
@@ -984,10 +1002,11 @@ export const events = [
       <p>
         {
           'Omnia is Equinor\'s new IT platform and will be central to how we develop going forwards. In this workshop we will give a short overview of what Omnia is before focussing on the data platform and the different options available. The hands on tutorial will cover the steps to build an end-to-end data pipeline from data ingestion, storage, compute, API creation and consumption.\n\n'+
-'Target Audience\n\n'+
-'- All developers in Equinor without existing Omnia experience.\n\n'+
-'Preparations\n\n'+
-'- None (at this time) - join #edc2019-omnia on Slack for updates.'
+            'Target Audience\n\n'+
+            '- All developers in Equinor without existing Omnia experience.\n\n'+
+            'Preparations\n\n'+
+            '- None.\n\n\n'+
+          '#edc2019-omnia at equinor.slack.com'
         }
       </p>
     ),
@@ -1054,8 +1073,8 @@ export const events = [
 'There will exist Github repos for React and SAP UI5 demo apps which can be used as starting points or for reference.\n'+
 'You are welcome to use any front-end technology.\n'+
 'On the last day we will hopefully have exciting demos of the participant\'s effort.\n'+
-'Maybe your solution will be the next Equinor time writing app?\n\n'+
-'Slack channel: #edc2019-hackathon-timewriting'
+            'Maybe your solution will be the next Equinor time writing app?\n\n\n'+
+            '#edc2019-hackathon-timewriting at equinor.slack.com'
         }
       </p>
     ),
