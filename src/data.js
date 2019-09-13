@@ -235,9 +235,14 @@ export const events = [
     description: (
       <p>
         {
-'Preparations: Install Node.js (latest), a Git client, Chrome and VS Code (out-of-the-box without third-party extensions).\n\n'+
-'No prior CSS knowledge required.\n\n'+          
-'In this workshop we’ll go through some fundamental concepts in CSS and look at different strategies for styling components'
+          'Preparations:\n'+
+            'Install\n'+
+            ' - Node.js (latest),\n'+
+            ' - a Git client,\n'+
+            ' - Chrome and \n'+
+            ' - VS Code (out-of-the-box without third-party extensions).\n\n'+
+            'No prior CSS knowledge required.\n\n'+
+            'In this workshop we\'ll go through some fundamental concepts in CSS and look at different strategies for styling components.'
         }
       </p>
     ),
