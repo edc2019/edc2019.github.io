@@ -453,14 +453,14 @@ export const events = [
   },
   {
     id: IDS.PYTHON_LIBS,
-    title: 'How to build Python libraries with C++ (Sølvberget)',
+    title: 'How to build Python libraries (Sølvberget)',
     shortTitle: 'Building Python libraries (Sølvberget)',
     speaker: SPEAKERS.JORGEN_KVALSVIK,
     description: (
       <p>
         {
-          'Preparations: none strictly necessary, but if you want follow the examples, you must have a working python and a working C++ compiler\n\n'+
-            'Target audience: anyone curious on (advanced) python development, or speeding up python with native code\n\n'+
+          'Preparations: none strictly necessary, but if you want follow the examples, you must have a working Python installation.\n\n'+
+            'Target audience: anyone curious on (advanced) Python development and packaging, or speeding up Python with native code\n\n'+
             'Expect: This is about _building_ (compiling), not code.\n\n'+
             'Python is a pretty good user-facing language, but sometimes things need speeding up, or you need to interact with a C++ library. The first step in this interaction is building it, and it is not necessarily smooth sailing. This workshop goes through the whole process, from an empty directory to a package with C++ code, installable with pip install.'
         }
