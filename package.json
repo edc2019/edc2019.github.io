@@ -4,13 +4,13 @@
   "private": true,
   "homepage": "https://edc2019.github.io",
   "dependencies": {
-    "eslint": "^6.3.0",
-    "gh-pages": "^1.2.0",
+    "eslint": "^6.4.0",
+    "gh-pages": "^2.1.1",
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
-    "react-router-dom": "^4.3.1",
+    "react-router-dom": "^5.0.1",
     "react-scripts": "^3.1.1",
-    "styled-components": "^3.4.6",
+    "styled-components": "^4.3.2",
     "yarn": "^1.17.3"
   },
   "scripts": {
