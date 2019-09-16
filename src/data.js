@@ -244,10 +244,10 @@ export const events = [
         {
           'Preparations:\n'+
             'Install\n'+
-            ' - Node.js (latest),\n'+
-            ' - a Git client,\n'+
-            ' - Chrome and \n'+
-            ' - VS Code (out-of-the-box without third-party extensions).\n\n'+
+            ' — Node.js (latest),\n'+
+            ' — a Git client,\n'+
+            ' — Chrome and \n'+
+            ' — VS Code (out-of-the-box without third-party extensions).\n\n'+
             'No prior CSS knowledge required.\n\n'+
             'In this workshop we\'ll go through some fundamental concepts in CSS and look at different strategies for styling components.\n\n\n'+
             '#edc2019-css-workshop at equinor.slack.com'
@@ -278,8 +278,8 @@ export const events = [
 'To get familiar with its powerful realtime scripting we will develop a small controller simulation using the LÖVE framework.\n\n'+
 'Visual Studio Code has extensions for Lua, however we will use ZeroBrane Studio (https://studio.zerobrane.com/) since it has a great integration with LÖVE.\n\n'+
 'To follow the content an participate, for Windows Equinor machines I recommend\n\n'+
-' - download the Windows 32bit zip archive from the ZeroBrane download page (https://studio.zerobrane.com/download?not-this-time) and\n\n'+
-' - the 32 or 64 bit zipped archive from the LÖVE download page (https://love2d.org/).\n\n'+
+' — download the Windows 32bit zip archive from the ZeroBrane download page (https://studio.zerobrane.com/download?not-this-time) and\n\n'+
+' — the 32 or 64 bit zipped archive from the LÖVE download page (https://love2d.org/).\n\n'+
             'For Mac and Linux just use the distribution packages.\n\n\n'+
             '#edc2019-lua at equinor.slack.com'
         }
@@ -305,12 +305,12 @@ export const events = [
         {
 'The purpose of the workshop is to give a general and hands-on introduction to Radix. We will take a UI-First approach (https://konstantinpavlov.net/blog/2017/03/07/ui-first-development/), where we will start from a web app with mocked data, establish a CI/CD DevOps cycle in Radix, integrate the web app with an API and add authentication using oauth-proxy (https://github.com/pusher/oauth2_proxy). If there is time we\'ll explore monitoring using prometheus and grafana.\n\n'+
 'Pre-requisites\n'+
-' - Account on github.com\n'+
-' - Git installed and working locally against github.com\n'+
-' - Docker running locally\n'+
-' - Local dev. environment (IDE++)\n'+
-' - Node js eco system installed and running (Download Nodejs)\n'+
-' - If you dont have everything in place, join the workshop and team up with someone else\n'
+' — Account on github.com\n'+
+' — Git installed and working locally against github.com\n'+
+' — Docker running locally\n'+
+' — Local dev. environment (IDE++)\n'+
+' — Node js eco system installed and running (Download Nodejs)\n'+
+' — If you dont have everything in place, join the workshop and team up with someone else\n'
         }
       </p>
     ),
@@ -422,14 +422,14 @@ export const events = [
       <p>
         {
           'Preparations:\n'+
-            ' - Docker installed and working on your machine.\n'+
-            ' - Follow the instructions at https://equinor.github.io/edc2019-docker/\n'+
+            ' — Docker installed and working on your machine.\n'+
+            ' — Follow the instructions at https://equinor.github.io/edc2019-docker/\n'+
             '\n'+
             'For:\n'+
-            ' - People interested in cloud and modern building and deployment practices\n' +
+            ' — People interested in cloud and modern building and deployment practices\n' +
             '\n'+
             'Outcome:\n'+
-            ' - To have a basic understanding of the history and benefits of Docker as well as enough practical experience to start using it in simple projects.\n\n\n'+
+            ' — To have a basic understanding of the history and benefits of Docker as well as enough practical experience to start using it in simple projects.\n\n\n'+
             '#edc2019-docker at equinor.slack.com'
 
         }
@@ -461,13 +461,13 @@ export const events = [
           'This is an introduction to version control system and specifically git.\n'+
             '\n'+
             'Prerequisites:\n'+
-            ' - Get Elevated Priveleges or at least the Elevated Installer if on Equinor Windows\n'+
-            ' - Install Git Bash if you\'re on Windows!\n'+
-            ' - Launch the terminal and type git if you\'re on a macOS\n'+
+            ' — Get Elevated Priveleges or at least the Elevated Installer if on Equinor Windows\n'+
+            ' — Install Git Bash if you\'re on Windows!\n'+
+            ' — Launch the terminal and type git if you\'re on a macOS\n'+
             '\n'+
             'Target audience:\n'+
-            ' - People who want to get started with Git and version control, either for configs, source code, or other textual data.\n'+
-            ' - Nothing new if you already can do branch and rebase!\n'+
+            ' — People who want to get started with Git and version control, either for configs, source code, or other textual data.\n'+
+            ' — Nothing new if you already can do branch and rebase!\n'+
             '\n'+
             'We go through the basics of distributed version control and make and edit/rebase commits, create and merge branches, revert and fix conflicts, and use several remotes.\n'
         }
@@ -541,11 +541,11 @@ export const events = [
       <p>
         {
           'Preparations\n'+
-            ' - Working Python environment\n\n'+
+            ' — Working Python environment\n\n'+
             'Recommended skills\n'+
-            ' - Solid Python, journeyman machine learning (or equivalent) skills, information theory aware.\n\n'+
+            ' — Solid Python, journeyman machine learning (or equivalent) skills, information theory aware.\n\n'+
             'What to expect\n'+
-            ' - Basic knowledge of NLP techniques that can be applied when your domain does not neatly conform to academic standards.'
+            ' — Basic knowledge of NLP techniques that can be applied when your domain does not neatly conform to academic standards.'
         }
       </p>
     ),
@@ -597,14 +597,14 @@ export const events = [
           'CTFs [capture the flag] are events that are usually hosted online or at information security conferences. These events consist of a series of challenges in a range of categories that vary in their degree of difficulty. Typical categories are web security, forensics, crypto, binary exploitation and steganography. Once an individual challenge is solved, a “flag” is given to the player and they submit this flag to the CTF server to earn points. CTF events are usually timed, and the points are totaled once the time has expired. The winning player / team will be the one that solved the most challenges and thus secured the highest score.\n\n'+
 'WarGames are similar to CTFs, but without the stress of time constrains and competition. Both WarGames and CTFs are great ways to learn new skills, not just for information security professionals, but also for developers and others interested in information technology.\n\n'+
 'This workshop will cover:\n\n'+
-' - What CTFs are, and how they are played.\n\n'+
-' - Introduction to some of the most popular platforms.\n\n'+
-' - Introduction to common tools and techniques.\n\n'+
-' - Hands on exercises.\n\n'+
+' — What CTFs are, and how they are played.\n\n'+
+' — Introduction to some of the most popular platforms.\n\n'+
+' — Introduction to common tools and techniques.\n\n'+
+' — Hands on exercises.\n\n'+
 'Requirements:\n\n'+
-' - Laptop with Nmap and Burp Suite installed. Equinor domain joined computers are not recommended, but can be used.\n\n'+
+' — Laptop with Nmap and Burp Suite installed. Equinor domain joined computers are not recommended, but can be used.\n\n'+
 'Preferred:\n\n'+
-' - Kali Linux VM or similar. (Kali Linux is a Debian-derived Linux distribution designed for digital forensics and penetration testing.)'
+' — Kali Linux VM or similar. (Kali Linux is a Debian-derived Linux distribution designed for digital forensics and penetration testing.)'
         }
       </p>
     ),
@@ -627,12 +627,12 @@ export const events = [
       <p>
         {
           'The workshop will demonstrate the lifecycle of a machine learning model through the following phases:\n\n'+
-            ' - Experimenting and EDA in jupyter notebook.\n'+
-            ' - Running structured experiments locally.\n'+
-            ' - Running experiments remotely on a Databricks-cluster in Azure.\n'+
-            ' - Evaluating results of experiments and choosing a model to deploy.\n'+
-            ' - Deploy the selected model to production in Azure.\n'+
-            ' - Making requests to the model.\n'+
+            ' — Experimenting and EDA in jupyter notebook.\n'+
+            ' — Running structured experiments locally.\n'+
+            ' — Running experiments remotely on a Databricks-cluster in Azure.\n'+
+            ' — Evaluating results of experiments and choosing a model to deploy.\n'+
+            ' — Deploy the selected model to production in Azure.\n'+
+            ' — Making requests to the model.\n'+
             '\n'+
             'The workshop will be held on a Windows computer with elevated privileges.\n'+
             '\n'+
@@ -858,9 +858,9 @@ export const events = [
           'Hands-on workshop focusing on web and mobile security, aiming to increase the security awareness for software developers. It looks at security from the attacker\'s perspective and takes them through the steps necessary to exploit vulnerable software on the web.\n\n'+
             'Vulnerabilities like Cross-site Scripting (XSS), SQL Injection, Cross-Site Request Forgery (CSRF) ect. will be covered in this workshop.\n\n'+
             'Partisipants should have the following software installed:\n'+
-            ' - Fiddler https://www.telerik.com/fiddler\n'+
-            ' - Python 3 https://www.python.org/downloads/\n'+
-            ' - Sqlmap http://sqlmap.org/\n'+
+            ' — Fiddler https://www.telerik.com/fiddler\n'+
+            ' — Python 3 https://www.python.org/downloads/\n'+
+            ' — Sqlmap http://sqlmap.org/\n'+
             '\n'+
             'Verify sqlmap by running sqlmap.py\n\n'+
             'Target group for workshop is software developers, system administrators and testers.\n\n'+
