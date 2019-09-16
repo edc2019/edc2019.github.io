@@ -267,8 +267,8 @@ export const events = [
   },
   {
     id: IDS.LUA,
-    title: 'From Lua with LÖVE (Rederiet 6th floor)',
-    shortTitle: 'Lua (Rederiet 6th floor)',
+    title: 'From Lua with LÖVE (Horizon)',
+    shortTitle: 'Lua (Horizon)',
     speaker: SPEAKERS.JUAN_ALAMO,
     description: (
       <p>
