@@ -788,14 +788,79 @@ export const events = [
     subtitle: 'Developing APIs (Rederiet 6th floor)',
     speaker: SPEAKERS.OYVIND_RONNE,
     color: '#f58db6',
-    description: (
-      <p>
-        {
-          'The API Track is a series of presentations (and some demos) about API development in Equinor.\n\n'+
-            'The API Track cover topics like the Equinor API Strategy, the API portal (api.equinor.com) and OMNIA API Management, API security, using Postman in API development, REST basics, etc.'
-        }
-      </p>
-    ),
+    description: (() => {
+      const column1 = {
+        width: '120px',
+        verticalAlign: 'top',
+        fontSize: 20
+      }
+      const column2 = {
+        paddingBottom: '28px'
+      }
+      const title = {
+        fontSize: 20 
+      }
+      const presenter = {
+        paddingLeft: '25px'
+      }
+      return (
+      <div>
+        <h1>Developing APIs - The API Track</h1>
+        <table>
+          <tbody>
+            <tr>
+              <td style={column1}>10:30 – 11:15</td>
+              <td style={column2}><span style={title}>Equinor API Strategy</span><br/>
+              <span style={presenter}>Øyvind Rønne, GBS IT SI</span><br/><br/>
+              Corporate IT is about to establish an API Strategy for Equinor. In this session we'll discuss why we need a strategy for APIs, what does the draft strategy contain, and what does the roadmap look like.</td>
+            </tr>
+            <tr>
+              <td style={column1}>11:30 – 12:15</td>
+              <td style={column2}><span style={title}>API Management at a glance</span><br/>
+              <span style={presenter}>Arild Eikeland, GBS IT AXDM DGO</span><br/>
+              <span style={presenter}>Venkata Suneel Kumar Hanumanthu, GBS IT SI Stavanger / Bouvet</span><br/><br/>
+              We will introduce APIM through the following 5 topics:
+              <ul>
+                <li>What is APIM: managing APIs and APIM terminology</li>
+                <li>Microsoft Azure APIM: Azure APIM features and benefits</li>
+                <li>APIM in Equinor: Equinor APIM environments and deployment procedures</li>
+                <li>Equinor APIM features: AZURE dashboards, Noora/dork tool</li>
+                <li>APIM RoadMap: upcoming changes to Equinor APIM</li>
+              </ul></td>
+            </tr>
+            <tr>
+              <td style={column1}>12:30 – 13:30</td>
+              <td style={column2}><span style={title}>LUNCH</span></td>
+            </tr>
+            <tr>
+              <td style={column1}>13:30 – 14:15</td>
+              <td style={column2}><span style={title}>REST</span><br/>
+              <span style={presenter}>Morten Bendiksen, GBS IT SI Bergen / Webstep</span><br/><br/>
+              REST was introduced by Roy Fielding as the "style" of the Web architecture. I´ll introduce what this means, and then relate it to actual API development using Richardson's Maturity Model.
+              </td>
+            </tr>
+            <tr>
+              <td style={column1}>14:30 – 15:15</td>
+              <td style={column2}><span style={title}>Experiences from using Postman in the Mobile App Team</span><br/>
+              <span style={presenter}>Josh Segar, GBS IT SI Stavanger / Bouvet</span><br/><br/>
+              In this session I will share some of the key experiences and lessons we have learned in the Go Digital Mobile development team as we moved from personal Postman accounts into a Postman Pro license.
+              We have migrated 20 APIs into shared workspaces to improve communication, development, and our delivery quality.  We also improved troubleshooting operations issues, improved our delivery speed 
+              for new apps, and reduced waiting and stress within the team.  I will show what has worked well for our needs, and some of the pain points that other adopters could keep in mind.
+              </td>
+            </tr>
+            <tr>
+              <td style={column1}>15:30 – 16:15</td>
+              <td style={column2}><span style={title}>What you need to know to secure your API with OAuth 2.0</span><br/>
+              <span style={presenter}>Nils Hofseth Andersen, GBS IT MSS LID</span><br/><br/>
+              Wondering how access control could be set up for an API with OAuth 2.0? In this session we'll look at how to implement fine grained access control for multiple different OAuth clients using 
+              scopes and role based access control. We'll look at how access is delegated from a person (Resource Owner) to an OAuth client, access tokens, show some tips when doing Azure App Registrations 
+              and practical demonstration of an example API/resource server.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    )})(),
     timeSlots: [
       {
         time: TIME_SLOTS['WORKSHOP_1'],
