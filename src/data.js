@@ -453,7 +453,7 @@ export const events = [
   {
     id: IDS.GITINTRO,
     title: 'A primer on Git (Kannik)',
-    shortTitle: 'Git (Kannik)',
+    shortTitle: 'Introduction to Git (Kannik)',
     speaker: SPEAKERS.PAAL_GROENAAS_DRANGE,
     description: (
       <p>
@@ -466,8 +466,10 @@ export const events = [
             ' - Launch the terminal and type git if you\'re on a macOS\n'+
             '\n'+
             'Target audience:\n'+
-            ' - People who want to get started with Git and version control, either for configs, source code, or other textual data.\n\n'+
-            'We go through the basics of distributed version control and make and edit/rebase commits, create and merge branches, revert and fix conflicts, and use several remotes.'
+            ' - People who want to get started with Git and version control, either for configs, source code, or other textual data.\n'+
+            ' - Nothing new if you already can do branch and rebase!\n'+
+            '\n'+
+            'We go through the basics of distributed version control and make and edit/rebase commits, create and merge branches, revert and fix conflicts, and use several remotes.\n'
         }
       </p>
     ),
@@ -587,7 +589,7 @@ export const events = [
   {
     id: IDS.INTRO_CTF,
     title: 'An introduction to CTFs — an exciting way to gain new knowledge and skills (Valberget)',
-    shortTitle: 'An introduction to CTFs (Valberget)',
+    shortTitle: 'Introduction to CTFs (Valberget)',
     speaker: SPEAKERS.EIRIK_NORDBOE,
     description: (
       <p>
