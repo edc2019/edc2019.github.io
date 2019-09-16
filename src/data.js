@@ -822,7 +822,12 @@ export const events = [
         {
           'This is a one day tour of the Python programming language. We will start with the fundamental building blocks and then focus on learning how things are connected under the hood. This tour will visit things like objects, sequences, generators, flow control, types, functions, classes, exceptions, comprehension, iterators, decorators, concurrency and much more. While we will mention, and sometimes use, a few standard libraries, most of this tour will focus on the Python language itself, explained through writing small useless snippets of code.\n\n'+
 'This tour is first of all for anyone that would like to start a journey to learn Python properly. Even if you have lots of Python experience already you are more than welcome to join us - there is always something new to learn by participating on a tour like this.\n\n'+
-'Bring a laptop with Python 3.6 or better installed (Python 3.6 is available in the software center). We will do some simple exercises in pairs, but most of the tour will be live coding by the instructor.'
+                'Bring a laptop with Python 3.6 or better installed (Python 3.6 is available in the software center). We will do some simple exercises in pairs, but most of the tour will be live coding by the instructor.\n'+
+                '\n'+
+                '\n'+
+                'If you are on Equinor Windows OS, Python 3.6 is available from the Software Center.  If you want to install from the software center, you need to apply for Python access through AccessIT.  More instructions are available on the wiki:\n'+
+                '\n'+
+                ' — https://wiki.equinor.com/wiki/index.php/Software:Python'
         }
       </p>
     ),
