@@ -1044,7 +1044,8 @@ export const events = [
     description: (
       <p>
         {
-          'I welcome all who would like to learn SIMPLE ways to implement even COMPLEX tasks on your TINY graphic cards! We will employ Python — as this language is so nice and simple and yet so powerful. In addition we will be exposed to GPU / Parallel languages (CUDA, OpenCL, etc) — learning to use our brains in parallel fashion too. Magic real-time rendering and 3D visualization tricks should also be revelead!'
+            'I welcome all who would like to learn SIMPLE ways to implement even COMPLEX tasks on your TINY graphic cards! We will employ Python — as this language is so nice and simple and yet so powerful. In addition we will be exposed to GPU / Parallel languages (CUDA, OpenCL, etc) — learning to use our brains in parallel fashion too. Magic real-time rendering and 3D visualization tricks should also be revelead!\n\n'+
+            '#edc2019-gpu-python at equinor.slack.com'
         }
       </p>
     ),
