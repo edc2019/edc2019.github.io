@@ -491,10 +491,18 @@ export const events = [
     description: (
       <p>
         {
-          'Preparations: none strictly necessary, but if you want follow the examples, you must have a working Python installation.\n\n'+
-            'Target audience: anyone curious on (advanced) Python development and packaging, or speeding up Python with native code\n\n'+
-            'Expect: This is about _building_ (compiling), not code.\n\n'+
-            'Python is a pretty good user-facing language, but sometimes things need speeding up, or you need to interact with a C++ library. The first step in this interaction is building it, and it is not necessarily smooth sailing. This workshop goes through the whole process, from an empty directory to a package with C++ code, installable with pip install.'
+          'This workshop takes us from an empty directory, to a working\n'+
+            'python package you can share with friends, colleagues, and\n'+
+            'stranges.  It will be complete with directory layout,\n'+
+            'documentation, automated testing, and if time allows, automated\n'+
+            'deploy to pypi.org.  No more scattered emails with scripts, start\n'+
+            'pip installing today!\n\n'+
+            'Some familiarity with python is helpful. It will be a live and interactive\n'+
+            'demonstration, but if you want to bring your own computer and\n'+
+            'follow along thats also ok. There will not be time to install and\n'+
+            'set up a working python install in the workshop, so it should be\n'+
+            'pre-installed if you want to follow along.\n\n'+
+            'Preparations: none strictly necessary, but if you want follow the examples, you must have a working Python installation.\n\n'
         }
       </p>
     ),
