@@ -24,6 +24,8 @@ const SPEAKERS = {
   SAM_NEWMAN: 'Sam Newman',
   JAMES_LEWIS: 'James Lewis',
 
+  CARSTEN: 'Carsten Falk Hammershøj',
+
   // plenary
   BJARTE_BOGSNES: 'Bjarte Bogsnes',
   PER_IVAR_SELVAAG: 'Per Ivar Selvaag',
@@ -563,9 +565,13 @@ export const events = [
     description: (
       <p>
         {
-'Saving the drone — After the SI gathering you casually left your drone in the maze. But what nobody told you is that after dark all the monsters get out.\n\n'+
-'And of course, it turns out that the drone is highly classified Equinor material, so it has be rescued. During this workshop we will rescue your drone utilizing one graph traversal algorithm after the other, with all the tricks your professor never told you.\n\n'+
-'Since it is already dark, we are going in blind, i.e. there will be no simulator. But fear not, you will be enlightened by the end.'        }
+          'Saving the drone — After the SI gathering you casually left your drone in the maze. But what nobody told you is that after dark all the monsters get out.\n\n'+
+              'And of course, it turns out that the drone is highly classified Equinor material, so it has be rescued. During this workshop we will rescue your drone utilizing one graph traversal algorithm after the other, with all the tricks your professor never told you.\n\n'+
+              'Since it is already dark, we are going in blind, i.e. there will be no simulator. But fear not, you will be enlightened by the end.\n\n'+
+               '#edc2019-saved-by-algorithms at equinor.slack.com'
+
+
+        }
       </p>
     ),
     timeSlots: [
@@ -1125,7 +1131,8 @@ export const events = [
 'The programming language will be JavaScript/NodeJS so you should be able to at least read JavaScript code.\n'+
 'Experience with command-line and Visual Studio Code will help but it\'s not required.\n'+
 'On Wednesday you can code and challenge fellow coders/teams to use the real robot arena.\n'+
-'On Thursday we will select the best robot teams and have a tournament on the arena.\n'
+'On Thursday we will select the best robot teams and have a tournament on the arena.\n\n\n'+
+'#ros-game-workshop on equinor.slack.com.'
         }
       </p>
     ),
@@ -1657,12 +1664,15 @@ export const schedule = [
       },
 
 
-
       {
         time: '14:15',
-        events: [{ title: 'Summary (Atlantic Hall)', color: '#ec384a' }],
+        events: [
+          { title: 'Exiting remarks from the VP IT',
+            speaker: SPEAKERS.CARSTEN,
+          }
+        ],
+        background: COLORS.SPRUCE_WOOD,
       },
-
 
 
       {
