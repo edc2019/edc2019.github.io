@@ -236,8 +236,8 @@ export const events = [
   },
   {
     id: IDS.CSS,
-    title: 'Styling components – a CSS crash course (Rederiet 6th floor)',
-    shortTitle: 'CSS (Rederiet 6th floor)',
+    title: 'Styling components – a CSS crash course (Kongsgardsstuen)',
+    shortTitle: 'CSS (Kongsgardsstuen)',
     speaker: SPEAKERS.VICTOR_NYSTAD,
     description: (
       <p>
@@ -326,8 +326,8 @@ export const events = [
   },
   {
     id: IDS.PROLOG,
-    title: 'Prolog (Kongsgardsstuen)',
-    shortTitle: 'Prolog (Kongsgardsstuen)',
+    title: 'Prolog (cancelled)',
+    shortTitle: 'Prolog (cancelled)',
     speaker: SPEAKERS.BJARTE_JOHANSEN,
     description: (
       <tt>
