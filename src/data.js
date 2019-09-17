@@ -326,8 +326,8 @@ export const events = [
   },
   {
     id: IDS.PROLOG,
-    title: 'Prolog (cancelled)',
-    shortTitle: 'Prolog (cancelled)',
+    title: 'Prolog (Rederiet 6th floor)',
+    shortTitle: 'Prolog (Rederiet 6th floor)',
     speaker: SPEAKERS.BJARTE_JOHANSEN,
     description: (
       <tt>
