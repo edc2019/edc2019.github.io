@@ -567,18 +567,25 @@ export const events = [
     day: CONFERENCE_DAYS.DAY_3,
     category: CATEGORIES.MINIWORKSHOP,
   },
+
   {
     id: IDS.SAVE_THE_DRONE,
-    title: 'Saving the drone — An Algorithms and Data Structures recap (Ledaalstuen)',
+    title: 'Saving the drone — A tribute to graph searching (Ledaalstuen)',
     shortTitle: 'Saving the drone (Ledaalstuen)',
     speaker: SPEAKERS.MARKUS_DREGI,
     description: (
       <p>
         {
-          'Saving the drone — After the SI gathering you casually left your drone in the maze. But what nobody told you is that after dark all the monsters get out.\n\n'+
-              'And of course, it turns out that the drone is highly classified Equinor material, so it has be rescued. During this workshop we will rescue your drone utilizing one graph traversal algorithm after the other, with all the tricks your professor never told you.\n\n'+
-              'Since it is already dark, we are going in blind, i.e. there will be no simulator. But fear not, you will be enlightened by the end.\n\n'+
-               '#edc2019-saved-by-algorithms at equinor.slack.com'
+'    It is a nice day. The sun is shining and all is good. You are hanging around\n'+
+'    in the local maze playing with your drone. It is not fully functional yet, but\n'+
+'    you are positive that you will manage. After all, the birds are singing.\n'+
+'\n'+
+'You could not be more wrong… In this workshop we will explore the many nuances and cool applications of graph searching through programming challenges with a common story. We will start out with a recap of the algorithms before you are given the problem set.  How deep into the dungeons will you get?\n'+
+'\n'+
+'The problems will be provided via HackerRank and you can solve all exercises in the browser if you want to. In addition, the site has support for most popular programming languages, so bring your favourite or one you would like to know a little better.\n'+
+'\n'+
+'Disclaimer: All drones and events depicted in this workshop are entirely fictitious. Any similarity to actual events or drones, living, dead or real, is purely coincidental\n\n'+
+                '#edc2019-saved-by-algorithms at equinor.slack.com'
 
 
         }
