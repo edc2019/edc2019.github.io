@@ -50,7 +50,7 @@ const SPEAKERS = {
   TEAM_OMNIA: 'Team OMNIA',
   TEAM_REAL_ROBOT: 'Ole Martin Gjersvik & Kjetil Eik',
   THORVALD_JOHANNESSEN: 'Thorvald Johannessen',
-  TEAM_HACKYOURSELF: 'Christian Sørseth',
+  TEAM_HACKYOURSELF: 'Niall Merrigan',
   TEAM_ACE: 'Tor-Ivar Hals, Kristina Marie Kjønnås, Katarzyna Wdaniec',
 
   // miniworkshops
