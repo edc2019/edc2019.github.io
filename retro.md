@@ -1,3 +1,23 @@
+## Organizing Committee
+
+
+* Kjell Erik: Full day workshops
+* Margaux: Lightning talks
+* Hallgeir: New language
+* Erlend: Mini-workshops
+
+* Thorvald: Head of Product development and Slagord
+* Kristian: HRG / rom / logistics
+* Pål: Whip - to be used by all
+* Olve: Coffeeboy, currently helping Pål with promoting EDC and getting more contributions
+* Jørn: Cheerleader
+* Lars Kåre: Cheerleader assistant
+
+* Kirsti/Magrete: Fysisk fostring
+* Torje: Head of Entertainment
+
+* Øvind: ?
+
 ## Slagord (Thorvald & Øyvind)
 
 * EDC 2019 - "Produktgreier"
